@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "ALLWX",
+      "hasCanvas": false,
+      "bodyTextLen": 8112,
+      "bodyTextHash": "a5ca0c0aaf42a535c6c15fc61bb5700f977a76a085e58c54c5dc9afd1db1afb1",
+      "bodyTextPrefix": "Skip to content ALLWX <GO> All Weather · Bridgewater-inspired cl",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/home.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "ALLWX",
+      "hasCanvas": false,
+      "bodyTextLen": 8062,
+      "bodyTextHash": "961129089880e07934da39c549b43fa40900926176e4e21825b07a7315d714b3",
+      "bodyTextPrefix": "Skip to content ALLWX HOME LEARN LISTEN TAPE HOUSE LAB 2026-09-0",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/home-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/home.json"
+}

@@ -1,0 +1,57 @@
+The question is whether the house weights are optimally calibrated for Reflation primary / stagflation overlay — the confirmed regime as of today. The honest answer is: structurally yes, tactically no — and the gaps are deliberate, not errors.
+
+What the Regime Demands
+
+Reflation (G↑, I↑) with a stagflation overlay (energy-driven, Hormuz) has a clear preference ordering across the four-box matrix:
+
+
+
+Regime Priority     Invictus Winners  Invictus Losers    Satellite Posture
+Reflation (primary) VWRP, ICOM        VAGS, IDTL (price) DFNS, COPA, SMGB pay
+Stagflation overlay SGLN, ICOM, ITPS* VWRP, VAGS         All satellites at risk; walk-back likely if G rolls
+
+*ITPS pays in stagflation only if real yields do not rise faster than CPI indexation.
+
+Line-by-Line: Regime Fit vs House Weight
+
+
+
+Line House Wt Regime Signal                             Today  Verdict
+VWRP 23.8%    ✅ Reflation winner                        −0.12% Well-sized. Largest line, correct regime. Stagflation overlay is the risk — but G is still 54.6 PMI. No case to trim.
+ICOM 8.5%     ✅ Both boxes pay                          +0.66% Undersized for the current tape. The only Invictus line that wins in both Reflation and stagflation simultaneously. A pure regime-optimizer would push this higher — but the house cap is 6–∞%, and the floor is already met. The house does not chase.
+SGLN 10.2%    ⚠️ Thesis intact, taxed today             −0.72% Correctly sized for the long cycle, wrong for the short trade. Real yield at 2.25% and hike bets are the short-term tax. A regime-optimizer would trim here — the house explicitly rejects that move. The debt-cycle thesis is not a weekly trade.
+ITPS 13.6%    ⚠️ Mixed — inflation yes, real yield risk −0.13% Correctly sized. BEI 2.35% vs PCE 3.7% — ITPS is cheap relative to realised inflation. Real yield 2.25% is below the 2.50% drag threshold. No case to move.
+VAGS 17.0%    ❌ Headwind in both boxes                  −0.19% The house's deliberate drag. VAGS is the deflation/disinflation engine — it is the wrong line for the current regime. A pure Reflation optimizer would zero it. The house holds it at 17% because the regime can rotate, and when it does (G↓, I↓), VAGS is the line that saves the book. This is the cost of being all-weather.
+IDTL 5.1%     ❌ Headwind — yield pressure               −0.20% Correctly minimised. At 5.1% (floor 0%, cap 8%), this is already the smallest Invictus line. It is the cut-cycle stub — not a current-regime line. Holding it at 5.1% is the right posture.
+CSH2 6.8%     ✅ Neutral / carry                         +0.02% Correctly sized. Optionality has a price — 2–3pp vs equities in a quiet Goldilocks year. In a Reflation/stagflation regime with a binary FOMC in 9 days, the dry powder is worth more than usual.
+
+Satellite Sleeve
+
+
+
+Line      House Wt Regime Fit                        Today  Verdict
+SMGB      2.70%    ✅ AI capex cycle — Reflation pays +1.70% Paying. Correctly held. Hard cap 5% — no case to add outside contribution cycle.
+DFNS      3.00%    ✅ Hormuz thesis reinforced        −0.71% Thesis intact, price lagging. Correctly held. The geopolitical catalyst is live; the price has not caught up yet.
+URNG      1.50%    ✅ Energy supply shock narrative   +0.94% Paying. Smallest satellite line — the house's highest-Sharpe thematic. No case to add outside contribution cycle.
+COPA/COPG 2.70%    ⚠️ Reflation yes, China risk      —      Verify ticker on T212 before 3 Oct. Copper is the electrification thesis — correct for Reflation, vulnerable if China slows on the energy shock.
+XDWI      2.25%    ✅ Reflation industrials           +0.30% Paying modestly. Correctly held.
+XDWH      2.85%    ⚠️ Defensive — regime-neutral     −0.85% The satellite sleeve's VAGS equivalent. Healthcare is the defensive anchor — it underperforms in Reflation and pays when the satellite sleeve is under pressure. Today's loss is a Novartis single-stock event. Thesis intact.
+
+BQL
+for(['CSH2 LN Equity', 'DFNS LN Equity', 'ICOM LN Equity', 'IDTL LN Equity', 'ITPS LN Equity', 'SGLN LN Equity', 'SMGB LN Equity', 'URNG LN Equity', 'VAGS LN Equity', 'VWRP LN Equity', 'XDWH LN Equity', 'XDWI LN Equity']) get(px_last, px_last/px_last(fill=PREV, dates=-1D)-1)
+
+The Honest Assessment
+
+A pure Reflation optimizer would look like this: overweight VWRP and ICOM, zero VAGS and IDTL, trim SGLN, max SMGB and DFNS. That portfolio would have outperformed the house significantly over the past 12 months — and it would be destroyed in a regime rotation to Goldilocks or deflation.
+
+The house is not a Reflation optimizer. It is an all-weather engine with a Reflation tilt already baked in — VWRP at 23.8% is the largest single line, ICOM at 8.5% is the goods-inflation hedge, and the satellite sleeve is weighted toward Reflation beneficiaries (SMGB, DFNS, COPA, XDWI). The drag lines — VAGS at 17%, IDTL at 5.1% — are the insurance premium against being wrong about the regime.
+
+The three genuine tensions in the current regime are:
+
+VAGS at 17% is the biggest drag. It is the correct size for an all-weather book. It is the wrong size for a Reflation trade. The house accepts this explicitly — conditioning VAGS on this week's GT10 means you do not have a house, you have a momentum strategy.
+
+ICOM at 8.5% is arguably undersized for a regime where it wins in both primary and overlay simultaneously. The house does not chase — the next contribution on 3 October is the correct mechanism to address drift, not a discretionary top-up.
+
+SGLN at 10.2% is being taxed by the short-term real-yield channel while the long-term debt-cycle thesis remains intact. A regime-optimizer would trim. The house holds — and that is the right call.
+
+Conclusion: The house is optimised for durability across all four regime boxes, with a structural tilt toward Reflation. It is not optimised for the current regime in isolation — and that is the point. The under-earning is the feature, not the bug. The next lever is the 3 October contribution: route to the most underweight Invictus line (check drift against your T212 NAV), confirm walk-back is inactive, and verify COPA/COPG ticker availability.

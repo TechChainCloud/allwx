@@ -1,0 +1,151 @@
+No data tools needed. Everything required is in this session. This is the operating manual.
+
+The One Thing That Matters Most — At Every Stage
+
+Contribution rate. Not asset selection. Not rebalance timing. Not which sleeve is up this week. At £710, a 1% improvement in annual return is £7.10. An extra £50 contribution is £50. The machine compounds what you feed it. Until the book reaches approximately £20,000, the contribution decision dwarfs every portfolio construction decision combined. This is not motivational language — it is arithmetic that does not change regardless of how well the Seven Questions are answered.
+
+Everything below is ordered by what actually moves the needle at each stage.
+
+The Milestone Map — £5,000 to £100,000
+
+£0 → £5,000 — The Discipline Stage
+
+What matters most: Contribution consistency. Nothing else is close.
+
+The machine is correctly built. Do not redesign it. Do not add lines. Do not change weights based on performance.
+
+The only variable you control that compounds is the monthly contribution date and amount. Fix both. Do not move them.
+
+At this stage, spread costs and minimum trade sizes mean that rebalancing by selling existing positions is almost always wrong. Direct every contribution to the most underweight sleeve. That is the entire rebalancing strategy.
+
+IDTL coupons (Dist): reinvest manually into the most underweight sleeve within five business days of receipt. Do not let them sit as cash.
+
+One watch level only: GT30 vs 5.40%. If it crosses, IDTL takes a ~6% hit. Note it. Do not sell. The 6% weight means the pie impact is ~0.36% — noise at this book size.
+
+Portfolio review frequency: Monthly, on the contribution date. Not daily. Not after bad sessions.
+
+What to ignore: Daily P&L. Individual line performance. News that does not change the Seven Questions readings. The urge to add a new ETF.
+
+£5,000 — First Milestone
+
+Action: One structural review. No changes unless a sleeve has drifted beyond ±3pp from target. Confirm the drawdown protocol is written and filed. Confirm contribution automation is in place. That is the entire review agenda.
+
+Metric to record: Annualised contribution rate vs annualised return. At £5,000, the contribution rate should be the larger number. If it is not, contributions are too low, not returns too high.
+
+£5,000 → £10,000 — The Measurement Stage
+
+What matters most: Building the habit of reading the Seven Questions without acting on them. The machine will be taxed in this range — a session like today (SGLN −1.47%, VWRP −0.59%) will feel larger in percentage terms than it should. The discipline is to answer the Seven Questions, confirm the regime has not rotated, and close the screen.
+
+Continue directing contributions to the most underweight sleeve.
+
+The ±3pp rebalance trigger now starts to matter in pounds. At £7,500, a 3pp drift is £225 — worth correcting via contribution direction rather than selling.
+
+Begin tracking the cause→effect chain daily. Not to act on it — to build the pattern recognition that makes Stage 4 legible when it arrives. The investor who has read the chain 200 times does not panic when it inverts.
+
+16 Sep FOMC is the first live event in this range. Apply the FOMC operating rules from the previous section. Do not pre-position. Do not post-position. Let the machine absorb it.
+
+What to ignore: YTD return comparisons to indices. ICOM's 33% YTD is not a reason to increase it to 15%. IDTL's −2.64% is not a reason to reduce it below 6%. The machine is not a performance vehicle — it is a regime vehicle.
+
+£10,000 — Second Milestone (First Structural Gate)
+
+Action required: This is the Phase 2 threshold. Two instrument additions become eligible — but only if both pass all four gates.
+
+
+
+Addition                                       Funded by               Target weight Gate check
+UK inflation-linked gilts (INXG or equivalent) Trim ITPS: 14% → 8–9%   5–6%          UCITS, London-listed, TER ≤0.25%, AUM ≥£500m, GBP real rates not already covered
+EM local currency bonds (SEML or equivalent)   Trim VAGS: 18% → 12–13% 5–6%          UCITS, London-listed, TER ≤0.25%, AUM ≥£500m, EM carry not already covered
+
+If the platform does not list eligible instruments that pass all four gates, do not add. Wait. The skeleton continues to run at 7 lines until eligible instruments are available. Do not compromise on the gate criteria to hit the milestone.
+
+Metric to record at £10,000: Weighted portfolio TER. It should remain at or below 0.15% after any additions. If it rises above 0.20%, the cost drag requires a stronger diversification case.
+
+£10,000 → £20,000 — The Compounding Stage
+
+What matters most: Contribution rate is still the dominant variable, but the machine's return contribution is now becoming visible in pounds. At £15,000, a 7% annual return is £1,050 — approaching the level where it competes with a monthly contribution in annual terms.
+
+The 9-line book (if Phase 2 additions were made) needs its first full rebalance cycle. The ±3pp trigger now applies across nine lines. Check monthly. Act only when triggered.
+
+The drawdown protocol becomes materially important in this range. A 12% drawdown on £15,000 is £1,800 — real money that will test the amber protocol. The protocol must be written and filed before this range is reached, not during it.
+
+Stage transition watch: If the debt cycle moves to Stage 4 in this range (2s10s inverts, PMI <50, credit spreads +100bp), the amber drawdown protocol activates. VWRP trims to 20%, CSH2 builds to 15%. This is the first real test of whether the rules hold under pressure.
+
+Begin tracking real return (nominal return minus UK CPI) alongside nominal return. The machine is designed to preserve purchasing power across regimes. Real return is the correct scorecard.
+
+£20,000 — Third Milestone
+
+Action: Full portfolio review. Check all sleeve weights, all instrument gate criteria, all watch levels. Confirm the drawdown protocol is still current — update the pound thresholds (8% of £20,000 is £1,600 yellow; 12% is £2,400 amber; 20% is £4,000 red). The protocol must be denominated in pounds, not just percentages, so it is legible in the moment.
+
+Metric to record: Contribution rate as a percentage of portfolio value. At £20,000, if contributions are £200/month, the contribution rate is 1.2% per month — still dominant over investment return. The crossover point (where annual return exceeds annual contributions) typically occurs between £30,000 and £50,000 at typical contribution rates. That crossover is the moment the machine starts working harder than the investor.
+
+£20,000 → £50,000 — The Crossover Stage
+
+What matters most: Regime discipline. This is the range where the machine's return contribution begins to rival and then exceed the contribution rate. It is also the range where a Stage 4 transition — if it occurs — produces the largest emotional test. A 15% drawdown on £35,000 is £5,250. The amber protocol must hold.
+
+The Seven Questions must be answered every session without exception. Not because the answers change daily — they rarely do — but because the habit of reading the machine is what makes the Stage 4 signal legible when it arrives. The investor who skips the Seven Questions for three weeks is the investor who misses the inversion.
+
+Currency exposure review: At £35,000, the 75% unhedged USD block is a £26,250 currency position. DXY at 99.67 tonight means this is a live risk. Begin tracking DXY weekly alongside the Seven Questions. The watch levels (97 and 102) are the action thresholds — not daily noise.
+
+IDTL coupons now matter in pounds. At £35,000 with IDTL at 6% (£2,100), the semi-annual coupon at ~4.89% trailing yield is approximately £51 per payment. Reinvest within five business days. Every coupon that sits as cash is a drag on the machine.
+
+Contribution rate: If income grows in this range, increase the contribution amount proportionally. The compounding effect of increasing contributions from £200 to £300/month at £30,000 is larger than any asset allocation decision available.
+
+£50,000 — Fourth Milestone (Second Structural Gate)
+
+Action required: Phase 3 threshold. Two structural decisions become eligible.
+
+
+
+Decision                  Action                                                                                                                                                                          Condition
+Equity factor tilt        Add value/equal-weight complement (IWVL or equivalent, 5–8%). Trim VWRP: 30% → 22–25%.                                                                                          Only if VWRP's cap-weight concentration is a documented concern — i.e., US mega-cap >60% of VWRP and the regime is not Goldilocks.
+Currency overlay decision Decide explicitly: accept the 75% USD exposure as a structural long-debasement bet, or hedge a portion of VWRP and ITPS. Document the decision and the reason. Review annually. Mandatory at £50,000. The position is too large to be accidental.
+
+Metric to record at £50,000: The crossover has almost certainly occurred. Annual investment return at 7% is £3,500. Annual contributions at £200/month are £2,400. The machine is now working harder than the investor. This is the compounding inflection point. Do not celebrate by redesigning the portfolio.
+
+£50,000 → £100,000 — The Compounding Stage
+
+What matters most: Staying in the machine. The single largest risk in this range is not a market event — it is a behavioural event. A Stage 4 drawdown of 15–20% on £70,000 is £10,500–£14,000. That is the number that causes investors to override the machine. The drawdown protocol, written at £710, is the only defence against that override.
+
+The Seven Questions are now a risk management tool, not just a monitoring tool. At this scale, a confirmed Stage 4 signal (amber protocol) triggers a real rebalance — selling VWRP from 30% to 20% on a £70,000 book means selling £7,000 of equities at a loss. The protocol must be followed exactly. Deviation at this scale is expensive.
+
+Tax efficiency review: Confirm the ISA wrapper is being maximised (£20,000 annual allowance). At £70,000+, the tax drag of holding this book outside an ISA becomes material. If the book has grown beyond the ISA wrapper, a SIPP contribution strategy becomes relevant for the defensive sleeve (VAGS, CSH2, IDTL).
+
+Platform review: At £100,000, platform fees (percentage-based) may exceed the cost of switching to a fixed-fee platform. Calculate the annual platform cost as a percentage of the book. If it exceeds 0.25%, a platform review is warranted.
+
+The real-return scorecard becomes the primary metric. Nominal return minus UK CPI, compounded from inception. This is the number that tells you whether the machine is doing its job — preserving and growing purchasing power across regimes.
+
+£100,000 — Final Milestone
+
+Action: Full structural review. The machine that was built at £710 with 7 lines should now be a 9–11 line book with written protocols for every decision. The review agenda:
+
+Confirm all four gates were applied to every instrument addition. Remove any line that no longer passes.
+
+Update the drawdown protocol pound thresholds (8% of £100,000 is £8,000 yellow; 12% is £12,000 amber; 20% is £20,000 red).
+
+Confirm the currency overlay decision is still deliberate and documented.
+
+Calculate the real return from inception. Compare to the All-Weather benchmark (Dalio's original portfolio returned approximately 9.7% nominal / ~6–7% real over long cycles). If the machine is within 2pp of that benchmark on a real basis, it is working.
+
+Confirm the contribution rate going forward. At £100,000, the machine's annual return at 7% is £7,000. Contributions are now a smaller fraction of total growth. The portfolio construction decisions matter more than they did at £710 — but the discipline rules do not change.
+
+The Single Table — What to Pay Attention to at Each Stage
+
+
+
+Stage      Primary focus                          Secondary focus                      What to ignore
+£0–£5k     Contribution consistency               Seven Questions habit                Daily P&L, line performance
+£5k–£10k   Contribution consistency               Cause→effect chain reading           YTD comparisons, new ETFs
+£10k       Phase 2 gate check                     Drawdown protocol in pounds          Performance vs benchmarks
+£10k–£20k  Regime discipline                      Real return tracking                 Short-term volatility
+£20k–£50k  Drawdown protocol                      Currency exposure review             Tactical tilts
+£50k       Phase 3 gate check + currency decision Platform fee review                  Adding lines without gate clearance
+£50k–£100k Staying in the machine                 ISA/SIPP wrapper optimisation        Overriding the drawdown protocol
+£100k      Full structural review                 Real return vs All-Weather benchmark Redesigning what is working
+
+The One Number to Watch Tonight and Every Night
+
+Of all the Bloomberg objects in the Seven Questions, the one that most directly governs the machine's near-term behaviour is GT30 at 5.28%. It is 12bp from the next IDTL pain threshold (5.40%) and 28bp from the first IDTL green light (5.00%). Every other watch level is secondary to this one until 16 Sep FOMC resolves the hike question.
+
+Set one alert. GT30 at 5.40%. If it crosses, IDTL takes a ~6% hit. Note it. Do not sell. Confirm the regime has not rotated. Close the screen.
+
+The machine is built. The rules are written. The milestones are mapped. The only remaining variable is time and contribution. Both are entirely within your control.

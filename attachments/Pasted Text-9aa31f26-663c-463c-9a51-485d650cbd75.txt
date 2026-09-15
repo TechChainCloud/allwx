@@ -1,0 +1,82 @@
+This is a portfolio design question, not a data retrieval question. Here is the answer directly.
+
+The Design Constraints First
+
+Twenty instruments. ISA wrapper (GBP base, T212 or equivalent). Never get in the way of compounding. That means: no leverage, no derivatives, no tactical tilts, no rebalancing by selling, contribution-routing only, low TER, physical or swap-replicated where appropriate, all four regime boxes covered, and a structure that survives a lost decade without requiring a decision.
+
+The Dalio framework stays. The expansion from 13 to 20 instruments buys three things the Invictus One-Pie deliberately sacrifices: factor granularity within equities, geographic precision within bonds, and commodity specificity within real assets.
+
+The 20-Instrument All-Weather ISA
+
+
+
+#                                   Ticker Weight Job                                                                                                                                                                  Regime Box
+EQUITY SLEEVE — 38%
+1                                   VWRP   18.0%  Global productivity core. ~3,700 names, dividends reinvested. The engine.                                                                                            Goldilocks ✓ Reflation ✓
+2                                   VVAL   5.0%   Global value factor. Cheap cashflows outperform over full cycles. Diversifies away from growth concentration in VWRP.                                                Reflation ✓ Goldilocks ✓
+3                                   WSML   5.0%   Global small-cap. Higher long-run return premium, lower correlation to mega-cap tech. Earns in mid-cycle expansion.                                                  Goldilocks ✓ Reflation ✓
+4                                   VFEM   5.0%   EM equity. Demographic dividend, commodity-linked growth, China/India/Brazil exposure. Separate from VWRP's EM weight to allow drift management.                     Reflation ✓
+5                                   IUKD   5.0%   UK high-dividend equity. Value-tilted, GBP-native, low correlation to US growth. Provides income reinvestment in the ISA wrapper.                                    Goldilocks ✓ Reflation ✓
+NOMINAL BOND SLEEVE — 22%
+6                                   VAGS   8.0%   Global aggregate, GBP-hedged. Deflation engine. Rates-and-credit job, not FX.                                                                                        Deflation ✓ Goldilocks ✓
+7                                   IGLS   5.0%   UK short gilts (1–5yr). GBP-native, low duration, high liquidity. Earns carry without long-end term premium risk. Complements VAGS without doubling duration.        Deflation ✓ Goldilocks ✓
+8                                   IDTL   5.0%   US Treasury 20+yr. Cut-cycle convexity stub. When Stage 5 arrives, the capital gain lives here.                                                                      Deflation ✓
+9                                   IEMB   4.0%   EM sovereign bonds, USD-denominated. Higher carry than DM bonds, diversifies the bond sleeve away from pure G7 rates. Earns in Reflation when EM growth is strong.   Reflation ✓ Goldilocks ✓
+INFLATION-LINKED SLEEVE — 14%
+10                                  ITPS   7.0%   US TIPS. CPI contract. Principal indexed to US CPI. The inflation-linked anchor.                                                                                     Stagflation ✓ Reflation ✓
+11                                  INXG   4.0%   UK index-linked gilts. GBP CPI contract. Hedges UK-specific inflation without USD exposure. Complements ITPS without currency overlap.                               Stagflation ✓ Reflation ✓
+12                                  TPSA   3.0%   Short-duration TIPS (0–5yr). Lower real-yield sensitivity than ITPS. Earns inflation accrual with less price risk if real yields rip. Buffers the ITPS duration.     Stagflation ✓
+REAL ASSETS SLEEVE — 16%
+13                                  SGLN   7.0%   Physical gold. Long-term debt cycle hedge. Debasement, crisis correlation, CB credibility.                                                                           Stagflation ✓ Deflation ✓
+14                                  ICOM   5.0%   Broad commodities (BCOM). Goods inflation hedge. Energy, metals, agriculture. Wins in both Reflation and stagflation.                                                Reflation ✓ Stagflation ✓
+15                                  SSLV   2.0%   Physical silver. Higher beta than gold to the industrial/monetary hybrid. Earns in Reflation (industrial demand) and stagflation (monetary hedge). Diversifies SGLN. Reflation ✓ Stagflation ✓
+16                                  WTRE   2.0%   Global listed real estate (REITS). Inflation-linked income, long-duration real asset. Low correlation to nominal bonds. Earns in Goldilocks and mild Reflation.      Goldilocks ✓ Reflation ✓
+LIQUIDITY / OPTIONALITY SLEEVE — 5%
+17                                  CSH2   5.0%   Near-SONIA overnight return. Optionality. Funds limit orders. The line that makes everything else possible.                                                          All regimes — pure carry
+THEMATIC SATELLITE SLEEVE — 5%
+18                                  SMGB   2.0%   Semiconductor / AI capex. The highest-conviction structural growth theme of the decade.                                                                              Reflation ✓
+19                                  DFNS   2.0%   Global defence. Geopolitical fragmentation is a multi-decade structural spend.                                                                                       Reflation ✓ Stagflation ✓
+20                                  URNG   1.0%   Uranium / nuclear. Highest standalone Sharpe thematic. Energy security + decarbonisation. Small by design — high vol, high conviction, long horizon.                 Stagflation ✓ Reflation ✓
+
+The Architecture in Five Principles
+
+1. The equity sleeve is factored, not just indexed. VWRP at 18% is the core, but VVAL (value), WSML (small-cap), VFEM (EM), and IUKD (UK dividend) each add a return factor that is genuinely independent of the mega-cap growth concentration in VWRP. Over a 30-year compounding horizon, the value and small-cap premiums are among the most robust in the academic literature. They do not require a forecast — they require patience.
+
+2. The bond sleeve is geographically and duration-diversified. VAGS is the global aggregate anchor. IGLS adds short-duration GBP carry without long-end risk. IDTL is the cut-cycle convexity stub. IEMB adds EM carry and diversifies away from pure G7 rates. No single yield curve dominates the bond sleeve.
+
+3. The inflation sleeve has three layers of duration. ITPS (duration ~6.6yr) is the core. TPSA (0–5yr) buffers the real-yield risk. INXG adds GBP CPI exposure so the inflation hedge is not entirely USD-denominated. Together they cover the inflation factor without concentrating all real-yield risk in a single instrument.
+
+4. Real assets cover three distinct jobs. SGLN is the monetary/debt-cycle hedge. ICOM is the goods-inflation hedge. SSLV adds industrial-monetary hybrid exposure at the margin. WTRE adds inflation-linked income from real property — a different mechanism from commodity futures or gold.
+
+5. The thematic satellite is deliberately small. Three lines, 5% total. No single thematic above 2%. The satellite is a return engine, not a stabiliser. It is sized so that a 50% drawdown in all three simultaneously costs the portfolio 2.5% — painful but not structural. The walk-back rule (PMI < 50 AND 2s10s inverted) stops new satellite contributions in the exact conditions when these lines fall hardest.
+
+What This Buys Over the Invictus One-Pie
+
+
+
+Dimension                    Invictus One-Pie (13 lines) 20-Instrument All-Weather
+Equity factor exposure       Market-cap only (VWRP)      Market-cap + value + small-cap + EM + UK dividend
+Bond geographic spread       Global aggregate + US long  Global aggregate + UK short + US long + EM sovereign
+Inflation coverage           US TIPS only                US TIPS + UK linkers + short TIPS
+Real asset granularity       Gold + broad commodities    Gold + broad commodities + silver + listed real estate
+Thematic satellite           6 lines, 15%                3 lines, 5% — tighter, higher conviction
+Estimated true portfolio vol ~7.8%                       ~7.2–7.5% (factor diversification reduces equity variance)
+Regime coverage              All four boxes              All four boxes, with deeper coverage per box
+
+What It Does Not Contain — And Why
+
+No leverage, no derivatives, no inverse ETFs. Compounding requires survival. Leverage introduces ruin risk.
+
+No single-country equity ETFs (except IUKD for GBP-native income). Country bets are forecasts. The house does not make forecasts.
+
+No crypto. Not an asset class with a defined economic function in the four-box framework. Bitcoin is not a CPI contract, not a productivity claim, not a deflation engine.
+
+No active funds. TER drag compounds against you over 30 years. Every basis point of TER is a permanent headwind to the terminal value.
+
+No more than 3 thematic satellites. Thematic equity is a return engine with high vol and high intra-sleeve correlation. More than three lines does not add diversification — it adds complexity and the illusion of it.
+
+No VHYL, no RBTX, no FAIG, no ABTC. The same reasons that applied to the Invictus One-Pie apply here. Evaluated and rejected.
+
+The One Rule That Does Not Change
+
+Twenty instruments or thirteen — the rule is the same. Contributions on a fixed date. Drift-routing to the underweight line. Walk-back when PMI < 50 AND 2s10s inverted. No hero trades. No selling. The compounding engine is the contribution schedule and the time horizon, not the instrument count. The portfolio's job is to survive long enough for both to do their work.

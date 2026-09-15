@@ -1,0 +1,167 @@
+[Chart]
+
+The 20-Instrument All-Weather ISA — Final Build
+
+18 instruments confirmed live on London exchanges. VVAL LN (no live data) replaced by IUKD. TPSA LN (no data) replaced by INXG. Both substitutions improve the portfolio — IUKD adds a confirmed value/dividend factor; INXG adds GBP-native inflation linkage.
+
+The Full Table
+
+
+
+#  Ticker Sleeve     Factor Group      Wt    Floor Cap CCY TER  Dur   1Y Ret   1Y Vol Sharpe Var Contrib G R S D Corr Group
+1  VWRP   Equity     Global Mkt-Cap    18.0% 15%   22% GBP 14bp —     +21.75%  11.08% 1.635  1.99%       ✓ ✓     EQ-CORE
+2  VFEM   Equity     EM Equity         5.0%  3%    8%  GBP 22bp —     +20.44%  15.13% 1.111  0.76%       ✓ ✓     EQ-EM
+3  WSML   Equity     Small-Cap Factor  5.0%  3%    8%  USD 17bp —     +21.67%  14.88% 1.212  0.74%       ✓ ✓     EQ-FACTOR
+4  IUKD   Equity     UK Dividend Value 4.0%  2%    7%  GBp 19bp —     +27.91%  11.37% 2.135  0.45%       ✓ ✓     EQ-VALUE
+5  VAGS   Nom Bond   Global Agg Hedged 8.0%  5%    12% GBP 8bp  6.1y  +0.22%   3.61%  −0.945 0.29%       ✓     ✓ BOND-DM
+6  IGLS   Nom Bond   UK Short Gilt     5.0%  3%    8%  GBP 7bp  2.5y  +2.56%   2.09%  −0.512 0.10%       ✓     ✓ BOND-SHORT
+7  IDTL   Nom Bond   US Long Treasury  5.0%  0%    8%  USD 7bp  14.9y −3.85%   9.17%  −0.816 0.46%             ✓ BOND-LONG
+8  IEMB   Nom Bond   EM Sovereign USD  4.0%  2%    7%  USD 22bp 7.0y  +4.99%   5.91%  0.230  0.24%       ✓ ✓     BOND-EM
+9  ITPS   IL Bond    US TIPS           7.0%  4%    10% GBP 10bp 6.6y  +0.10%   5.90%  −0.598 0.41%         ✓ ✓   IL-US
+10 INXG   IL Bond    UK Index-Linked   4.0%  2%    7%  GBP 10bp 9.2y  +2.88%   9.19%  −0.082 0.37%         ✓ ✓   IL-UK
+11 SGLN   Real Asset Physical Gold     7.0%  4%    10% GBp 12bp —     +21.18%  25.86% 0.679  1.81%         ✓ ✓ ✓ GOLD
+12 ICOM   Real Asset Broad Commodities 5.0%  3%    8%  USD 19bp —     +44.36%  17.85% 2.282  0.89%         ✓ ✓   COMM-BROAD
+13 SSLV   Real Asset Physical Silver   2.0%  1%    4%  USD 20bp —     +60.21%  61.08% 0.926  1.22%         ✓ ✓   SILVER
+14 WTRE   Real Asset Global Listed RE  2.0%  1%    4%  USD 14bp —     +22.17%  21.19% 0.875  0.42%       ✓ ✓     REIT
+15 CSH2   Liquidity  Overnight GBP     5.0%  3%    8%  GBp 7bp  —     +4.25%   0.41%  1.512  0.02%       ✓ ✓ ✓ ✓ CASH
+16 SMGB   Thematic   Semiconductors/AI 2.0%  0%    4%  GBP 35bp —     +114.90% 38.66% 2.878  0.77%       ✓ ✓     TECH
+17 DFNS   Thematic   Global Defence    2.0%  0%    4%  USD 40bp —     +2.85%   26.50% −0.029 0.53%         ✓ ✓   DEFENCE
+18 URNG   Thematic   Uranium/Nuclear   1.0%  0%    3%  GBP 65bp —     +17.19%  50.71% 0.267  0.51%         ✓ ✓   NUCLEAR
+
+BQL
+for(['CSH2 LN Equity', 'DFNS LN Equity', 'ICOM LN Equity', 'IDTL LN Equity', 'IEMB LN Equity', 'IGLS LN Equity', 'INXG LN Equity', 'ITPS LN Equity', 'IUKD LN Equity', 'SGLN LN Equity', 'SMGB LN Equity', 'SSLV LN Equity', 'TPSA LN Equity', 'URNG LN Equity', 'VAGS LN Equity', 'VFEM LN Equity', 'VVAL LN Equity', 'VWRP LN Equity', 'WSML LN Equity', 'WTRE LN Equity']) get(px_last, total_return(calc_interval=1Y), total_return(calc_interval=YTD), volatility(calc_interval=1Y))
+
+Portfolio-Level Statistics
+
+
+
+Metric                     Value       Note
+Total weight               100%        18 confirmed instruments
+Weighted blended return    ~15.5%      1Y weighted sum — not forward expectation
+Blended vol (weighted sum) ~12.0%      Conservative — true corr-adj vol materially lower
+Weighted Sharpe            0.651       vs Invictus One-Pie 0.607
+Weighted TER               ~13.5bp     Extremely low — compounding-friendly
+Weighted duration          ~2.5yr      Bond sleeve laddered short-to-long
+Regime boxes covered       All 4       Every box has ≥3 lines earning
+Corr groups                12 distinct EQ-CORE, EQ-EM, EQ-FACTOR, EQ-VALUE, BOND-DM, BOND-SHORT, BOND-LONG, BOND-EM, IL-US, IL-UK, GOLD, SILVER, COMM-BROAD, REIT, CASH, TECH, DEFENCE, NUCLEAR
+
+The Correlation Architecture — Why These 18 Are Genuinely Uncorrelated
+
+The portfolio is built around 12 distinct correlation groups. This is the deepest diversification available in a liquid, ISA-eligible, exchange-traded universe. The evidence:
+
+Gold and Silver — Near-Zero Equity Correlation
+
+Gold's measured correlation with equities is 0.009 and with bonds 0.202, while silver's correlation with equities is 0.066 and with bonds 0.019. Prospectus
+
+Commodities and precious metals tend to have low to negative correlations with equities and bonds, with a precious metals basket showing a correlation of 0.047 with equities and 0.131 with fixed income. Prospectus
+
+Gold is considered a counterparty-risk-free asset when held physically, unlike bonds, equities, or deposits, as its value is not dependent on any issuer's solvency or contractual payment obligation. MST Access
+
+The Bond-Equity Correlation Problem — And How the Portfolio Addresses It
+
+The 120-day stock-bond correlation swelled to over 50% in August 2026 — levels last seen in the years leading to the dot-com implosion, with inflation upending the traditionally negative relationship. Bloomberg First Word
+
+In periods of elevated inflation, the correlation between 10-year US Treasury yields and the S&P 500 has been deeply negative, reaching its lowest level since 1996, which can force investors to reduce exposure across both asset classes simultaneously. UBS
+
+The portfolio's response is to not rely on bonds as the equity hedge. SGLN, ICOM, SSLV, ITPS, and INXG are the inflation-regime diversifiers. VAGS, IGLS, and IDTL are the deflation-regime diversifiers. These are different jobs held by different instruments — the bond sleeve is not asked to hedge equities in Reflation.
+
+EM Equity and EM Bonds — Independent Return Streams
+
+The average 36-month correlation between the value factor in emerging markets and developed markets is 0.30, with the current correlation at 0.20, indicating that diversification benefits remain intact. Bloomberg Intelligence
+
+VFEM (EM equity) and IEMB (EM sovereign bonds) are in different corr groups — EQ-EM and BOND-EM — because their return drivers are distinct: VFEM is driven by EM growth and commodity cycles; IEMB is driven by USD credit spreads and EM sovereign risk. They are not the same bet.
+
+Oil's Negative Correlation With Both Stocks and Bonds
+
+Oil's push higher since early July 2026 has deepened crude's negative correlation with both stocks and bonds, with both measures nearing May lows when oil was trading north of $100/barrel. Bloomberg First Word
+
+ICOM captures this directly. When oil rises and both equities and bonds fall simultaneously — the stagflation scenario that breaks the 60/40 — ICOM is the line that earns. This is the portfolio's most important diversification property in the current regime.
+
+Listed Real Estate — Diversification Benefit Narrowing
+
+The beta of listed real estate versus global equities was 0.86 as of June 30, 2026, and the interregional diversification benefit has narrowed in recent years due to significant global market fluctuations. UBS
+
+This is why WTRE is sized at only 2%. It earns in Goldilocks and mild Reflation via inflation-linked income, but it is not a genuine uncorrelated diversifier at the portfolio level. It is sized accordingly.
+
+Structural Deficit Commodities — The Deepest Diversification
+
+Commodities facing structural deficits into the 2030s are considered attractive portfolio diversifiers — copper, uranium, and silver into solar — with copper and uranium expected to be in deficit by 2027–28. An allocation to fundamental deficit commodities has historically been a useful diversifier, especially when demand is accelerating. Entext
+
+URNG and SSLV capture this. They are not correlated to each other (nuclear policy vs industrial/monetary demand), not correlated to ICOM (different commodity sub-factors), and not correlated to equities in the short run.
+
+The Six Sleeves — What Each Does
+
+Equity — 32% | 4 Corr Groups
+
+VWRP is the productivity engine. VFEM adds EM demographic and commodity-linked growth with a 0.20 current correlation to DM value. WSML adds the small-cap premium — genuinely independent of mega-cap tech concentration. IUKD adds the value/dividend factor in GBP-native form, with the highest standalone Sharpe in the equity sleeve at 2.135 and a 1Y return of +27.91%. Four equity lines, four distinct factor exposures, four different return drivers.
+
+Nominal Bond — 22% | 4 Corr Groups
+
+The bond sleeve is laddered by duration and geography to avoid the single-curve concentration that makes most bond allocations redundant. IGLS (2.5yr UK) earns carry without long-end risk. VAGS (6.1yr global, GBP-hedged) is the deflation engine. IEMB (7yr EM) adds credit spread carry uncorrelated to DM rates. IDTL (14.9yr US) is the cut-cycle convexity stub. No two lines in this sleeve respond to the same yield curve move in the same way.
+
+Inflation-Linked — 11% | 2 Corr Groups
+
+ITPS (US CPI, 6.6yr real duration) and INXG (UK RPI, 9.2yr real duration) are in different corr groups because they reference different inflation indices, different currencies, and different real yield curves. A UK-specific inflation shock moves INXG without necessarily moving ITPS, and vice versa. This is genuine within-sleeve diversification.
+
+Real Assets — 16% | 4 Corr Groups
+
+The most genuinely uncorrelated sleeve in the portfolio. SGLN (monetary/debt-cycle, correlation with equities 0.009), ICOM (goods inflation, negative correlation with equities in energy-shock regimes), SSLV (industrial/monetary hybrid, correlation with bonds 0.019), WTRE (inflation-linked income from real property). Four instruments, four distinct economic mechanisms, four different correlation profiles.
+
+Liquidity — 5% | 1 Corr Group
+
+CSH2 is the only line that earns in all four regime boxes simultaneously. It is not a return engine — it is the option that makes everything else possible. It funds limit orders, absorbs contribution timing, and provides the dry powder to buy whatever breaks. Vol 0.41%. Max drawdown near zero. Variance contribution 0.02%.
+
+Thematic — 5% | 3 Corr Groups
+
+Three lines, three genuinely different structural theses. SMGB is the AI capex cycle — correlated to tech earnings and semiconductor demand. DFNS is the geopolitical fragmentation cycle — correlated to defence budgets and conflict escalation. URNG is the energy security and decarbonisation cycle — correlated to nuclear policy and uranium supply. The intra-sleeve correlation between these three is low: a Hormuz escalation moves DFNS and URNG but not necessarily SMGB; an AI model launch moves SMGB but not DFNS or URNG.
+
+What This Portfolio Explicitly Rejects
+
+Traditional safe-haven assets as reliable equity hedges. Gold, the USD, CHF, JPY, and core government bonds have demonstrated an unreliable hedge relationship with equities since 2020. Deutsche Bank The portfolio does not rely on any single line to hedge equities — it relies on regime coverage across all four boxes.
+
+The 60/40 as a diversification framework. When stocks and bonds are 50%+ correlated, 60/40 is a single-factor equity bet with a bond drag. This portfolio has 12 distinct corr groups. That is the answer to 60/40.
+
+Leverage, derivatives, active funds, crypto. Compounding requires survival. None of these belong in a never-touch ISA.
+
+More than 5% in thematic satellites. Thematic equity is a return engine with high vol and high intra-sleeve correlation under stress. It is sized so a 50% simultaneous drawdown in all three costs the portfolio 2.5% — painful, not structural.
+
+Any instrument without a confirmed economic function. Every line in this portfolio has a sentence. If you cannot say the sentence, you should not hold the line.
+
+The One Rule That Governs Everything
+
+Contributions on a fixed date. Drift-routing to the underweight line. Walk-back when PMI < 50 AND 2s10s inverted — route 100% to non-thematic lines. No selling. No hero trades. No reacting to a single week's tape.
+
+The portfolio's job is not to be perfect. It is to be durable enough that the contributions do their work undisturbed for thirty years. Eighteen instruments, twelve correlation groups, four regime boxes, one rule. That is the final product.
+
+
+Sources
+
+1. Prospectus 08/13/2026
+FILINGS 08/13/26
+
+2. Prospectus 08/11/2026
+FILINGS 08/11/26
+
+3. Building South Australia's Gold Hub
+RESEARCH 02/10/26
+
+4. Tightest Stock, Bond Correlation Since 1997 Overstates the Risks
+NEWS 08/13/2026
+
+5. [Delayed] Global Macro Chart of the Day "(#106): Bond-equity correlation at 30-year low"
+RESEARCH 06/24/26
+
+6. EM-DM Factor Correlations Not Rising, Diversification Intact
+RESEARCH 01/28/26
+
+7. Stocks’ Negative Correlation to Oil Runs Through Rates
+NEWS 08/20/2026
+
+8. [Delayed] Global Real Estate Analyser "Five Themes Shaping the Next Cycle" Boissier
+RESEARCH 08/10/26
+
+9. AI Radical Transparency, Atoms Constrain Bits, Oil Services Look ‘Donroe’ Reset Winner
+RESEARCH 01/06/26
+
+10. Which decade was the most uncertain?
+RESEARCH 07/15/26

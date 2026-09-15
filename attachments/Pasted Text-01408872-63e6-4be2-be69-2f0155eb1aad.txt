@@ -1,0 +1,85 @@
+The Verdict: VAGS at 17% Has the Worst Risk-Adjusted Case
+
+The full ranking by 1-year Sharpe ratio (using EFFR 3.63% as the risk-free rate):
+
+
+
+Rank      Line Sleeve    House Wt 1Y Return 1Y Vol Sharpe Weight at Risk Regime Fit
+1 (worst) VAGS Invictus  17.0%    0.22%     3.61%  −0.945 3.0pp          Headwind — both boxes
+2         IDTL Invictus  5.1%     −3.85%    9.17%  −0.816 5.1pp          Headwind — yield pressure
+3         ITPS Invictus  13.6%    0.10%     5.90%  −0.598 3.6pp          Mixed
+4         DFNS Satellite 3.0%     2.85%     26.50% −0.029 3.0pp          Thesis intact / price lagging
+5         URNG Satellite 1.5%     17.19%    50.71% 0.267  1.5pp          Energy thesis
+6         SGLN Invictus  10.2%    21.18%    25.86% 0.679  3.2pp          Stagflation ✓ / taxed short-term
+7         XDWI Satellite 2.25%    16.75%    16.55% 0.793  2.25pp         Reflation ✓ mild
+8         XDWH Satellite 2.85%    18.96%    15.33% 1.000  2.85pp         Regime-neutral defensive
+9         CSH2 Invictus  6.8%     4.25%     0.41%  1.512  2.8pp          Neutral / optionality
+10        VWRP Invictus  23.8%    21.75%    11.08% 1.635  3.8pp          Reflation ✓
+11        ICOM Invictus  8.5%     44.36%    17.85% 2.282  2.5pp          Reflation ✓ + Stagflation ✓
+12        SMGB Satellite 2.70%    114.90%   38.66% 2.878  2.7pp          Reflation ✓ AI capex
+13        COPA Satellite 2.70%    —         —      —      2.7pp          Reflation ✓ / China risk
+
+BQL
+for(['CSH2 LN Equity', 'DFNS LN Equity', 'ICOM LN Equity', 'IDTL LN Equity', 'ITPS LN Equity', 'SGLN LN Equity', 'SMGB LN Equity', 'URNG LN Equity', 'VAGS LN Equity', 'VWRP LN Equity', 'XDWH LN Equity', 'XDWI LN Equity']) get(total_return(calc_interval=1Y), volatility(calc_interval=1Y))
+
+VAGS wins the worst-case award on three simultaneous grounds: the lowest Sharpe in the pie at −0.945, the second-largest house weight at 17%, and a regime signal that is a headwind in both the primary (Reflation) and overlay (stagflation) boxes. It is the most expensive insurance policy in the portfolio right now.
+
+IDTL is the worse raw performer (−3.85% 1Y vs VAGS's +0.22%) but it only carries 5.1% of the book and its floor is 0% — it is already minimised. VAGS at 17% with a floor of 14% is where the real weight is sitting on a negative Sharpe.
+
+Why VAGS Still Deserves Its Weight — The Counter-Case
+
+Before modelling the trim, the counter-case must be stated plainly. VAGS is not broken. It is doing exactly what it was designed to do: nothing, in a Reflation regime. Its job is to be loud in a deflationary slowdown — G↓, I↓, policy rates falling — and that regime is not today's regime. The −0.945 Sharpe is the cost of holding deflation insurance in an inflationary world. The question is whether 17% is the right amount of that insurance, or whether 14% is sufficient.
+
+The Trimmed Portfolio: VAGS 17% → 14%, VWRP 23.8% → 26.8%
+
+The freed 3pp is routed to VWRP — the highest-Sharpe Invictus line, the regime winner, and the productivity core. VWRP at 26.8% remains inside its 27% cap.
+
+
+
+Line Sleeve    Before After Delta  Sharpe Regime Fit
+VWRP Invictus  23.8%  26.8% +3.0pp 1.635  Reflation ✓
+VAGS Invictus  17.0%  14.0% −3.0pp −0.945 Headwind both boxes
+ITPS Invictus  13.6%  13.6% 0      −0.598 Mixed
+SGLN Invictus  10.2%  10.2% 0      0.679  Stagflation ✓
+ICOM Invictus  8.5%   8.5%  0      2.282  Reflation ✓ + Stagflation ✓
+CSH2 Invictus  6.8%   6.8%  0      1.512  Neutral
+IDTL Invictus  5.1%   5.1%  0      −0.816 Headwind
+DFNS Satellite 3.0%   3.0%  0      −0.029 Thesis intact
+XDWH Satellite 2.85%  2.85% 0      1.000  Defensive
+SMGB Satellite 2.70%  2.70% 0      2.878  Reflation ✓
+COPA Satellite 2.70%  2.70% 0      —      Reflation ✓
+XDWI Satellite 2.25%  2.25% 0      0.793  Reflation ✓
+URNG Satellite 1.50%  1.50% 0      0.267  Energy thesis
+
+Portfolio-Level Impact
+
+
+
+Metric                     Before (House)  After (Trimmed)    Delta
+Weighted return (blended)  15.88%          16.53%             +0.65pp
+Blended vol (weighted sum) 12.65%          12.88%             +0.23pp
+Weighted Sharpe            0.607           0.685              +0.078
+VWRP cap headroom          3.2pp           0.2pp              Near cap
+Deflation coverage         Full (VAGS 17%) Reduced (VAGS 14%) 3pp less insurance
+
+The trimmed portfolio is measurably better on a risk-adjusted basis in the current regime: +0.078 on weighted Sharpe, +0.65pp on blended return, with blended vol rising only 0.23pp. The improvement is real but not dramatic — because VAGS's variance contribution is only 4.3% of portfolio variance. Trimming it does not meaningfully reduce risk; it primarily removes a return drag.
+
+The Reason the House Does Not Do This
+
+Three reasons, in order of importance.
+
+First, the regime can rotate faster than a contribution cycle. VAGS at 14% vs 17% is a 3pp difference in deflation coverage. If G rolls below 50 PMI — the walk-back trigger scenario — VAGS is the line that saves the book. Trimming it now, at the exact moment the stagflation overlay is strengthening, is selling insurance after the storm has started.
+
+Second, the mechanism for this change is contribution-routing, not a sell order. The house does not trim by selling. It trims by routing new contributions away from VAGS until drift corrects. If VAGS is currently above 17% in the live portfolio, the next contribution naturally routes elsewhere. If it is at 17%, there is no drift breach — no action is warranted under the rule hierarchy.
+
+Third, VWRP at 26.8% is 0.2pp from its 27% cap. Routing 3pp to VWRP gets the portfolio one bad month away from a hard-cap breach. That is not a comfortable position to lock in deliberately.
+
+The Honest Conclusion
+
+VAGS at 17% has the worst risk-adjusted case of any line in the pie for the current regime. The trim to 14% improves the portfolio on every quantitative metric that matters today. The house does not make that move because the house is not optimised for today — it is optimised for every day, including the one where G drops to 48 PMI and VAGS is suddenly the only line earning. The 3pp between 17% and 14% is the price of that optionality. Whether it is worth paying is the one question the rules do not answer for you.
+
+What the rules do say: if VAGS drifts below 14% on its own — through market moves, not through a sell order — the next contribution routes back to it. That is the floor doing its job. The house does not pre-empt the drift; it responds to it.
+
+Next contribution: 3 October 2026. Check VAGS drift first.
+
+This analysis is a classroom exercise. The lock file is not edited. No action is taken outside the contribution cycle.

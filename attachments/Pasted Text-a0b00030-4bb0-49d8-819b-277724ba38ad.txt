@@ -1,0 +1,144 @@
+[Chart]
+
+Invictus — Target Weights by Phase
+
+Four phases. Each phase is triggered by book value, not by time or market conditions. The architecture — three sleeves, four regimes — does not change. The instruments and weights evolve as scale makes precision meaningful in pounds.
+
+Phase 0 — £0 to £10,000 (Current)
+
+7 lines. Weighted TER: 0.12%. GBP-hedged: 25%. USD-unhedged: 75%.
+
+
+
+Sleeve      Ticker Name                                  Target TER   FX         Regime role
+Growth Core VWRP   Vanguard FTSE All-World Acc           30%    0.14% Unhedged   Goldilocks + Reflation
+Real Assets SGLN   iShares Physical Gold ETC             15%    0.12% Unhedged   Stagflation + Deflation crisis
+Real Assets ITPS   iShares USD TIPS Acc                  14%    0.10% Unhedged   Reflation (inflation accrual)
+Defensive   VAGS   Vanguard Global Aggregate GBP-Hdg Acc 18%    0.08% GBP hedged Disinflation + Deflation
+Real Assets ICOM   iShares Bloomberg Commodity Swap Acc  10%    0.19% Unhedged   Reflation + Stagflation
+Defensive   CSH2   iShares GBP Ultrashort Bond Acc       7%     0.10% GBP hedged All regimes — dry powder
+Defensive   IDTL   iShares USD Treasury 20+yr Dist       6%     0.07% Unhedged   Deflation + Stage 5/6 only
+
+Sleeve totals: Growth Core 30% | Real Assets 39% | Defensive 31%
+
+Rules: Rebalance trigger ±3pp. Contribution directed to most underweight sleeve. No new lines until £10,000. IDTL green light: GT30 <5.00% AND PMI rolling over. Tonight: GT30 5.28% — IDTL stays at 6%.
+
+Phase 1 — £10,000 to £50,000
+
+9 lines. Weighted TER: 0.16%. GBP-hedged: 20%. USD-unhedged: 80%.
+
+Trigger: Book crosses £10,000. Both additions must pass all four gates before opening.
+
+
+
+Sleeve      Ticker Name                                  Target TER   FX         Change vs Phase 0
+Growth Core VWRP   Vanguard FTSE All-World Acc           20%    0.14% Unhedged   −10% (funds IWVL)
+Growth Core IWVL ✦ iShares MSCI World Value Factor       10%    0.30% Unhedged   New. 5Y Sharpe 0.84, ann. return 17.19%
+Real Assets SGLN   iShares Physical Gold ETC             15%    0.12% Unhedged   Unchanged
+Real Assets ITPS   iShares USD TIPS Acc                  14%    0.10% Unhedged   Unchanged
+Real Assets ICOM   iShares Bloomberg Commodity Swap Acc  10%    0.19% Unhedged   Unchanged
+Defensive   VAGS   Vanguard Global Aggregate GBP-Hdg Acc 13%    0.08% GBP hedged −5% (funds SEML)
+Defensive   SEML ✦ iShares EM Local Govt Bond            5%     0.50% Unhedged   New. Max DD −11.1%, vol 7.45%, EM carry
+Defensive   CSH2   iShares GBP Ultrashort Bond Acc       7%     0.10% GBP hedged Unchanged
+Defensive   IDTL   iShares USD Treasury 20+yr Dist       6%     0.07% Unhedged   Unchanged
+
+Sleeve totals: Growth Core 30% | Real Assets 39% | Defensive 31%
+
+What changes and why:
+
+VWRP trimmed 10pp to fund IWVL. The value factor delivered 610bp more annual return than VWRP over 5 years with a Sharpe of 0.84 vs 0.58. At £10,000, a 10% IWVL sleeve is £1,000 — large enough to be meaningful, small enough that spread costs do not dominate.
+
+VAGS trimmed 5pp to fund SEML. EM local bonds add carry and EM growth cycle exposure that VWRP (USD-denominated) and VAGS (developed-market rates) do not capture. SEML's max drawdown of −11.1% is the lowest of any candidate tested — it is the lowest-risk addition available.
+
+Growth Core total stays at 30%. Real Assets stays at 39%. Defensive stays at 31%. The regime architecture is unchanged. Only the instruments within each sleeve evolve.
+
+INXG is permanently excluded. 5Y return −39.8%, max drawdown −50.87%. The data disqualifies it at any phase.
+
+Phase 2 — £50,000 to £100,000
+
+10 lines. Weighted TER: 0.17%. GBP-hedged: 19%. USD-unhedged: 81%.
+
+Trigger: Book crosses £50,000. One addition (MVOL), two weight adjustments.
+
+
+
+Sleeve      Ticker Name                                  Target TER   FX         Change vs Phase 1
+Growth Core VWRP   Vanguard FTSE All-World Acc           18%    0.14% Unhedged   −2% (funds MVOL)
+Growth Core IWVL   iShares MSCI World Value Factor       10%    0.30% Unhedged   Unchanged
+Growth Core MVOL ✦ iShares MSCI World Min Volatility     5%     0.30% Unhedged   New. Drawdown buffer within equity sleeve
+Real Assets SGLN   iShares Physical Gold ETC             15%    0.12% Unhedged   Unchanged
+Real Assets ITPS   iShares USD TIPS Acc                  12%    0.10% Unhedged   −2% (funds CSH2 increase)
+Real Assets ICOM   iShares Bloomberg Commodity Swap Acc  10%    0.19% Unhedged   Unchanged
+Defensive   VAGS   Vanguard Global Aggregate GBP-Hdg Acc 10%    0.08% GBP hedged −3% (book large enough; SEML covers EM)
+Defensive   SEML   iShares EM Local Govt Bond            5%     0.50% Unhedged   Unchanged
+Defensive   CSH2   iShares GBP Ultrashort Bond Acc       9%     0.10% GBP hedged +2% (larger book = larger rebalancing buffer)
+Defensive   IDTL   iShares USD Treasury 20+yr Dist       6%     0.07% Unhedged   Unchanged — still Stage-5 residual
+
+Sleeve totals: Growth Core 33% | Real Assets 37% | Defensive 30%
+
+What changes and why:
+
+MVOL added at 5% within the growth sleeve. At £50,000, a 5% MVOL position is £2,500 — large enough to provide genuine drawdown buffering within the equity sleeve. MVOL's max drawdown of −18.5% vs VWRP's −17.6% is similar, but its lower vol (10.71% vs 12.99%) reduces the equity sleeve's intra-sleeve volatility. It does not improve return — it reduces the equity sleeve's worst-case behaviour.
+
+CSH2 increases to 9%. At £50,000, the rebalancing buffer needs to be larger in pounds. 9% of £50,000 is £4,500 — sufficient to fund a full rebalance of any single sleeve without selling a winner.
+
+Mandatory currency overlay decision at this phase. 81% of the book is USD-unhedged — approximately £40,500 at £50,000. That is a deliberate structural position. Document it. Review annually. Do not discover it on a DXY spike.
+
+Phase 3 — £100,000+
+
+10 lines. Weighted TER: 0.17%. GBP-hedged: 22%. USD-unhedged: 78%.
+
+Trigger: Book crosses £100,000. No new lines — weight redistribution only.
+
+
+
+Sleeve      Ticker Name                                  Target TER   FX         Change vs Phase 2
+Growth Core VWRP   Vanguard FTSE All-World Acc           15%    0.14% Unhedged   −3% (funds CSH2 increase)
+Growth Core IWVL   iShares MSCI World Value Factor       10%    0.30% Unhedged   Unchanged
+Growth Core MVOL   iShares MSCI World Min Volatility     5%     0.30% Unhedged   Unchanged
+Real Assets SGLN   iShares Physical Gold ETC             15%    0.12% Unhedged   Unchanged — floor. Never go below 10%.
+Real Assets ITPS   iShares USD TIPS Acc                  10%    0.10% Unhedged   −2% (funds SEML increase)
+Real Assets ICOM   iShares Bloomberg Commodity Swap Acc  10%    0.19% Unhedged   Unchanged — synthetic cap at 10%
+Defensive   VAGS   Vanguard Global Aggregate GBP-Hdg Acc 10%    0.08% GBP hedged Unchanged
+Defensive   SEML   iShares EM Local Govt Bond            7%     0.50% Unhedged   +2% (EM carry more meaningful at scale)
+Defensive   CSH2   iShares GBP Ultrashort Bond Acc       12%    0.10% GBP hedged +3% (rebalancing buffer at £100k scale)
+Defensive   IDTL   iShares USD Treasury 20+yr Dist       6%     0.07% Unhedged   Unchanged — Stage-5 residual, always
+
+Sleeve totals: Growth Core 30% | Real Assets 35% | Defensive 35%
+
+What changes and why:
+
+CSH2 rises to 12%. At £100,000, 12% is £12,000 — the rebalancing buffer is now large enough to fund a full amber drawdown protocol rebalance (VWRP trim from 15% to 10% = £5,000 sale; CSH2 absorbs it without selling any other winner).
+
+Defensive sleeve grows to 35% as the book matures. Capital preservation becomes relatively more important as the absolute value of a 20% drawdown grows from £142 at £710 to £20,000 at £100,000.
+
+SEML grows to 7%. At £100,000, 7% is £7,000 — the EM carry and diversification benefit is now material in pounds, not just in percentage terms.
+
+ICOM remains capped at 10% permanently. The synthetic structure constraint does not change with book size.
+
+IDTL remains at 6% permanently until a confirmed Stage 4/5 transition. It is not a scale decision — it is a regime decision.
+
+The Four-Phase Summary
+
+
+
+Metric          Phase 0 (£0–£10k)         Phase 1 (£10k–£50k)  Phase 2 (£50k–£100k)               Phase 3 (£100k+)
+Lines           7                         9                    10                                 10
+Weighted TER    0.12%                     0.16%                0.17%                              0.17%
+Growth Core     30%                       30%                  33%                                30%
+Real Assets     39%                       39%                  37%                                35%
+Defensive       31%                       31%                  30%                                35%
+GBP hedged      25%                       20%                  19%                                22%
+USD unhedged    75%                       80%                  81%                                78%
+New instruments —                         IWVL, SEML           MVOL                               None
+Key action      Contribute. Do not touch. Add value + EM carry Add vol buffer + currency decision Grow defensive buffer
+
+The Three Lines That Never Change
+
+SGLN: floor 15%, never below 10%. The long-cycle debasement hedge. Its 5Y Sharpe of 0.94 is the highest in the entire portfolio at every phase. It is the machine's best risk-adjusted asset. It does not get trimmed to fund anything.
+
+ICOM: hard cap 10%. Synthetic structure. Counterparty risk. The cap is permanent regardless of book size or YTD performance.
+
+IDTL: 6% until Stage 4/5 confirmed. GT30 must break 5.00% AND PMI must roll below 50. Tonight GT30 is 5.28%. The 6% does not move until the data moves first.
+
+The machine grows in precision as it grows in scale. The architecture does not change. The instruments within each sleeve evolve once, at £10,000, and once more at £50,000. After £100,000, the only variable is contribution rate, rebalance discipline, and the drawdown protocol. Everything else is already built.

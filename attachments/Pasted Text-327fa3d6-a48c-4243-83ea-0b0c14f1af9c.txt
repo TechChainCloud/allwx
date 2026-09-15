@@ -1,0 +1,131 @@
+Running all three cases now. All use 8.20% CAGR, monthly compounding, starting September 2026.
+
+Case 2 — £200 with 10% Step-Up Every 6 Months (25 Years)
+
+Every 6 months, the monthly contribution increases by 10%. So Month 1–6: £200, Month 7–12: £220, Month 13–18: £242, and so on — compounding twice per year.
+
+
+
+Year Monthly Contribution (start of year) Annual Contribution Cumulative Invested
+1    £200 → £220                          £2,520              £2,520
+2    £242 → £266                          £3,048              £5,568
+3    £293 → £322                          £3,690              £9,258
+5    £429 → £472                          £5,406              £20,484
+7    £628 → £691                          £7,914              £38,952
+10   £1,171 → £1,288                      £14,754             £85,176
+15   £3,116 → £3,428                      £39,264             £272,244
+20   £8,297 → £9,127                      £104,544            £769,620
+25   £22,099 → £24,309                    £278,448            £2,104,000+
+
+ISA allowance (£20,000/year) is breached around Year 13–14, when monthly contributions hit ~£1,667. Beyond that, contributions must overflow into a GIA.
+
+
+
+Metric                                                  Value
+ISA terminal value (25yr, capped at £20k/yr from Yr 14) ~£1,580,000
+GIA overflow terminal value (25yr, taxable)             ~£2,900,000
+Combined gross terminal value                           ~£4,480,000
+Total cash invested (25yr)                              ~£2,104,000
+Growth multiplier                                       ~2.1×
+
+The 10% every-6-months step-up is extremely aggressive — a 21% effective annual contribution increase. By Year 25 you are contributing over £22,000/month. The terminal number is enormous but the contribution schedule requires income growth that matches it. Reality-check: Year 20 requires £8,297/month in contributions.
+
+Case 4 — £200 + 10% Every 9 Months (10 Years), Then Fixed + £1,000/Month Until Age 55
+
+Assuming current age ~30, so "until age 55" = 25 years total. Phase 1: 10 years of stepped contributions. Phase 2: 15 years of fixed elevated contributions.
+
+Phase 1: Years 1–10 (10% increase every 9 months)
+
+
+
+Step                   Months Active  Monthly Contribution
+Start                  Months 1–9     £200.00
+Step 1                 Months 10–18   £220.00
+Step 2                 Months 19–27   £242.00
+Step 3                 Months 28–36   £266.20
+Step 4                 Months 37–45   £292.82
+Step 5                 Months 46–54   £322.10
+Step 6                 Months 55–63   £354.31
+Step 7                 Months 64–72   £389.74
+Step 8                 Months 73–81   £428.72
+Step 9                 Months 82–90   £471.59
+Step 10                Months 91–99   £518.75
+Step 11                Months 100–108 £570.62
+Step 12 (end of Yr 10) Months 109–120 £627.68
+
+Final monthly contribution at end of Year 10: ~£627.68. This is the Phase 2 base.
+
+Phase 2: Years 11–25 (£627.68 + £1,000 = £1,627.68/month, fixed)
+
+No further percentage increases. £1,627.68/month for 15 years. This sits comfortably under the £20,000/year ISA allowance (£19,532/year) — so the entire Phase 2 stays inside the ISA wrapper.
+
+
+
+Phase               Duration   Monthly Contribution     Cumulative Invested
+Phase 1 (Yrs 1–10)  120 months £200 → £627.68 (stepped) ~£43,800
+Phase 2 (Yrs 11–25) 180 months £1,627.68 fixed          ~£336,782 additional
+Total invested      25 years   —                        ~£380,582
+
+Metric                                      Value
+Portfolio value at end of Year 10 (Phase 1) ~£78,400
+Terminal value at age 55 (end of Year 25)   ~£712,000
+Total cash invested                         ~£380,582
+Growth on investment                        ~1.87×
+ISA allowance breached?                     No — Phase 2 = £19,532/yr
+
+Case 5 — £20,000 ISA Filled Annually, 25 of 30 Years (First 5 Years: £200 + 10% Every 6 Months)
+
+Structure: Years 1–5 at stepped contributions (£200, 10% every 6 months). From Year 6 onward, the full £20,000 ISA allowance is deployed annually (£1,666.67/month). This runs for 25 years of the 30-year horizon — implying the full £20k starts at Year 6 and runs to Year 30.
+
+Phase 1: Years 1–5 (£200 + 10% every 6 months)
+
+
+
+Period       Monthly Contribution
+Months 1–6   £200.00
+Months 7–12  £220.00
+Months 13–18 £242.00
+Months 19–24 £266.20
+Months 25–30 £292.82
+Months 31–36 £322.10
+Months 37–42 £354.31
+Months 43–48 £389.74
+Months 49–54 £428.72
+Months 55–60 £471.59
+
+Total invested in Phase 1 (5 years): ~£18,900. Portfolio value at end of Year 5: ~£22,800.
+
+Phase 2: Years 6–30 (£20,000/year = £1,666.67/month, 25 years)
+
+
+
+Metric                               Value
+Portfolio value carried into Phase 2 ~£22,800
+Annual contribution (Phase 2)        £20,000
+Phase 2 duration                     25 years
+Total invested Phase 2               £500,000
+Total invested (30 years)            ~£518,900
+Terminal value at Year 30            ~£1,620,000
+Growth on investment                 ~3.1×
+ISA allowance breached?              No — exactly at limit
+
+Side-by-Side Comparison — All Cases
+
+
+
+Case               Structure                                  Horizon Total Invested Terminal Value       ISA Breach?
+Flat £200/month    No step-up                                 25yr    £60,000        £193,400             No
+15% annual step-up Yearly increase                            25yr    £533,176       £1,247,000           Yr 17
+Case 2             10% every 6 months                         25yr    £2,104,000+    £4,480,000 (ISA+GIA) Yr 13–14
+Case 4             10% every 9mo (10yr) then +£1k fixed to 55 25yr    £380,582       £712,000             No
+Case 5             Stepped 5yr then £20k/yr for 25yr          30yr    £518,900       £1,620,000           No
+
+The Verdict
+
+Case 2 produces the largest number by far (~£4.5M combined) but requires you to be contributing £8,000+/month by Year 20. It is a wealth-building machine if income scales with it — but it is a GIA overflow strategy from Year 14, not a pure ISA play.
+
+Case 5 is the most ISA-efficient structure: ramp up in the early years while income is lower, then max the allowance for 25 years. £1.62M terminal, fully sheltered, no GIA needed. Clean and optimal within the ISA wrapper.
+
+Case 4 is the most conservative and realistic: £712,000 at 55, entirely inside the ISA, with a natural income-linked ramp in Phase 1 and a predictable fixed commitment in Phase 2. The £1,000/month top-up from Year 11 is the key decision point — it needs to be affordable sustainably.
+
+If the goal is maximum ISA-sheltered wealth at 30 years without GIA complexity, Case 5 is the optimal structure. If income growth is the constraint, Case 4 is the most executable.

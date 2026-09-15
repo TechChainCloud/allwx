@@ -1,0 +1,111 @@
+This is a rules question, not a data question. Everything needed is already in the session. Here is the complete decision system.
+
+Two Separate Rule Sets
+
+Weight adjustments and instrument additions are governed by different triggers and different timescales. Conflating them is the most common portfolio management error — it produces unnecessary turnover and destroys the compounding that the machine is designed to capture.
+
+Weight adjustments: mechanical, frequent, rules-based. No judgement required.
+
+Instrument additions: structural, rare, scale-triggered. High bar to clear.
+
+Rule Set 1 — Weight Adjustments
+
+There are exactly three valid reasons to change a sleeve weight. Any other reason is noise.
+
+Trigger A: Drift (the mechanical rule)
+
+Check monthly, on the contribution date. If any sleeve has drifted ±3pp or more from its target weight, rebalance back to target. No exceptions, no discretion.
+
+Do not rebalance daily. Do not rebalance because a line had a bad week.
+
+The contribution itself is the first rebalancing tool — direct new cash to the most underweight sleeve before touching existing positions. This minimises turnover and avoids selling winners unnecessarily.
+
+Only sell an existing position to rebalance if the drift exceeds 3pp after the contribution has been directed to the underweight sleeve.
+
+Record every rebalance: date, trigger (drift pp), action taken, resulting weights. This is the audit trail that keeps the machine honest.
+
+Trigger B: Confirmed Stage Transition (the regime rule)
+
+If the Seven Questions confirm a debt cycle stage change — not a single data point, but a confirmed shift across at least three of the seven questions simultaneously — the target weights shift to the new stage posture.
+
+
+
+Stage Transition                                   Signal (must see all three)                                                                   Weight Action
+Stage 3 → Stage 4 (Expansion → Slowdown)           2s10s inverts (<0bp) AND PMI < 50 AND credit spreads +100bp from trough                       VWRP: 30% → 20%. CSH2: 7% → 15%. Hold SGLN, ICOM, ITPS. IDTL: hold at 6%.
+Stage 4 → Stage 5 (Slowdown → Recession/Deflation) PMI < 45 AND credit spreads +200bp AND Fed cutting                                            IDTL: 6% → 15%. VAGS: 18% → 25%. ICOM: 10% → 5%. VWRP: 20% → 15%. CSH2: deploy into IDTL/VAGS.
+Stage 5 → Stage 6 (Recession → Recovery)           PMI bottoming and turning up AND 2s10s steepening from inversion AND credit spreads narrowing Begin rebuilding VWRP toward 30%. Trim IDTL back toward 6%. Restore ICOM toward 10%.
+Any stage → Stagflation overlay                    PMI < 50 AND Brent > $100 AND BEI > 3%                                                        SGLN: 15% → 20%. ICOM: 10% → 15%. VWRP: trim by 5pp. IDTL: 6% → 0–3%.
+
+Critical rule: A single data point — one bad PMI print, one yield spike — does not trigger a stage transition. The signal must be confirmed across multiple questions over at least two consecutive readings. The machine is designed to be slow to change. That is a feature.
+
+Trigger C: Drawdown Protocol (the risk rule)
+
+Written in advance. Applied mechanically when the threshold is crossed. No discretion at the moment of pain.
+
+
+
+Level    Condition                                                       Action
+Yellow   Book down 8–12% from peak                                       No sleeve changes. Review Seven Questions. Document cause→effect chain. Confirm regime has not rotated. Do not add to losers.
+Amber    Book down 12–20% from peak AND 2s10s inverts AND PMI < 50       VWRP: 30% → 20%. CSH2: 7% → 15%. Hold real assets. This is the Stage 4 posture.
+Red      Book down >20% from peak AND credit spreads +200bp AND PMI < 45 ICOM: 10% → 5%. IDTL: 6% → 12–15%. VAGS: 18% → 25%. VWRP: hold at reduced weight. Stage 5 posture.
+Recovery PMI turns up for two consecutive months AND 2s10s steepening    Reverse the amber/red changes in the same order they were applied. Restore target weights over two contribution cycles, not in one move.
+
+Rule Set 2 — Adding Instruments
+
+The bar is high. An instrument is added only when it passes all four gates. Failing any one gate is a veto.
+
+Gate 1: Scale Gate
+
+The book must be large enough that the new line is meaningful in pounds, not just in percentage terms. A 5% sleeve at £710 is £35.50 — spread costs and minimum trade sizes make it operationally pointless.
+
+Phase 2 additions (UK linkers, EM local bonds): book must reach £10,000 before either line is opened.
+
+Phase 3 additions (equity factor tilt, currency overlay): book must reach £50,000.
+
+No exceptions. If the book is below the threshold, the answer is always "not yet."
+
+Gate 2: Regime Role Gate
+
+The new instrument must fill a regime role that is not already covered by an existing line. It must answer the question: which of the four regimes does this improve coverage for, and which existing line is it genuinely different from?
+
+UK linkers pass: they cover the same Reflation/Stagflation regime as ITPS but with GBP real rates — a genuinely different risk factor for a GBP-base investor.
+
+EM local bonds pass: they add carry and EM growth cycle exposure that VWRP (USD-denominated EM equities) does not capture.
+
+A second gold ETC fails: SGLN already covers the role. Adding PHAU or BULP is duplication, not diversification.
+
+A single-country equity ETF fails unless it fills a specific factor gap (e.g., value tilt) that VWRP's cap-weight structure structurally underweights.
+
+Gate 3: Cost and Structure Gate
+
+The new instrument must meet the same standards as the existing seven lines:
+
+UCITS-compliant, London-listed, GBP-tradeable on the platform.
+
+TER at or below the weighted average of the existing book (~0.12%). Maximum acceptable TER for a new line: 0.25%. Above that, the cost drag requires an exceptional diversification case.
+
+If synthetic (swap-based like ICOM): maximum sleeve weight 10%. No exceptions. Counterparty risk is real in a liquidity event.
+
+If Dist share class: a reinvestment rule must be written before the line is opened. Coupons sitting as cash are not part of the machine.
+
+AUM minimum: £500m. Below that, closure risk and wide spreads are a structural drag.
+
+Gate 4: Displacement Gate
+
+Every new instrument must displace an existing weight — the total must remain 100%. The rule is: identify which existing line is being trimmed, by how much, and why that trim does not impair the regime coverage of the sleeve being reduced.
+
+UK linkers funded by trimming ITPS (14% → 8–9%): ITPS's regime role is partially replicated in GBP terms. The trim is justified.
+
+EM local bonds funded by trimming VAGS (18% → 12–13%): VAGS's disinflation role is partially preserved; EM local adds carry and EM cycle. The trim is justified.
+
+A new line funded by trimming CSH2 below 5%: not justified. CSH2 is the option value and the rebalancing buffer. It has a floor of 5%.
+
+A new line funded by trimming SGLN below 10%: not justified. Below 10%, the gold sleeve loses its crisis-hedge materiality.
+
+The Meta-Rule
+
+Weight adjustments are the machine running. Instrument additions are the machine being upgraded. The machine runs on a monthly clock. Upgrades happen on a multi-year clock, triggered by book size, not by market conditions or the desire to do something.
+
+The most dangerous moment for both rule sets is a period of strong performance — when ICOM is up 33% and VWRP is up 13% and the temptation is to add more of what is working. That is the moment the rules exist to prevent. The machine rebalances away from winners, not toward them. That is the only free lunch in portfolio construction, and it requires the rules to be written before the temptation arrives.
+
+Write the drawdown protocol and the instrument addition gates in a single document tonight. Date it. Do not change it without a written reason that references the Seven Questions. That document is worth more than any individual asset selection decision.

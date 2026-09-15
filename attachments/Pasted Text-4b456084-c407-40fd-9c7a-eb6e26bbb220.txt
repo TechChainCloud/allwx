@@ -1,0 +1,115 @@
+It is 22:18 BST on 1 Sep 2026. The market has closed. Here is how to operate — not in theory, but based on what the data and news actually printed today.
+
+
+
+BQL
+for(['GT2 Govt','GT10 Govt','GT30 Govt','CTII10 Govt','USGGBE10 Index','DXY Curncy','GBPUSD Curncy','CO1 Comdty','XAU Curncy','VIX Index']) get(px_last, yield) preferences(addCols=ALL)
+
+What the Tape Said Today
+
+Today was not a quiet session. Three things happened simultaneously that tightened the Seven Questions readings:
+
+Fed Governor Barr said the FOMC should "act decisively to raise rates" if inflation does not moderate sufficiently. He is a voter. This is not a dissent — it is a public signal 15 days before the 16 Sep decision. MT Newswires Dow Jones Institutional News Feed
+
+ISM Manufacturing fell one point to 54.6 in August — still the second-highest reading since 2022, eighth consecutive month of expansion. Growth is not stalling. Bloomberg News
+
+Global bond yields surged — US-Iran tension reinforced oil/inflation expectations. The 10Y hit 4.795%, highest since January 2025. EM bonds sold off on Fed hike bets. Dow Jones Institutional News Feed Bloomberg News
+
+The TIPS real yield rose for a fifth consecutive session to 2.44%. Gold fell to a near two-week low. The 30Y has now settled above 5% for an extended stretch not seen since 2006. Bloomberg First Word Bloomberg News
+
+The Seven Questions — Tonight's Readings
+
+
+
+# Question             Tonight's Answer                                                                                                                                                                        Change vs Morning
+1 Cycle stage?         Stage 3. ISM 54.6, 2s10s +40bp. Growth expanding, curve normal.                                                                                                                         Unchanged. ISM confirmed expansion.
+2 Central bank?        Hike probability rising. Barr (voter) explicitly flagged decisive action if inflation does not moderate. 16 Sep is now a live hike meeting, not just a hold.                            Upgraded. Hawkish signal added.
+3 Regime?              Primary Reflation. Stagflation overlay strengthening. Brent $95.26, BEI 2.36%, PCE 3.7%. Growth up + inflation sticky + hike odds rising.                                               Overlay intensified. Barr + oil = tighter.
+4 Curve?               2s10s +40bp. GT30 5.28%. No IDTL green light. Long end in fiscal/term-premium penalty box — now also in hike-odds penalty box.                                                          GT30 crept higher. IDTL further from green light.
+5 Dollar?              DXY 99.67, GBPUSD 1.3516. Dollar edged higher on hike bets per news flow. Mild headwind to 75% unhedged block.                                                                          Marginally firmer dollar.
+6 Priced vs confirmed? BEI 2.36% vs PCE 3.7%. TIPS real yield rising for five sessions — market is pricing more hike risk, not more inflation. The BEI/PCE gap persists. ITPS accrual still cheap.             Real yield +10bp today. Gap unchanged.
+7 Principle?           PMI > 50 + Brent $95 + 2s10s positive + Barr hawkish = Stage 3 Reflation confirmed. VWRP and real assets remain the funded priority. IDTL is a Stage-5 residual. Do not add it tonight. Principle unchanged. Conviction higher.
+
+How to Operate — Right Now, Tonight
+
+It is 22:18. The London market is closed. The US market has closed. There is nothing to execute. That is the first operational rule: the machine does not run at 22:18. The temptation to act in the evening — after reading the news, after seeing SGLN down 1.47% — is the machine's primary enemy. Recognise it and close the brokerage app.
+
+What tonight is for is reading, not trading. Here is the specific operating sequence:
+
+Tonight (22:18 BST) — Read Only
+
+The Seven Questions have been answered above. The regime has not rotated. No rebalance trigger has been hit (all sleeves within ~1pp of target). No action is required or permitted tonight.
+
+File one fact: GTII10 is 2.44%, up from 2.34% yesterday. That 10bp is the tax SGLN paid today. It is not a thesis failure — it is the hike-odds mechanism working exactly as the framework predicts. Write it down. Do not sell SGLN.
+
+File one forward signal: Barr's statement today means 16 Sep is a live hike meeting. The market is now pricing that. IDTL and SGLN will face continued short-term pressure if hike odds rise further. ICOM benefits if Brent holds above $90.
+
+Tomorrow Morning (Before 07:00 BST) — Prepare
+
+Check GT30 against 5.00% (IDTL green light) and 5.40% (duration hit). Tonight it is 5.28% — 28bp from the green light, 12bp from the next pain threshold.
+
+Check Brent overnight. $95 today. A move above $100 cements hike odds and extends ICOM. A move below $85 is the first CPI relief signal.
+
+Check GTII10. Five consecutive sessions of rises. If it crosses 2.50%, the ITPS drag begins to overwhelm the accrual benefit on a short horizon — that is a watch level, not an action level.
+
+Check DXY. 99.67 tonight. If it crosses 102, the 75% unhedged block faces a material headwind. If it falls below 97, it is a tailwind.
+
+This Week — One Decision Only
+
+The only decision this week is the contribution date. If the monthly DCA has not landed, direct it to the most underweight sleeve. Based on tonight's weights (all within ~1pp of target), the contribution goes to whichever sleeve is furthest below target after checking live prices on the morning of the contribution date. Do not pre-decide where it goes based on tonight's prices.
+
+16 Sep FOMC — The Live Event
+
+This is the only scheduled event between now and the next contribution cycle that could trigger a Seven Questions update significant enough to warrant a sleeve review. Two scenarios:
+
+Hike (+25bp): FDTR moves to 3.75–4.00%. IDTL takes another duration hit (~1.5% on the line). SGLN faces continued real-yield pressure. ICOM is mixed — energy benefits from inflation confirmation, but tighter financial conditions are a headwind to industrial metals. CSH2 yield rises by ~25bp. No rebalance required unless drift exceeds 3pp.
+
+Hold with hawkish language: Effectively what is already priced. Minimal market reaction. Seven Questions readings unchanged. No action.
+
+Hold with dovish pivot: The surprise scenario. GT30 falls, IDTL rallies, SGLN rallies. This is the first signal to review IDTL's 6% residual weight — but only if GT30 breaks below 5.00% and PMI is rolling over. One dovish hold does not make Stage 5. Watch, do not act immediately.
+
+The Operating Rhythm — Written as Rules
+
+
+
+Time                        Action                                                                                                  Tool                    Decision?
+Every evening               Answer the Seven Questions. File one fact. File one forward signal.                                     This briefing           No — read only
+Every morning               Check GT30, Brent, GTII10, DXY against watch levels. Note any crossings.                                Bloomberg objects above Only if a watch level is crossed
+Monthly (contribution date) Direct DCA to most underweight sleeve. Check drift. Rebalance only if ±3pp breached after contribution. Live weights vs targets Yes — mechanical only
+16 Sep FOMC                 Update Q2 and Q3. Check if regime has rotated. Check IDTL status vs GT30.                               Seven Questions         Only if stage transition confirmed
+Any session                 If book draws down 8%+ from peak, open the drawdown protocol. Do not improvise.                         Drawdown protocol       Yes — rules only, no discretion
+
+The Single Most Important Operational Fact
+
+VIX is 16.34 tonight. That is low. Low VIX means the market is not pricing a crisis. It means VWRP's earnings cover is intact, the growth force is running, and the regime is Reflation — not Stagflation, not Deflation. A VIX of 16 in a Stage 3 world with PMI 54.6 and ISM 54.6 is the machine working as designed. Bloomberg News
+
+The operational temptation at 22:18 after a day where SGLN fell 1.47% and gold hit a two-week low is to do something. The data says the opposite. The machine is correctly positioned. The regime has not rotated. The drawdown protocol has not been triggered. The rebalance trigger has not been hit.
+
+The correct operation tonight is to close the screen, file the GTII10 number (2.44%), and set one alarm: GT30 at 5.40% is the next pain threshold for IDTL. It is currently 12bp away. That is tomorrow's first check.
+
+
+Sources
+
+1. FOMC Must Hike Rates if Elevated Inflation Persists, Fed Governor Barr Says
+NEWS 09/01/2026
+
+2. Fed's Barr: Central Bank Should Act Decisively to Raise Rates if Inflation Doesn't Appear to Be Moderating Sufficiently
+NEWS 09/01/2026
+
+3. US Factory Gauge Eases But Holds Close to Four-Year High (3)
+NEWS 09/01/2026
+
+4. Global Bond Yields Surge as Oil Prices Fuel Inflation Worries -- 3rd Update
+NEWS 09/01/2026
+
+5. Bond Slide Spreads to Emerging Markets on Fed Rate Hike Bets
+NEWS 09/01/2026
+
+6. Inflation Breakevens Perk Up as ISM Flashes Covid-Like Signs
+NEWS 09/01/2026
+
+7. Gold Approaches Two-Week Low on Rising Yields, Fed Hike Bets
+NEWS 09/01/2026
+
+8. US 30-Year Bond Enters September on Worst Stretch Since 2006 (2)
+NEWS 09/01/2026

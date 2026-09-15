@@ -1,0 +1,25 @@
+The pie has five ingredients that make it work together rather than just coexist.
+
+1. Every Line Has a Different Job
+
+Most portfolios diversify by ticker count. This one diversifies by economic function. VWRP is the productivity claim. VAGS is the deflation engine. ITPS is the CPI contract. SGLN is the debt-cycle hedge. ICOM is the goods-inflation hedge. CSH2 is optionality. IDTL is the cut-cycle stub. None of them do the same job. When one is losing, it is almost always because a different one is winning — and that is the design, not a coincidence.
+
+2. It Covers All Four Regime Boxes
+
+Reflation, Goldilocks, Stagflation, Deflation. The pie has at least one line that wins in each box. No forecast required. You do not need to know which regime is coming — you need to already own the line that pays when it arrives. The regime matrix is not a prediction tool; it is a map of which lines are currently earning and which are paying the insurance premium.
+
+3. The Drag Lines Are Features, Not Bugs
+
+VAGS at 17% is losing money today. IDTL at 5.1% is losing money today. That is correct. They are the deflation and cut-cycle engines — they are supposed to be quiet in Reflation and loud in a recession. A portfolio that only holds lines that are winning right now is a momentum strategy wearing a diversification label. The drag lines are the reason the 5th percentile 30-year outcome is £157,859 rather than zero.
+
+4. The Rules Remove the Human
+
+The six-priority rule hierarchy — hard caps, walk-back, drift, contribution split, satellite size check — means the portfolio manages itself between contribution dates. There is no discretionary rebalancing, no hero trades, no reacting to a Warsh speech. The walk-back rule stops satellite top-ups in the exact conditions when satellites fall hardest. The drift rule routes new cash to the underweight line without selling anything. AutoInvest on the 3rd executes without emotion. The rules are the portfolio manager.
+
+5. Contributions Are the Engine, Not the NAV
+
+At a three-figure book, £200 a month is not a rounding error — it is the dominant force shaping the portfolio. The 30-year median terminal value of £260,181 is built almost entirely on the compounding of those contributions, not on clever trading. The Monte Carlo shows that even after a lost decade in years one through ten, the breakeven return required in years eleven through thirty is only 7.48% — well within the house's weighted mean return assumption. The pie does not need to be perfect. It needs to survive long enough for the contributions to do their work.
+
+The One Thing That Would Make It Tasteless
+
+Editing the lock file. Every time a line underperforms and the temptation is to swap it out, trim it, or add something shinier, the all-weather property degrades. The pie is only as good as the discipline not to touch it between the 3rd of each month and the next 3rd. That is the hardest ingredient to hold.

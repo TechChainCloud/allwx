@@ -1,0 +1,315 @@
+BQL
+for(['CSH2 LN Equity', 'DFNS LN Equity', 'ICOM LN Equity', 'IDTL LN Equity', 'ITPS LN Equity', 'SGLN LN Equity', 'SMGB LN Equity', 'URNG LN Equity', 'VAGS LN Equity', 'VWRP LN Equity', 'XDWH LN Equity', 'XDWI LN Equity']) get(px_last, total_return(calc_interval=1Y), total_return(calc_interval=YTD), volatility(calc_interval=1Y))
+
+Invictus One-Pie — 3 Good, 3 Bad: All 13 Lines
+
+Invictus Sleeve
+
+VWRP — FTSE All-World Acc | 23.8% | YTD +14.04% | 1Y +21.75% | Vol 11.08%
+
+✅ Earnings momentum is real. Q2 earnings growth is reportedly tracking around 50% year-over-year, with improving profit revisions meaning any episode of market weakness makes stocks cheaper by reducing P/E ratios rather than signalling deterioration. Bloomberg News
+
+✅ Breadth is widening. The rally is reportedly expanding beyond large-cap technology as earnings momentum improves across regions and sectors — EM led today with the Kospi +4.6% and Topix +0.6%. Bloomberg News Bloomberg First Word VWRP's ~3,700-name structure captures this broadening directly.
+
+✅ Regime alignment. PMI 54.6 and Reflation primary — the exact conditions where VWRP earns. The productivity thesis does not require a forecast; it requires time and contributions.
+
+❌ Concentration risk in the index. The sustainability of returns depends heavily on a narrow set of companies tied to AI infrastructure capital spending. Proxy/Voting Matters A correction in AI-related valuations could expose underlying weaknesses masked by strong technology-led demand.
+
+❌ Rising real yields are a multiple headwind. US real yields at 2.25% are approaching levels that have historically been a headwind for equities. Barclays Financial conditions are tightening, and the FOMC binary on 16 Sep adds near-term uncertainty.
+
+❌ Stagflation overlay is the existential risk. If G rolls over while I stays elevated — the overlay scenario — VWRP loses on both the earnings and the multiple. It is the portfolio's largest variance contributor (~35%) and has no natural hedge within itself.
+
+VAGS — Bloomberg Global Aggregate GBP-Hedged Acc | 17.0% | YTD −0.42% | 1Y +0.22% | Vol 3.61%
+
+✅ Lowest-vol stabiliser in the sleeve. At 3.61% annualised vol, VAGS contributes only ~4.3% of portfolio variance. It is the line that keeps the portfolio's true vol at 7.8% rather than the 11.23% blended sum. That is its job, and it is doing it.
+
+✅ YTM ~4.4%, AA- rated, GBP-hedged. The carry is real. In a world where the cut cycle eventually arrives, VAGS earns capital gains on top of that carry. Carry and rolldown are reportedly the primary drivers of fixed income total returns in H2 2026. Bank J Safra Sarasin.
+
+✅ Deflation insurance is cheap right now. VAGS is underperforming in Reflation — which means it is cheap relative to its function. When the regime rotates to G↓, I↓, this line reprices sharply. Buying insurance when it is expensive is the mistake; holding it when it is cheap is the discipline.
+
+❌ In the pain trade this week. Global government bonds are reportedly set to extend declines as a holiday-shortened US week collides with auctions and CPI data. Bloomberg First Word The European bond selloff — UK gilt +0.83% today — is a direct headwind via the global aggregate's European component.
+
+❌ Duration supply is structurally rising. The US is running consistent budget deficits and European budgets remain pressured — concerns over long-end bond issuance are unlikely to change. Wells Fargo This is a persistent headwind for the aggregate's longer-dated holdings.
+
+❌ ECB hike Thursday adds European yield pressure. German Bund yield rises are reportedly driven almost entirely by ECB rate-hike repricing. MBSB Investment Bank Berhad A hawkish ECB statement on Thursday would widen the European bond selloff already in motion and hit VAGS directly.
+
+ITPS — US TIPS Acc | 13.6% | YTD +0.34% | 1Y +0.10% | Vol 5.90%
+
+✅ BEI/PCE gap is the value signal. BEI at 2.354% vs PCE at 3.7% — a 135bp gap. ITPS is cheap relative to realised inflation. Domestic investment funds have reportedly been the primary purchasers of TIPS at auction in 2026, a trend that continued through the year. Bloomberg Intelligence
+
+✅ Real yield below the drag threshold. GTII10 at 2.25% is below the house's 2.50% drag threshold. Accrual offset is intact. The debasement trade is reportedly resurfacing due to record debt issuance, which is reviving demand for inflation hedges including TIPS. Barclays
+
+✅ Stagflation overlay pays here. If Brent breaks $100 and goods inflation accelerates, ITPS's CPI indexation earns. It is the only Invictus line that wins in stagflation without requiring real yields to fall — as long as they do not rise faster than CPI.
+
+❌ Real yield is the enemy. If the Fed hikes on 16 Sep and real yields rip through 2.50%, the price falls regardless of what CPI is doing. ΔP/P ≈ −D × Δy_real. Duration ~6.57 years means a 25bp real yield move is approximately a −1.6% price hit.
+
+❌ USD unhedged — FX cost applies. ITPS is unhedged USD. Every T212 contribution incurs the 0.15% FX cost. If ITPA lists on the London Stock Exchange, the house rule is to swap at 13.6% and not hold both. Until then, the FX drag is a permanent friction.
+
+❌ Foreign demand for TIPS has declined. Foreign demand for TIPS has declined from its peak in 2022–23. Bloomberg Intelligence A narrower buyer base means less support at auction and potentially wider bid-ask spreads in stress.
+
+SGLN — Physical Gold ETC | 10.2% | YTD +1.79% | 1Y +21.18% | Vol 25.86%
+
+✅ Central bank demand is structural and accelerating. China added the most gold to its reserves since 2023 in August — 650,000 ounces — extending the PBOC's buying streak to 22 months. Bloomberg News Central banks laid the groundwork for gold's rebound, ramping up purchases just before ETF buyers returned. Bloomberg First Word
+
+✅ Constructive medium-to-long-term outlook. The constructive medium- to long-term outlook for gold is maintained, with growing upside risk if fiscal sustainability concerns persist. Demand has proven resilient and official-sector buying is strengthening at lower prices, establishing a price floor around $4,000/oz. UBS
+
+✅ Debasement thesis is live. Fiat currencies are losing purchasing power together — debasement is a case for real assets, not a structural short on the dollar. Bloomberg First Word The US fiscal deficit is reportedly approaching $2 trillion in 2026. AmInvestment Bank Berhad Three of the four ugly debt-cycle end-games print gold.
+
+❌ Real yield is the short-term tax. Gold broke decisively below $4,000/oz in late June 2026, down roughly 27% from its January peak near $5,600/oz, driven by a stronger dollar, hawkish Fed rhetoric, and unwinding geopolitical risk premiums. Freedom Broker Today's −0.52% is the same mechanism: hike bets → real yields → gold tax.
+
+❌ Multidecade Treasury yield highs are competition. Multidecade highs in US Treasury bond yields and stock market capitalisation relative to public debt and GDP present headwinds for gold, which has become a volatile risk asset. T-bonds may gain an upper hand over gold into year-end. Bloomberg Intelligence
+
+❌ Vol is 25.86% — second-largest risk contributor. SGLN contributes ~19.8% of portfolio variance despite being only 10.2% of the book. In a hike-and-hold environment, the real-yield tax can persist for quarters. The long-term thesis is correct; the short-term path can be painful.
+
+ICOM — BCOM Broad Commodities Swap Acc | 8.5% | YTD +34.38% | 1Y +44.36% | Vol 17.85%
+
+✅ The session's standout performer — and for structural reasons. Brent at $97, Hormuz escalation, European gas storage 67% vs 83% seasonal norm. ICOM is the only Invictus line that wins in both Reflation and stagflation simultaneously. YTD +34.38% is the strongest Invictus return by a wide margin.
+
+✅ Energy prices surging — BCOM's largest weight. Energy is 37.3% of BCOM. Brent crude is reportedly up +23.6% and WTI up +21.8% in July 2026 alone. Summary Fact Sheet The Hormuz supply shock is a direct ICOM tailwind with no natural offset within the instrument.
+
+✅ Regime alignment is double-locked. In Reflation, goods prices rise with growth. In stagflation, goods prices rise with supply shocks. ICOM earns in both. It is the only line in the pie with this property.
+
+❌ Broad commodities are valued richly near 2008–11 highs relative to Treasury bonds. Copper may follow a pump-then-dump pattern seen in other assets in 2026. Bloomberg Intelligence At these levels, mean reversion is a real risk if the demand cycle rolls.
+
+❌ Roll drag in contango is a permanent friction. ICOM is an unfunded swap on futures — it pays roll costs when the curve is in contango. In a demand recession, deep contango can erode returns even when spot prices are stable. TER 0.19% is the highest in the Invictus sleeve.
+
+❌ Demand recession kills it. If G rolls below 50 PMI — the walk-back trigger scenario — ICOM loses on the demand side simultaneously with the supply-shock premium deflating. It is the line most exposed to a regime flip from stagflation to deflation.
+
+CSH2 — Amundi Smart Overnight Return GBP-Hedged Acc | 6.8% | YTD +2.81% | 1Y +4.25% | Vol 0.41%
+
+✅ Vol 0.41% — the portfolio's anchor. Max drawdown near zero. In a week where SGLN is −0.72%, VAGS is −0.19%, and IDTL is −0.20%, CSH2 is +0.02%. It is the line that does not move when everything else does.
+
+✅ Carry is real and rising. Near-SONIA at EFFR 3.63% proxy. If the Fed hikes on 16 Sep, CSH2's yield rises. It is the only Invictus line that benefits directly from a hike. The spread between liquidity pools and short Treasuries is reportedly at its most positive in four years. Stifel
+
+✅ Optionality has a live use case right now. With ICOM and IDTL carrying wide spreads on small tickets, and a binary FOMC in 9 days, the dry powder is worth more than its carry. CSH2 is what makes limit orders possible without selling anything.
+
+❌ Loses every quiet Goldilocks year by 2–3pp vs equities. That is the correct price for the option. But in a 30-year compounding context, 6.8% in cash earning 4.25% vs VWRP earning 21.75% over the same period is a real opportunity cost.
+
+❌ GBP-hedged — no currency upside. The ~76% unhedged block benefits when DXY falls. CSH2 does not. In a dollar-weakening environment, CSH2 underperforms even its own carry on a total-return basis relative to unhedged lines.
+
+❌ Floor 4%, cap 10% — limited upside from drift. Even if the walk-back fires and all £200 goes to Invictus, CSH2 competes with six other lines for that capital. It cannot be meaningfully sized up without breaching the cap or crowding out VWRP.
+
+IDTL — iShares USD Treasury 20+yr Dist | 5.1% | YTD −2.70% | 1Y −3.85% | Vol 9.17%
+
+✅ The US Treasury is actively supporting the long end. The US Treasury is reportedly expanding its buyback program for long-dated government bonds, increasing maximum operation sizes in the 10–20 year and 20–30 year sectors from $2bn to at least $4bn per operation, effective 9 September 2026. Intesa Sanpaolo This directly reduces the duration risk private investors must absorb.
+
+✅ GT30 at 4.78% — below the 5.00% green-light level. The house's own watch level is intact. If the cut cycle arrives, duration ~14.94 years means a 100bp rally in yields is approximately a +15% price gain. The convexity stub is correctly sized at 5.1%.
+
+✅ Valuations are reportedly attractive at current levels. With 1.7x 25bp hikes priced for 2026, and 10-year yields near 4.75–4.78%, Treasuries should find support — valuations are considered attractive and the market is seen as a soft cap on further hike pricing. Natixis
+
+❌ YTD −2.70%, 1Y −3.85% — the worst-performing Invictus line. The long end is reportedly on pace for its highest year-end level since 2001. Bloomberg Intelligence Fiscal deficits, heavy issuance, and AI-driven capital expenditure competing for investor demand are all structural headwinds. Commerzbank
+
+❌ Term premium is rising structurally. The sell-off at the long end is primarily attributed to a continued rise in term premium, justified by reduced Fed transparency and implications for higher structural rate volatility, with duration supply expected to rise materially in 2028. UBS
+
+❌ Long ends of yield curves carry too much risk in the current environment — intermediate maturities (5–7 years) are reportedly preferred due to benefits from upward-sloping curves and a cushion against adverse rate moves. Bank J Safra Sarasin. IDTL is the opposite of that positioning.
+
+Satellite Sleeve
+
+DFNS — Defence Thematic Equity | 3.0% | YTD −3.48% | 1Y +2.85% | Vol 26.50%
+
+✅ Geopolitical thesis is live and escalating. Iranian forces reportedly fired ballistic missiles at two US Navy warships; Houthi rebels reportedly struck Saudi Aramco infrastructure. Bloomberg News The Hormuz escalation is the most direct possible catalyst for defence spending acceleration. The thesis is not theoretical today.
+
+✅ US midterm elections in November 2026 are a significant event that could impact domestic policy and global markets, with potential implications for US defence spending and industrial policy. OCBC Group Research Defence budgets are a political priority in both parties in the current geopolitical environment.
+
+✅ AI and defence are converging. Tiltan's Majestic.ai platform is positioned to capitalise on demand for defence and commercial AI applications, and the global AI training dataset market is projected to grow significantly. S-1 The defence thematic is increasingly an AI-adjacent trade.
+
+❌ YTD −3.48% — the weakest performer in the entire pie. The thesis is intact but the price is not reflecting it. Vol at 26.50% means the drawdown path can be severe before the catalyst lands in earnings. Patience is required.
+
+❌ Defence budgets are subject to rapid shifts in political priorities and fiscal constraints. While global defence spending is increasing, there is no guarantee this translates into revenue — defence programs may be delayed or suspended during national emergencies. S-1
+
+❌ Borrowing fees are reportedly elevated. T3 Defense Inc. (DFNS) is reportedly experiencing a significant increase in borrowing fees, with a fee of +88,930 bps. Equilend Holdings Elevated short interest is a signal of market scepticism about near-term price performance, even if the long-run thesis is sound.
+
+XDWH — Global Healthcare Equity | 2.85% | YTD +7.03% | 1Y +18.96% | Vol 15.33%
+
+✅ Highest standalone Sharpe among the defensive satellites at 0.797. Healthcare is the satellite sleeve's stabiliser — lower beta than SMGB, DFNS, or URNG, with a 1Y return of +18.96% that beats VWRP on a risk-adjusted basis.
+
+✅ Regime-neutral defensive anchor. Healthcare earnings are not cyclical — they do not require G↑ to perform. In a stagflation overlay where all other satellites are at risk, XDWH provides the sleeve with a non-cyclical return stream.
+
+✅ Structural demand is inelastic. Ageing demographics across developed markets create a secular demand floor for healthcare that is independent of the economic cycle, the Fed, or the oil price. The thesis does not require a regime call.
+
+❌ Today's −0.85% is the worst satellite performer. Reportedly driven by a Novartis drug failure — pelacarsen — bleeding into sector sentiment. Bloomberg News Single-stock events in large-cap pharma create sector-level drag in a concentrated ETF.
+
+❌ Regulatory and drug-pricing risk is the structural threat. US midterm elections in November 2026 could bring renewed focus on drug pricing legislation. Healthcare regulation is the one risk that can hit the entire sector simultaneously regardless of the economic regime.
+
+❌ Underperforms in strong Reflation. When G is rising strongly and risk appetite is high, capital rotates out of defensive healthcare into cyclicals and growth. XDWH is the satellite sleeve's VAGS equivalent — it pays when the others do not, and lags when they do.
+
+SMGB — Semiconductor Thematic Equity | 2.70% | YTD +66.24% | 1Y +114.90% | Vol 38.66%
+
+✅ The pie's best performer by a distance. +66.24% YTD, +114.90% over 1 year. The AI capex cycle is not a thesis — it is a confirmed earnings reality. Broadcom predicts AI semiconductor revenue reaching $115bn in fiscal 2027 and more than doubling in 2028. Bloomberg First Word
+
+✅ Today's catalyst is live. OpenAI's next-generation model launch drove Kospi +4.6%, SK Hynix +8%, Samsung +6%, TSMC +2.1%. Bloomberg News HBM4 shipments for AI applications are reportedly expected to become more visible in H2, with SK Hynix holding 50% revenue share in HBM. Dow Jones Institutional News Feed
+
+✅ Nvidia's credit trajectory signals structural health. Nvidia's credit rating has climbed four notches to Aa1 at Moody's since 2023, leaving just one more step to the highest level — a signal of the financial strength underpinning the AI capex cycle. Bloomberg First Word
+
+❌ Vol at 38.66% — the highest-vol Invictus or satellite line except URNG. A 38% vol line at 2.70% of the portfolio is manageable. But the drawdown path is severe: SMGB can lose 30–40% in a single AI sentiment reversal, as the Philadelphia Semiconductor Index reportedly fell ~5% in a single session in August on valuation concerns. Commerzbank
+
+❌ Expectations are now very high. Broadcom's 221% sales growth got a shrug from the market. Dow Jones Barron's When blowout results fail to move the price, the bar for positive surprise has become extremely high. SMGB is priced for continued perfection in the AI capex cycle.
+
+❌ Currency risk for Korean and Taiwanese names. South Korean memory-chip makers are reportedly likely to post softer-than-expected Q3 earnings due to the won's strength — a 10% appreciation of the won could reduce earnings materially. Dow Jones Institutional News Feed SMGB's EM semiconductor exposure carries embedded FX risk.
+
+COPA/COPG — Copper Miner Equity | 2.70% | YTD — | 1Y — | Vol —
+
+✅ Electrification demand is structural. Copper is the metal of decarbonisation — EVs, grid infrastructure, data centres. The COPX copper ETF was reportedly up around 20% in August, supported by macro tailwinds including the debasement/hard asset trade and potential stimulus from China. UBS
+
+✅ Diversified miners are increasingly focusing on copper exposure. Diversified miners are reportedly focusing on increasing copper exposure, either organically or through M&A, to achieve a "copper multiple," with catalysts expected from asset sales and merger completions. UBS This structural re-rating of copper assets is a tailwind for the miner equity thesis.
+
+✅ Reflation regime alignment. Copper gains in Reflation when China is growing and the energy transition is spending. In H1 2026, copper reportedly gained 10.1% driven by electrification and resilient demand. Afrinvest
+
+❌ Copper may be overvalued at current levels. Broad commodities are valued richly near their 2008–11 highs relative to Treasury bonds, and copper may follow a pump-then-dump pattern seen in other assets in 2026. Bloomberg Intelligence A hawkish Jackson Hole speech has reportedly triggered some selling in copper, leading to expectations of near-term consolidation. UBS
+
+❌ Correlation with the S&P 500 is at multidecade highs. Copper's correlation with the S&P 500 has reached multidecade highs. Bloomberg Intelligence This means copper miners offer less diversification than the electrification thesis implies — they fall with equities in a risk-off event.
+
+❌ Ticker not confirmed on T212. COPA or COPG — verify which is available before the 3 October contribution. This is an operational risk, not a thesis risk, but it is the most immediate action item in the entire satellite sleeve.
+
+XDWI — Global Industrial Equity | 2.25% | YTD +11.57% | 1Y +16.75% | Vol 16.55%
+
+✅ Reflation alignment is clean. Industrials benefit directly from sustained capex, infrastructure spending, and manufacturing investment — all of which are present in the current Reflation regime. XDWI +0.30% today, +11.57% YTD, consistent with the regime.
+
+✅ AI infrastructure is an industrial story. SpaceX is reportedly casting blades and vanes for natural gas turbines to ease bottlenecks limiting data centre development. Bloomberg News The AI capex cycle is creating industrial demand that extends well beyond semiconductors into power, construction, and engineered components.
+
+✅ Lowest-vol satellite at 16.55%. Among the six satellite lines, XDWI has the most moderate volatility profile. It provides Reflation exposure with less drawdown risk than SMGB, DFNS, or URNG.
+
+❌ European borrowing cost headwind. UK gilt at 5.176% and German 30Y at a 15-year high are raising the cost of capital for European industrial companies. XDWI's global exposure includes European industrials that are directly affected by higher financing costs.
+
+❌ Lowest standalone Sharpe in the satellite sleeve at 0.666. XDWI is the least efficient satellite line on a risk-adjusted basis. It earns less per unit of vol than XDWH, SMGB, DFNS, or URNG. It is held for regime diversification within the sleeve, not for efficiency.
+
+❌ China slowdown risk. Global industrials are exposed to Chinese demand — both directly through exports and indirectly through commodity input costs. China growth disappointment is assessed as a medium-probability risk with a medium market impact via weak commodity demand and slower trade growth. Afrinvest
+
+URNG — Uranium / Nuclear Thematic Equity | 1.50% | YTD +1.58% | 1Y +17.19% | Vol 50.71%
+
+✅ Highest standalone Sharpe in the satellite sleeve at 1.035. Under long-run assumptions (10% return / 25% vol), URNG is the most efficient satellite line. The nuclear energy thesis — scalable, dispatchable, zero-carbon baseload — is structurally sound and increasingly politically supported.
+
+✅ Energy supply shock is a live thesis catalyst. European gas storage at 67% vs 83% seasonal norm heading into winter. Bloomberg News Hormuz escalation threatening oil supply. In this environment, nuclear energy as a dispatchable alternative to gas and oil becomes a policy priority, not just a climate argument.
+
+✅ Geopolitical fragmentation is structurally bullish for nuclear. Energy security is now a defence argument as much as a climate argument. US-China strategic rivalry, Middle East conflict, and European gas dependency are all pushing governments toward domestic nuclear capacity. Afrinvest
+
+❌ Vol at 50.71% — the highest in the entire pie. URNG is the most volatile line in the portfolio. At 1.50% weight, the variance contribution is manageable — but the drawdown path on a single position can be extreme. Nuclear policy reversals (Germany's history) can reprice the entire sector overnight.
+
+❌ YTD +1.58% — significantly underperforming the thesis. Despite the energy supply shock narrative, URNG has barely moved YTD. The uranium spot price and nuclear equity valuations are not yet reflecting the structural tailwinds. Thesis-to-price lag is a real risk in thematic investing.
+
+❌ Uranium supply is concentrated and politically sensitive. Kazakhstan (Kazatomprom) supplies approximately 40% of global uranium. Geopolitical disruption to that supply chain — or a policy reversal in a major nuclear-operating country — can move the entire sector independently of the energy security thesis.
+
+Summary across all 13 lines: The pie has no perfect instrument. Every line has a structural flaw — that is not a design failure, it is the cost of holding all four regime boxes simultaneously. The good things are mostly structural and long-duration. The bad things are mostly cyclical and short-duration. That asymmetry is the point.
+
+
+Sources
+
+1. JPMorgan’s Matejka Says Buy the Dip in Stocks on Earnings Boost
+NEWS 09/07/2026
+
+2. Topix Index Rises 0.6%; SoftBank Leads Advance
+NEWS 09/07/2026
+
+3. Asian Stocks Climb Most in Month as Chip Names Track US Peers
+NEWS 09/07/2026
+
+4. Proxy/Voting Matters 09/07/2026
+FILINGS 09/07/26
+
+5. [Delayed] Equity Strategy - Who Owns What: Positioning risk, but Europe not in a bad spot
+RESEARCH 08/04/26
+
+6. The end of the summer lull
+RESEARCH 08/18/26
+
+7. Global Bonds Face Pain Trade for Longer
+NEWS 09/07/2026
+
+8. EUR Rates: Improving Growth, Limited Long End Relief
+RESEARCH 08/26/26
+
+9. Fixed Income & FX Weekly-Week Ended 21 August
+RESEARCH 08/26/26
+
+10. Domestic Buyers Dominate TIPS Auctions; Foreign Demand Is Mixed
+RESEARCH 07/20/26
+
+11. [Delayed] Equity Strategy - Who Owns What: Riding out the debasement trade
+RESEARCH 09/01/26
+
+12. China Central Bank Adds Most Gold Since 2023 Even as Prices Jump
+NEWS 09/07/2026
+
+13. Central-Bank Demand Keeps Backstopping Gold Prices: MLIV Chart
+NEWS 09/03/2026
+
+14. [Delayed] Zhaojin Mining Industry "Significant volume cut, Downgrade to Neutral" (Neutral)
+RESEARCH 09/05/26
+
+15. You Can’t Escape Debasement by Selling the Dollar: Macro View
+NEWS 09/02/2026
+
+16. 20260717 - AmBank Economics - WhatWeThink - 2H2026 Outlook
+RESEARCH 07/17/26
+
+17. Record Gold FCF Fuels Buybacks
+RESEARCH 08/06/26
+
+18. T-Bonds Overtaking Gold, With Profound Implications or Ho-Hum 2H
+RESEARCH 08/06/26
+
+19. Summary Fact Sheet 07/31/2026
+FILINGS 07/31/26
+
+20. Geopolitics Lift Commodity Risk as Copper Leads, Bonds Beckon
+RESEARCH 08/31/26
+
+21. Agency Market Update Commentary: July 2026
+RESEARCH 07/17/26
+
+22. Intesa Sanpaolo S.p.A. - Interest Rate Strategy - A Treasury-Fed twist: the combined impact of buybacks and RMPs
+RESEARCH 08/19/26
+
+23. The Return of Tariffs
+RESEARCH 07/24/26
+
+24. Highest T-Bond Yield Since 2001 May Mark Endgame
+RESEARCH 08/07/26
+
+25. Commerzbank: Asia Daily Update: Chips slide, Hormuz standoff lingers
+RESEARCH 08/19/26
+
+26. [Delayed] US Rates Strategy "Erratum: "Play the ball"" White
+RESEARCH 08/04/26
+
+27. US Stocks Slip as Oil Gains Keep Traders Cautious: Markets Wrap
+NEWS 09/07/2026
+
+28. SG - Equity strategy: Constructive on 2H26 outlook
+RESEARCH 07/03/26
+
+29. S-1 09/03/2026
+FILINGS 09/03/26
+
+30. OpenAI Hands Getty a Lifeline - EquiLend Short Interest and Financing Recap
+RESEARCH 07/30/26
+
+31. Broadcom Guide Boosts Bullish Case for Opticals: Equity Insight
+NEWS 09/02/2026
+
+32. Kospi Index Rises 4.6%; SK Hynix Leads Advance
+NEWS 09/07/2026
+
+33. Taiex Index Rises 1.7%; TSMC Leads Advance
+NEWS 09/07/2026
+
+34. Global Equities Roundup: Market Talk
+NEWS 09/06/2026
+
+35. Cash-Rich Nvidia Deserves to Join the Elite AAA Club: Macro View
+NEWS 09/02/2026
+
+36. Broadcom and Snowflake Perfectly Sum Up the AI Trade 
+NEWS 09/03/2026
+
+37. Global Equities Roundup: Market Talk
+NEWS 09/03/2026
+
+38. [Delayed] Mining Strategy "Back to School - September 2026" Major
+RESEARCH 09/06/26
+
+39. Global Section - Afrinvest 2026 Half-year Review and Outlook Report
+RESEARCH 07/15/26
+
+40. SpaceX’s DIY Turbines Harken a New Era: Industrial Strength
+NEWS 09/04/2026

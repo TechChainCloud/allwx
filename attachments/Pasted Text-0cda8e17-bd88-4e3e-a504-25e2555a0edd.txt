@@ -1,0 +1,79 @@
+The plan is simple. There are four dates that matter and one standing rule. Everything else is noise.
+
+The Plan
+
+This Week — Three Binary Events
+
+
+
+Date       Event                      Bloomberg Object     What to Watch                                                                                                                         House Implication
+Tue 8 Sep  US Treasury market reopens GT10 Govt, GT30 Govt First reprice of Friday payrolls + Hormuz. Watch GT10 at the NY open. Key level: 5.00%.                                               Above 5.00% → VAGS, IDTL, SGLN all taxed simultaneously. Below 4.60% → pivot bid, IDTL/VAGS rally. Do not act on either. Observe.
+Thu 11 Sep US CPI (August)            CPIAUCSL Index       Hot print (above consensus) = hike odds above 60%, BEI rips, IDTL/SGLN taxed. Cool print = pivot bid, VAGS/IDTL rally, gold recovers. Hot: ICOM and ITPS (if real yields hold) are the regime winners. Cool: VAGS and IDTL bid. Either way: no action. Observe and update the Seven Questions.
+Thu 11 Sep ECB rate decision          EURR002W Index       +25bp reportedly fully priced. Watch the statement for forward guidance — any signal of a pause matters more than the hike itself.    VAGS sensitivity via European aggregate component. A hawkish surprise widens the European bond selloff already in motion. A dovish statement bids VAGS.
+
+16 September — The Binary
+
+The FOMC decision is the single most important event on the house's calendar between now and the 3 October contribution. At ~60% hike probability, this is reportedly the biggest toss-up since SVB. Agence France Presse The house has two lines that feel it directly:
+
+Hike lands: CSH2 carry rises. SGLN taxed (real-yield channel). IDTL taxed (long-end repricing). VAGS under pressure. ICOM unaffected — goods inflation is not a Fed instrument. VWRP: mild multiple compression, offset by earnings resilience in Reflation.
+
+Hold (dovish surprise): IDTL and VAGS bid. SGLN recovers. Cut-cycle thesis gets its first data point. VWRP rallies on relief.
+
+The house action in either scenario: none. The sentences do not change on a single FOMC. The house was built to hold through exactly this kind of binary.
+
+3 October — The Only Action Date
+
+£200 AutoInvest on the 3rd. This is the only lever available before the next contribution. The decision tree at that point:
+
+Check walk-back first. PMI < 50 AND 2s10s < 0bp → route full £200 to Invictus only. Satellites receive zero. Current status: PMI 54.6, 2s10s +41.6bp — both clear. Alliance News
+
+Check Invictus drift (±3pp). Pull your T212 NAV. Any Invictus line more than 3pp below its house weight gets the next contribution. Most likely candidates after today's session: VAGS (headwind all session), SGLN (−0.72% today, real-yield tax ongoing).
+
+Check satellite drift (±1.5pp). If no Invictus drift breach, check satellites. SMGB has been the strongest mover — monitor for overweight drift. XDWH and DFNS have been the weakest — monitor for underweight drift.
+
+Check satellite collective cap. If satellites collectively > 20% of total portfolio → stop feeding satellites, route 100% to Invictus.
+
+Default split if no drift breach: £150 Invictus (75%), £50 satellite (25%). Most underweight line in each sleeve.
+
+Verify COPA/COPG ticker on T212 before executing. This must be resolved before the contribution fires.
+
+The Standing Rule — Every Day Until Then
+
+Monitor two numbers. Nothing else requires action:
+
+
+
+Object             Current Level Trigger Action if Triggered
+2s10s (GT10 − GT2) +41.6bp       < 0bp   Walk-back: route full £200 to Invictus only on 3 Oct
+PMI (NAPMPMI)      54.6          < 50    Walk-back: same as above — but both must fire simultaneously
+
+BQL
+for(['GT2 Govt','GT10 Govt','NAPMPMI Index','CO1 Comdty','VIX Index','DXY Curncy','GBPUSD Curncy']) get(px_last, yield) preferences(addCols=ALL)
+
+BQL
+for('GT10 Govt') get(yield - value(yield,['GT2 Govt'])) preferences(addCols=ALL)
+
+Neither is close. The walk-back has a historical frequency of 6.1% of months. It is not the base case. It is the rule that exists precisely because the base case is sometimes wrong.
+
+What the Plan Is Not
+
+It is not watching SGLN fall and deciding the gold thesis is broken.
+
+It is not watching SMGB +1.70% and deciding to top it up outside the contribution cycle.
+
+It is not reacting to a Warsh speech, a Hormuz headline, or a single CPI print by editing the lock file.
+
+It is not moving the AutoInvest date.
+
+In One Sentence
+
+Watch Tuesday's Treasury open, Thursday's CPI, and the 16 Sep FOMC — update the Seven Questions after each — then execute the contribution rules mechanically on 3 October. The house does the rest.
+
+
+Sources
+
+1. Tech firms rally but Asian markets mixed, with eyes on US inflation
+NEWS 09/07/2026
+
+2. FOREX: Rand stable amid US holiday and ahead of US inflation reading
+NEWS 09/07/2026

@@ -1,0 +1,38 @@
+[Chart]
+
+Invictus One-Pie — 13 Lines, 2 Sleeves
+
+Invictus Sleeve — 85%
+
+VWRP 23.8% — Growth Core. The claim on global productivity. FTSE All-World Acc holds ~3,700 companies across developed and emerging markets, dividends reinvested. This is the engine of the portfolio over decades — it wins in Goldilocks and Reflation when growth is rising, and it is the dominant risk line (~35% of portfolio variance). It loses in deep recession and stagflation if margins get crushed. The floor (20%) stops a bad quarter becoming a new religion; the cap (27%) stops a good run turning the portfolio into a single-factor equity bet.
+
+VAGS 17.0% — Deflation Engine. Bloomberg Global Aggregate, GBP-hedged, investment grade. When growth and inflation both fall, policy rates follow and this line earns capital gains on top of its ~4.4% yield-to-maturity. The GBP hedge is deliberate — this is a rates-and-credit job, not an FX job. It is the portfolio's shock absorber in a deflationary slowdown or a late-cycle recession. It loses when nominal yields rise, which is why it is in the penalty box today.
+
+ITPS 13.6% — CPI Contract. US TIPS: principal indexed to US CPI. When inflation rises and real yields stay stable or fall, this line pays. The identity is simple — breakeven inflation ≈ nominal yield minus real yield. ITPS wins in stagflation if real yields do not rip, and in any environment where realised CPI outpaces what the market has priced. It is not a magic bond: rising real yields drop the price regardless of what CPI is doing. At 2.25% real yield today, it is below the 2.50% drag threshold.
+
+SGLN 10.2% — Long-Term Debt Cycle Hedge. Physical allocated LBMA gold. Three of the four ugly end-games for a long debt cycle print gold: debasement, inflation shock, and a real-rate shock that breaks something else. Gold is the line that works when the system itself is in question — loss of central bank credibility, ugly deleveraging, crisis correlation spikes. Its short-term enemy is rising real yields (the gold tax), which is why it is down today. The long-term debt-cycle thesis operates on a different timescale. Do not sell on a hike-bet week.
+
+ICOM 8.5% — Goods Inflation Hedge. Diversified commodity swap via BCOM — oil, metals, and agriculture in index weights. This is not miners and not gold; it is the futures complex itself. When the inflation shock comes from the supply side — an energy spike, a crop failure, a Hormuz escalation — this line pays first. It wins in both Reflation and stagflation when the shock is goods-driven. Its cost is roll drag in deep contango and losses in a demand recession. Today it is the Invictus sleeve's best performer.
+
+CSH2 6.8% — Optionality. Amundi Smart Overnight Return, GBP-hedged, near-SONIA. This is not cash drag — it is the line that makes everything else possible. It funds limit orders on ICOM and IDTL when spreads are wide. It is the dry powder when something breaks and the best line in the portfolio is suddenly cheap. Vol ~0.6%, max drawdown near zero. It loses every quiet Goldilocks year by 2–3pp vs equities, and that is the correct price to pay for the option.
+
+IDTL 5.1% — Cut-Cycle Stub. iShares USD Treasury 20+ year. When Stage 5 arrives — recession, front end at the floor, Fed cutting — the capital gain lives at the long end. Duration ~15 years means a 100bp rally in yields is a ~15% price gain. It is only 5.1% because the house already carries ~19% USD duration between ITPS and IDTL, and more long bond is a bet on the cut, not ballast. The cap is 8%. It is in the penalty box today alongside VAGS, but the sentence does not change: if the cut cycle comes, you need this line to feel it.
+
+Satellite Sleeve — 15%
+
+DFNS 3.0% — Defence Thematic. Global defence equity. The thesis is structural: a multi-decade shift in NATO and allied defence spending driven by geopolitical fragmentation. It is a return engine, not a stabiliser — high vol, high conviction, long horizon. The Hormuz escalation today is a live thesis reinforcement, even if the price has not moved yet. Walk-back rule stops new contributions in the exact conditions when this line falls hardest.
+
+XDWH 2.85% — Defensive Healthcare. Global healthcare equity, quality-tilted. Healthcare is the satellite sleeve's defensive anchor — lower beta than the other thematic lines, with a standalone Sharpe of 0.80. It provides some cushion when the broader satellite sleeve is under pressure. Its risk is regulatory and drug-pricing policy, not the economic cycle. Today's −0.85% is a Novartis single-stock event bleeding into the sector — thesis intact.
+
+SMGB 2.70% — Semiconductor Thematic. Global semiconductor equity. The AI capex cycle is the thesis: data centres, inference chips, memory, and the entire supply chain that feeds them. It is the highest-beta satellite line and the most sensitive to the AI narrative — which is why today's OpenAI model launch drove it +1.70%. It loses hard if the AI capex cycle disappoints or if a demand air pocket hits the chip cycle. Standalone Sharpe 0.78 under long-run assumptions.
+
+COPA/COPG 2.70% — Copper Miner Equity. The electrification and energy-transition thesis in equity form. Copper is the metal of decarbonisation — EVs, grid infrastructure, data centres. Copper miners give leveraged exposure to the copper price with operational risk on top. It wins in Reflation when China is growing and the energy transition is spending. It loses if China slows or the commodity cycle rolls. Verify which ticker (COPA or COPG) is available on T212 before the 3 October contribution.
+
+XDWI 2.25% — Global Industrial Equity. Broad global industrials — the line that benefits from a sustained Reflation regime as capex, infrastructure, and manufacturing investment flow through. Lower standalone Sharpe (0.67) than the other satellites but provides diversification within the sleeve away from pure tech and defence. Today +0.30%, consistent with the Reflation primary.
+
+URNG 1.50% — Uranium / Nuclear Thematic. The highest standalone Sharpe in the satellite sleeve (1.04 under long-run assumptions). The thesis is nuclear energy as the only scalable, dispatchable, zero-carbon baseload — increasingly relevant as European gas storage sits 16pp below seasonal norms and energy security becomes a political priority. Small position by design: high conviction, high vol, long horizon. Today +0.94% on the energy supply shock narrative.
+
+
+
+BQL
+for(['CSH2 LN Equity', 'DFNS LN Equity', 'ICOM LN Equity', 'IDTL LN Equity', 'ITPS LN Equity', 'SGLN LN Equity', 'SMGB LN Equity', 'URNG LN Equity', 'VAGS LN Equity', 'VWRP LN Equity', 'XDWH LN Equity', 'XDWI LN Equity']) get(px_last)
