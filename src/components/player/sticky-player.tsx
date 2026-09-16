@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Link } from "@tanstack/react-router";
 import { ChevronLeft, ChevronRight, Pause, Play, RotateCcw, RotateCw } from "lucide-react";
 import { EPISODES, episodeBySlug, nextEpisode, prevEpisode } from "@/lib/content";
-import { formatTime } from "@/lib/utils";
+import { formatTime, publicUrl } from "@/lib/utils";
 import { usePlayer } from "@/store/player";
 import { Button } from "@/components/ui/button";
 
@@ -29,12 +29,19 @@ export function StickyPlayer() {
   useEffect(() => {
     const el = audioRef.current;
     if (!el || !episode) return;
-    if (el.dataset.src !== episode.audio) {
-      el.dataset.src = episode.audio;
+    const src = publicUrl(episode.audio);
+    if (el.dataset.src !== src) {
+      el.dataset.src = src;
       el.dataset.slug = episode.slug;
-      el.src = episode.audio;
+      el.src = src;
       const saved = usePlayer.getState().positions[episode.slug] ?? 0;
-      el.currentTime = Math.min(saved, Math.max(0, episode.duration - 0.5));
+      const applySaved = () => {
+        if (saved > 0) {
+          el.currentTime = Math.min(saved, Math.max(0, episode.duration - 0.5));
+        }
+      };
+      if (el.readyState >= 1) applySaved();
+      else el.addEventListener("loadedmetadata", applySaved, { once: true });
     }
     el.playbackRate = rate;
     if (playing) {
@@ -77,7 +84,6 @@ export function StickyPlayer() {
     );
   }
 
-  const pct = episode.duration ? Math.min(100, (pos / episode.duration) * 100) : 0;
   const chapter = [...episode.chapters].reverse().find((c) => pos >= c.t);
 
   return (
