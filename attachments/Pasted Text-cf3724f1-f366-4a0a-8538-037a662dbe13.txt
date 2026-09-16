@@ -1,0 +1,218 @@
+The Full Universe Screen — Five Filters, Every Ticker
+
+All five screens ran simultaneously. What follows is the complete synthesis: 30+ tickers across five systematic filters, organised by Principia sleeve fit, with live data, regime scores, and a frank verdict on each. This is the universe the farm has not yet considered.
+
+The Screening Framework
+
+Before the results, the filter that was applied to every candidate:
+
+Minimum track record: 3Y annualised return available (eliminates post-2023 launches with no stress-test data)
+
+Regime coverage: must earn its allocation in at least two of the six historical weathers
+
+Principia fit: must fill a gap in the current book or improve an existing line — not duplicate it
+
+No seventeenth line rule: every candidate is assessed as a replacement or absorption, not an addition
+
+Factor-based ETFs offer low fees, strong liquidity, and high transparency — making them a more cost-effective holding than a group of industry-based ETFs. BOCOM Securities
+
+Screen 1 — Gaps in the Current Book
+
+The current Invictus book has no energy equity, no dedicated EM tilt, no equal-weight engine alternative, no clean energy, and no pure infrastructure line. These are the best-in-class candidates for each gap.
+
+
+
+BQL
+for(['AGRB LN Equity', 'AGRI LN Equity', 'GBRE LN Equity', 'IEEM LN Equity', 'INFR LN Equity', 'INRG LN Equity', 'IQQW LN Equity', 'VFEM LN Equity', 'WATS LN Equity', 'WNRG LN Equity', 'XDEW LN Equity']) get(ann_total_return(calc_interval=3Y), fund_expense_ratio, fund_total_assets, name, total_return(calc_interval=1Y), total_return(calc_interval=YTD))
+
+Ticker  Name                              Gap Filled                                                        YTD    1Y     3Y Ann OCF   Verdict
+WNRG LN SPDR MSCI World Energy            Energy equity — the missing stagflation line                      +16.9% +47.9% +43.2% 0.30% ✅ Tier 1
+IEEM LN iShares MSCI EM                   EM tilt — VWRP underweights EM at ~12%                            +18.9% +28.6% +18.0% 0.18% ✅ Tier 1
+XDEW LN Xtrackers S&P 500 Equal Weight    Engine alternative — removes mega-cap concentration               +14.7% +15.6% +11.9% 0.15% ✅ Tier 1
+INFR LN iShares Global Infrastructure     Infrastructure — inflation-linked revenues, low cycle sensitivity +8.0%  +11.8% +7.5%  0.65% ⚠️ Tier 2 — OCF high
+GBRE LN SPDR Dow Jones Global Real Estate Real estate — income-generating real asset                        +6.1%  +9.8%  +8.4%  0.40% ⚠️ Tier 2 — next regime
+VFEM LN Vanguard FTSE Emerging Markets    EM tilt — cheaper alternative to IEEM                             +14.3% +14.2% +8.4%  0.17% ⚠️ Tier 2 — lower 3Y vs IEEM
+INRG LN iShares Global Clean Energy       Clean energy transition                                           +2.4%  +19.8% +2.8%  0.65% ❌ Tier 3 — weak 3Y, high OCF
+
+The standout: WNRG LN is the single most important gap in the current book. A 3Y annualised return of +43.2% and a 1Y return of +47.9% in the current reflation-with-stagflation-overlay regime is not noise — it is the energy sector doing exactly what it did in 1973–1980. The farm has ICOM (broad commodities) but no energy equity. WNRG is the picks-and-shovels of the energy supercycle. A sharp reversal in flows for natural resources ETFs from net outflows in 2025 to significant inflows year-to-date signals a real asset rotation already underway. Bloomberg Intelligence
+
+IEEM at 0.18% OCF is the cheapest EM vehicle in the screen and the strongest performer. XDEW at 0.15% OCF is the cheapest ticker in the entire universe screen — and equal-weighting the S&P 500 removes the concentration risk that makes VWRP vulnerable to a mega-cap unwind.
+
+Screen 2 — Regime-Best Tickers
+
+For each of the six historical weathers, the single LSE-listed ETF that would have performed best — and whether it earns a permanent farm line.
+
+
+
+BQL
+for(['GDX LN Equity', 'GDXJ LN Equity', 'IOGP LN Equity', 'SGLD LN Equity', 'SXLP LN Equity', 'WTEF LN Equity']) get(ann_total_return(calc_interval=3Y), fund_total_assets, name, total_return(calc_interval=1Y), total_return(calc_interval=YTD))
+
+Regime                     Ticker  Name                          YTD    1Y     3Y Ann Regime Logic                                                                              Farm Verdict
+Stagflation (1970s)        IOGP LN iShares Oil & Gas Exploration +11.1% +42.8% +39.9% Energy equity: the 1970s winner. Direct exposure to the commodity that drives stagflation ✅ Strongest regime-specific candidate in the entire screen
+Inflation Shock (2022)     GDX LN  VanEck Gold Miners            +48.0% +36.4% +11.6% Gold miners: leveraged exposure to gold price with operational upside                     ⚠️ Complements SGLN but adds equity risk to the barn
+Geopolitical Storm         GDXJ LN VanEck Junior Gold Miners     +52.4% +36.7% +7.7%  Junior miners: highest beta to gold price in a crisis                                     ❌ Too volatile for a farm line; 3Y ann weak vs GDX
+All-Weather / Disinflation WTEF LN WisdomTree US Efficient Core  +16.1% +12.9% +10.5% 90% US equity + 60% US Treasuries via futures = 150% notional exposure, balanced          ⚠️ Interesting engine alternative — leveraged balance
+Recession / Defensive      SXLP LN SPDR S&P US Consumer Staples  +8.6%  +7.8%  +9.0%  Consumer staples: pricing power, non-cyclical demand, dividend income                     ⚠️ Overlaps with XDWH (healthcare); complements it
+Crisis / Safe Haven        SGLD LN Invesco Physical Gold ETC     +30.4% +16.3% −0.8%  Physical gold alternative to SGLN — same asset, different provider                        ❌ Duplicates SGLN; no incremental value
+
+The standout: IOGP LN is the regime-best ticker in the entire screen. A 3Y annualised return of +39.9% — the highest of any fixed-income or equity ETF across all five screens — reflects the energy supercycle that has been running since 2021. Unlike ICOM (broad commodities), IOGP is pure oil and gas exploration equity: it captures the operating leverage of energy companies when the commodity price rises. Mineral royalties and energy infrastructure assets offer steady cash streams that can help mitigate the volatility associated with hard-asset exposure. Bloomberg Intelligence
+
+GDX LN at +48.0% YTD is the gold miners story: when gold is at $4,309 and mining costs are relatively fixed, the operating leverage is substantial. The barn (SGLN) owns the metal; GDX would own the companies that dig it up. They are complements, not duplicates — but GDX adds equity correlation risk that SGLN does not carry.
+
+Screen 3 — Factor ETFs: The Smart Engine
+
+The six most common factors for constructing portfolios are value, quality, low volatility, small market cap, high dividend, and momentum. BOCOM Securities Every one of them is available as an LSE-listed ETF. The question is whether any of them should replace or supplement VWRP as the engine.
+
+
+
+Ticker  Name                              Factor           YTD    1Y     3Y Ann Regime Fit                                                                 Verdict
+IWVL LN iShares MSCI World Value          Value            +28.4% +51.4% +34.8% Reflation, stagflation, rate-reset — value outperforms when rates are high ✅ Tier 1 — strongest factor in current regime
+IWMO LN iShares MSCI World Momentum       Momentum         +26.2% +19.9% +16.1% Trend-following in equities — works in any sustained directional regime    ✅ Tier 1 — complements DBMF's trend logic
+VHYL LN Vanguard All-World High Dividend  Dividend yield   +16.0% +24.4% +15.5% Income + defensive tilt — works in stagflation and recession               ✅ Tier 1 — income-generating engine alternative
+JPGL LN JPMorgan Global Multi-Factor      Multi-factor     +16.6% +18.2% +13.5% Blended exposure — regime-diversified by design                            ⚠️ Tier 2 — good but IWVL dominates on returns
+FUSD LN Fidelity US Quality Income        Quality + income +17.8% +16.0% +11.3% Quality factor: high margins, low leverage — defensive in downturns        ⚠️ Tier 2 — US-only concentration
+IWQU LN iShares MSCI World Quality        Quality          +17.4% +16.1% +10.4% Quality: outperforms in late cycle and recession                           ⚠️ Tier 2 — solid but lower return than IWVL
+MVOL LN iShares MSCI World Min Volatility Low volatility   +10.4% +6.1%  +6.1%  Defensive — lowest drawdown in equity bear markets                         ⚠️ Tier 2 — quiet farm candidate, not engine
+
+Factor-based portfolios generally outperform industry-based portfolios and are less affected by cyclical fluctuations. BOCOM Securities
+
+The standout: IWVL LN is the most important factor finding in the entire screen. A 3Y annualised return of +34.8% and a 1Y return of +51.4% — in a high-rate, reflation-with-stagflation-overlay regime — is the value factor doing exactly what 100 years of academic evidence says it should do when rates are elevated and growth is uncertain. Value stocks have lower duration than growth stocks: their cash flows are front-loaded, making them less sensitive to the discount rate. In the current regime, IWVL is a structurally superior engine to VWRP.
+
+MVOL LN is the quiet farm candidate hiding in the factor screen. At +6.1% 3Y annualised it underperforms as an engine — but as a defensive equity sleeve in the quiet farm, minimum volatility equity provides equity-like long-run returns with recession-era drawdown protection. Combining carbon goals with factor investing — particularly for defensive low-volatility strategies — may lead to favourable climate and financial-risk outcomes. Bloomberg Intelligence
+
+Screen 4 — The Quiet Farm Rebuilt
+
+The current quiet farm (VAGS, IDTL, INXG, XSTR, IGLS) has one structural weakness: VAGS is nominal aggregate bonds in a positive stock-bond correlation regime. These are the alternatives.
+
+
+
+Ticker  Name                                  YTD   1Y    YTM   Duration Replaces                                                     Verdict
+FLOT LN iShares USD Floating Rate Bond        +3.0% +4.3% 4.17% 1.67yr   VAGS — removes rate sensitivity, retains income              ✅ Tier 1 — best VAGS replacement in current regime
+USFR LN WisdomTree USD Float Rate Treasury    +2.6% +3.9% 3.85% 0.91yr   XSTR — government-grade floating rate, near-zero duration    ✅ Tier 1 — safer than XSTR, similar carry
+SDHY LN iShares USD Short Duration High Yield +1.9% +3.3% 7.13% 2.20yr   VAGS — higher yield, short duration, credit risk             ⚠️ Tier 2 — yield is compelling; credit spread risk in recession
+IGLS LN iShares UK Gilts 0-5yr                +0.7% +2.2% 4.67% 2.21yr   Already in book — confirmed as correct short gilt carry line ✅ Already held — validated
+GISG LN Amundi Global Govt Inflation-Linked   +1.4% +1.4% 1.89% 4.56yr   INXG — global linker diversification vs UK-only INXG         ⚠️ Tier 2 — low YTM; INXG superior in current UK regime
+ISXF LN iShares GBP Corp Bond ex-Financials   −1.7% +1.0% 6.23% 6.50yr   VAGS — higher yield but long duration and negative YTD       ❌ Tier 3 — duration risk unacceptable in current regime
+ERNX GY iShares EUR Ultrashort Bond           +1.4% +2.1% 3.11% 0.60yr   XSTR — EUR-denominated; currency drag for GBP ISA            ❌ Tier 3 — currency mismatch for GBP ISA
+
+The standout: FLOT LN is the single most actionable quiet farm improvement. It yields 4.17% with a duration of only 1.67 years — compared to VAGS which carries 7–8 years of duration in a regime where the stock-bond correlation is positive. Replacing VAGS with FLOT removes the biggest structural weakness in the quiet farm without reducing income. USFR LN at 0.91yr duration is the most defensive fixed income instrument in the entire screen — essentially a floating-rate T-bill fund. Together, FLOT + USFR + IGLS would form a quiet farm fixed income sleeve that earns carry without duration risk.
+
+Screen 5 — The Full Quantitative Universe: Master Ranked Table
+
+Every ticker across all five screens, ranked by Principia fit score (regime breadth × return quality × OCF efficiency × gap filled). Investors are favouring ETFs for their transparency, portfolio diversification, and intraday liquidity, with record net new creates topping €49 billion in July 2026. Bloomberg Intelligence
+
+
+
+Rank Ticker  Name                                Screen 3Y Ann OCF   Principia Line                  Sleeve Suggested Wt Tier
+1    WNRG LN SPDR MSCI World Energy              Gap    +43.2% 0.30% The Derrick (energy equity)     Living 2.0–3.0%     ✅ 1
+2    IOGP LN iShares Oil & Gas Exploration       Regime +39.9% —     The Derrick (pure E&P)          Living 1.5–2.0%     ✅ 1
+3    IWVL LN iShares MSCI World Value            Factor +34.8% —     Engine tilt or replacement      Living 5.0–10.0%    ✅ 1
+4    IEEM LN iShares MSCI EM                     Gap    +18.0% 0.18% The Frontier (EM tilt)          Living 2.0–3.0%     ✅ 1
+5    FLOT LN iShares USD Floating Rate Bond      Quiet  —      —     VAGS replacement                Quiet  4.0–6.0%     ✅ 1
+6    IWMO LN iShares MSCI World Momentum         Factor +16.1% —     Engine complement to VWRP       Living 2.0–3.0%     ✅ 1
+7    VHYL LN Vanguard All-World High Dividend    Factor +15.5% —     Income engine / quiet bridge    Living 3.0–5.0%     ✅ 1
+8    USFR LN WisdomTree USD Float Rate Treasury  Quiet  —      —     XSTR upgrade (govt-grade)       Quiet  3.0–5.0%     ✅ 1
+9    XDEW LN Xtrackers S&P 500 Equal Weight      Gap    +11.9% 0.15% Engine de-concentration         Living 5.0–8.0%     ✅ 1
+10   GDX LN  VanEck Gold Miners                  Regime +11.6% —     Barn amplifier (alongside SGLN) Living 1.0–1.5%     ⚠️ 2
+11   SDHY LN iShares USD Short Dur High Yield    Quiet  —      —     Quiet farm income booster       Quiet  2.0–3.0%     ⚠️ 2
+12   WTEF LN WisdomTree US Efficient Core        Regime +10.5% —     Balanced engine alternative     Living 3.0–5.0%     ⚠️ 2
+13   MVOL LN iShares MSCI World Min Volatility   Factor +6.1%  —     Quiet farm defensive equity     Quiet  2.0–3.0%     ⚠️ 2
+14   JPGL LN JPMorgan Global Multi-Factor        Factor +13.5% —     Engine diversifier              Living 2.0–3.0%     ⚠️ 2
+15   INFR LN iShares Global Infrastructure       Gap    +7.5%  0.65% The Grid (infrastructure)       Living 2.0%         ⚠️ 2 — OCF high
+16   SXLP LN SPDR US Consumer Staples            Regime +9.0%  —     Defensive equity complement     Living 1.5%         ⚠️ 2
+17   GBRE LN SPDR Global Real Estate             Gap    +8.4%  0.40% Real assets (next regime)       Living 1.5%         ⚠️ 2
+18   GISG LN Amundi Global Govt Inflation-Linked Quiet  —      —     INXG global complement          Quiet  1.5%         ⚠️ 2
+19   VFEM LN Vanguard FTSE EM                    Gap    +8.4%  0.17% EM tilt (cheaper vs IEEM)       Living 2.0%         ⚠️ 2
+20   FUSD LN Fidelity US Quality Income          Factor +11.3% —     Quality income engine           Living 2.0%         ⚠️ 2
+21   IWQU LN iShares MSCI World Quality          Factor +10.4% —     Quality factor engine           Living 2.0%         ⚠️ 2
+22   GDXJ LN VanEck Junior Gold Miners           Regime +7.7%  —     Crisis satellite only           —      0%           ❌ 3
+23   INRG LN iShares Global Clean Energy         Gap    +2.8%  0.65% —                               —      0%           ❌ 3
+24   ISXF LN iShares GBP Corp Bond ex-Fin        Quiet  —      —     —                               —      0%           ❌ 3 — duration risk
+25   ERNX GY iShares EUR Ultrashort Bond         Quiet  —      —     —                               —      0%           ❌ 3 — currency mismatch
+26   SGLD LN Invesco Physical Gold ETC           Regime −0.8%  —     Duplicates SGLN                 —      0%           ❌ 3 — duplicate
+
+The Three Highest-Conviction Additions from the Full Universe
+
+If the Principia protocol allows only one new line at a time, pointed at by contributions on the 3rd, this is the priority order:
+
+WNRG LN — The Derrick. Energy equity is the single largest gap in the current book. The farm has broad commodities (ICOM) but no energy equity operating leverage. In every stagflation scenario from 1973 to 2022, energy equity was the top-performing asset class. At 2–3% of the farm, a −40% year (2020 COVID crash) costs 80–120bp. The 3Y annualised return of +43.2% is the highest of any gap-filling candidate. This is the line the farm needs most tonight.
+
+IWVL LN — The Value Engine. The value factor has delivered +34.8% annualised over 3 years in a high-rate regime — exactly the environment where value outperforms growth. If the engine (VWRP) is the farm's largest line at 45%, tilting even 5–10% of that toward value via IWVL would materially improve the farm's regime resilience without adding a new line. IWVL could absorb part of VWRP's weight rather than sitting alongside it.
+
+FLOT LN — The VAGS Replacement. The most actionable quiet farm improvement. FLOT yields 4.17% with 1.67yr duration vs VAGS's 7–8yr duration in a positive stock-bond correlation regime. This is not a new line — it is a direct replacement that removes the biggest structural weakness in the quiet farm. The contribution protocol handles it: point the next month's cash at FLOT, let VAGS drift below target, and do not reinvest VAGS distributions.
+
+The Invictus Prime Upgrade Path
+
+The protocol is clear: no selling inside the ISA, contributions are the only rebalancing tool, no seventeenth line. The upgrade path respects all three rules.
+
+
+
+Month        Action                       Ticker  Mechanism
+October 3rd  Introduce The Derrick        WNRG LN New line at 1.0%; point contributions here until 2.0–3.0% target reached
+November 3rd Begin VAGS → FLOT transition FLOT LN Point contributions at FLOT; let VAGS drift; do not reinvest VAGS income
+December 3rd Introduce EM tilt            IEEM LN New line at 1.0%; absorbs from VWRP's overweight if VWRP is above 45%
+Q1 2027      Value engine tilt            IWVL LN Redirect portion of VWRP contributions; IWVL absorbs into engine sleeve
+
+The farm does not need to be rebuilt tonight. The machine travels through all four quadrants. The signed sentence stays the hand. But the universe has been screened — and the gaps are now named.
+
+
+
+BQL
+for(['FUSD LN Equity', 'IWMO LN Equity', 'IWQU LN Equity', 'IWVL LN Equity', 'JPGL LN Equity', 'MVOL LN Equity', 'VHYL LN Equity']) get(ann_total_return(calc_interval=3Y), fund_total_assets, name, total_return(calc_interval=1Y), total_return(calc_interval=YTD))
+
+BQL
+for(['FQAL US Equity', 'FUSD LN Equity', 'FVAL US Equity', 'HDIV CN Equity', 'IWMO LN Equity', 'IWQU LN Equity', 'IWVL LN Equity', 'JPGL LN Equity', 'MVOL LN Equity', 'VHYL LN Equity']) get(fund_total_assets, name)
+
+BQL
+for(['FQAL US Equity', 'FUSD LN Equity', 'FVAL US Equity', 'HDIV CN Equity', 'IWMO LN Equity', 'IWQU LN Equity', 'IWVL LN Equity', 'JPGL LN Equity', 'MVOL LN Equity', 'VHYL LN Equity']) get(bs_assets_under_mgmt, estimated_aum, fund_net_asset_val)
+
+BQL
+for(['ERNX GY Equity', 'FLOT LN Equity', 'GISG LN Equity', 'IGLS LN Equity', 'ISXF LN Equity', 'SDHY LN Equity', 'TIPS LN Equity', 'USFR LN Equity', 'XSTR LN Equity']) get(fund_net_asset_val, fund_total_assets, name, total_return(calc_interval=1Y), total_return(calc_interval=YTD))
+
+BQL
+for(holdings('FLOT LN Equity')) get(wavg(group(duration), group(weight)), wavg(group(yield(yield_type=YTM)), group(weight)))
+
+BQL
+for(holdings('USFR LN Equity')) get(wavg(group(duration), group(weight)), wavg(group(yield(yield_type=YTM)), group(weight)))
+
+BQL
+for(holdings('GISG LN Equity')) get(wavg(group(duration), group(weight)), wavg(group(yield(yield_type=YTM)), group(weight)))
+
+BQL
+for(holdings('TIPS LN Equity')) get(wavg(group(duration), group(weight)), wavg(group(yield(yield_type=YTM)), group(weight)))
+
+BQL
+for(holdings('IGLS LN Equity')) get(wavg(group(duration), group(weight)), wavg(group(yield(yield_type=YTM)), group(weight)))
+
+BQL
+for(holdings('XSTR LN Equity')) get(wavg(group(duration), group(weight)), wavg(group(yield(yield_type=YTM)), group(weight)))
+
+BQL
+for(holdings('SDHY LN Equity')) get(wavg(group(duration), group(weight)), wavg(group(yield(yield_type=YTM)), group(weight)))
+
+BQL
+for(holdings('ISXF LN Equity')) get(wavg(group(duration), group(weight)), wavg(group(yield(yield_type=YTM)), group(weight)))
+
+BQL
+for(holdings('ERNX GY Equity')) get(wavg(group(duration), group(weight)), wavg(group(yield(yield_type=YTM)), group(weight)))
+
+BQL
+for(['FLOT LN Equity', 'GISG LN Equity', 'IGLS LN Equity', 'ISXF LN Equity', 'SDHY LN Equity', 'TIPS LN Equity', 'USFR LN Equity', 'XSTR LN Equity']) get(fund_asset_class_focus, fund_typ, name)
+
+
+Sources
+
+1. China Macro Review >> Quantitative Strategy #20: How to Invest in China ETFs
+RESEARCH 08/05/22
+
+2. The Real Asset Rotation is Underway
+RESEARCH 03/22/26
+
+3. Higher-Yielding Assets Steady in Times of War and Peace
+RESEARCH 03/09/26
+
+4. Carbon Goals Complement Factor Strategies With Sector Screening
+RESEARCH 12/14/22
+
+5. Record ETF Flows Shows Investors' Cautious Appetite for Risk
+RESEARCH 08/31/26

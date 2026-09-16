@@ -35,8 +35,9 @@ function ListenIndex() {
       </p>
       <h1 className="mt-3 font-mono text-4xl tracking-tight">Listen in order. Skip by chapter.</h1>
       <p className="mt-4 font-sans text-base leading-relaxed text-muted">
-        Season one teaches the seven jobs. Season two is the house, the numbers,
-        Prime, and the full lesson. Education only.
+        Season one teaches the seven jobs. Season two is the house and Prime I.
+        Season three is the lock: Prime II, the derrick, the universe, the third.
+        Education only.
       </p>
 
       {resume && (

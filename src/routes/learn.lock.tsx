@@ -27,13 +27,13 @@ function LockPage() {
   return (
     <div className="space-y-10">
       <header className="max-w-2xl">
-        <p className="stamp text-[11px] text-accent">Lock file · teaching</p>
+        <p className="stamp text-[11px] text-accent">Lock file · Prime II stamped 16 Sep 08:23</p>
         <h1 className="mt-3 font-mono text-4xl tracking-tight">
           The only document that authorises AutoInvest.
         </h1>
         <p className="mt-3 font-sans text-sm leading-relaxed text-muted">
-          A briefing, an analysis, a conversation — none of these are a change
-          log entry. This page is a classroom. It does not move T212.
+          Prime II is the house lock. The live pad is still fourteen lines.
+          Change date is 17 Sep. First cash 3 Oct. This page does not move T212.
         </p>
       </header>
 

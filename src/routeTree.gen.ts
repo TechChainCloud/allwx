@@ -25,11 +25,17 @@ import { Route as JobsIndexRouteImport } from './routes/jobs.index'
 import { Route as JobsIdRouteImport } from './routes/jobs.$id'
 import { Route as LearnIndexRouteImport } from './routes/learn.index'
 import { Route as LearnAtlasRouteImport } from './routes/learn.atlas'
+import { Route as LearnCompareRouteImport } from './routes/learn.compare'
 import { Route as LearnDecideRouteImport } from './routes/learn.decide'
+import { Route as LearnDerrickRouteImport } from './routes/learn.derrick'
+import { Route as LearnLibraryRouteImport } from './routes/learn.library'
 import { Route as LearnLockRouteImport } from './routes/learn.lock'
 import { Route as LearnMachineRouteImport } from './routes/learn.machine'
 import { Route as LearnPathRouteImport } from './routes/learn.path'
+import { Route as LearnPrime2RouteImport } from './routes/learn.prime2'
 import { Route as LearnQuizRouteImport } from './routes/learn.quiz'
+import { Route as LearnUniverseRouteImport } from './routes/learn.universe'
+import { Route as LearnYearsRouteImport } from './routes/learn.years'
 import { Route as ListenIndexRouteImport } from './routes/listen.index'
 import { Route as ListenSlugRouteImport } from './routes/listen.$slug'
 
@@ -113,9 +119,24 @@ const LearnAtlasRoute = LearnAtlasRouteImport.update({
   path: '/atlas',
   getParentRoute: () => LearnRoute,
 } as any)
+const LearnCompareRoute = LearnCompareRouteImport.update({
+  id: '/compare',
+  path: '/compare',
+  getParentRoute: () => LearnRoute,
+} as any)
 const LearnDecideRoute = LearnDecideRouteImport.update({
   id: '/decide',
   path: '/decide',
+  getParentRoute: () => LearnRoute,
+} as any)
+const LearnDerrickRoute = LearnDerrickRouteImport.update({
+  id: '/derrick',
+  path: '/derrick',
+  getParentRoute: () => LearnRoute,
+} as any)
+const LearnLibraryRoute = LearnLibraryRouteImport.update({
+  id: '/library',
+  path: '/library',
   getParentRoute: () => LearnRoute,
 } as any)
 const LearnLockRoute = LearnLockRouteImport.update({
@@ -133,9 +154,24 @@ const LearnPathRoute = LearnPathRouteImport.update({
   path: '/path',
   getParentRoute: () => LearnRoute,
 } as any)
+const LearnPrime2Route = LearnPrime2RouteImport.update({
+  id: '/prime2',
+  path: '/prime2',
+  getParentRoute: () => LearnRoute,
+} as any)
 const LearnQuizRoute = LearnQuizRouteImport.update({
   id: '/quiz',
   path: '/quiz',
+  getParentRoute: () => LearnRoute,
+} as any)
+const LearnUniverseRoute = LearnUniverseRouteImport.update({
+  id: '/universe',
+  path: '/universe',
+  getParentRoute: () => LearnRoute,
+} as any)
+const LearnYearsRoute = LearnYearsRouteImport.update({
+  id: '/years',
+  path: '/years',
   getParentRoute: () => LearnRoute,
 } as any)
 const ListenIndexRoute = ListenIndexRouteImport.update({
@@ -164,11 +200,17 @@ export interface FileRoutesByFullPath {
   '/weathers': typeof WeathersRoute
   '/jobs/$id': typeof JobsIdRoute
   '/learn/atlas': typeof LearnAtlasRoute
+  '/learn/compare': typeof LearnCompareRoute
   '/learn/decide': typeof LearnDecideRoute
+  '/learn/derrick': typeof LearnDerrickRoute
+  '/learn/library': typeof LearnLibraryRoute
   '/learn/lock': typeof LearnLockRoute
   '/learn/machine': typeof LearnMachineRoute
   '/learn/path': typeof LearnPathRoute
+  '/learn/prime2': typeof LearnPrime2Route
   '/learn/quiz': typeof LearnQuizRoute
+  '/learn/universe': typeof LearnUniverseRoute
+  '/learn/years': typeof LearnYearsRoute
   '/listen/$slug': typeof ListenSlugRoute
   '/jobs/': typeof JobsIndexRoute
   '/learn/': typeof LearnIndexRoute
@@ -187,11 +229,17 @@ export interface FileRoutesByTo {
   '/weathers': typeof WeathersRoute
   '/jobs/$id': typeof JobsIdRoute
   '/learn/atlas': typeof LearnAtlasRoute
+  '/learn/compare': typeof LearnCompareRoute
   '/learn/decide': typeof LearnDecideRoute
+  '/learn/derrick': typeof LearnDerrickRoute
+  '/learn/library': typeof LearnLibraryRoute
   '/learn/lock': typeof LearnLockRoute
   '/learn/machine': typeof LearnMachineRoute
   '/learn/path': typeof LearnPathRoute
+  '/learn/prime2': typeof LearnPrime2Route
   '/learn/quiz': typeof LearnQuizRoute
+  '/learn/universe': typeof LearnUniverseRoute
+  '/learn/years': typeof LearnYearsRoute
   '/listen/$slug': typeof ListenSlugRoute
   '/jobs': typeof JobsIndexRoute
   '/learn': typeof LearnIndexRoute
@@ -213,11 +261,17 @@ export interface FileRoutesById {
   '/weathers': typeof WeathersRoute
   '/jobs/$id': typeof JobsIdRoute
   '/learn/atlas': typeof LearnAtlasRoute
+  '/learn/compare': typeof LearnCompareRoute
   '/learn/decide': typeof LearnDecideRoute
+  '/learn/derrick': typeof LearnDerrickRoute
+  '/learn/library': typeof LearnLibraryRoute
   '/learn/lock': typeof LearnLockRoute
   '/learn/machine': typeof LearnMachineRoute
   '/learn/path': typeof LearnPathRoute
+  '/learn/prime2': typeof LearnPrime2Route
   '/learn/quiz': typeof LearnQuizRoute
+  '/learn/universe': typeof LearnUniverseRoute
+  '/learn/years': typeof LearnYearsRoute
   '/listen/$slug': typeof ListenSlugRoute
   '/jobs/': typeof JobsIndexRoute
   '/learn/': typeof LearnIndexRoute
@@ -240,11 +294,17 @@ export interface FileRouteTypes {
     | '/weathers'
     | '/jobs/$id'
     | '/learn/atlas'
+    | '/learn/compare'
     | '/learn/decide'
+    | '/learn/derrick'
+    | '/learn/library'
     | '/learn/lock'
     | '/learn/machine'
     | '/learn/path'
+    | '/learn/prime2'
     | '/learn/quiz'
+    | '/learn/universe'
+    | '/learn/years'
     | '/listen/$slug'
     | '/jobs/'
     | '/learn/'
@@ -263,11 +323,17 @@ export interface FileRouteTypes {
     | '/weathers'
     | '/jobs/$id'
     | '/learn/atlas'
+    | '/learn/compare'
     | '/learn/decide'
+    | '/learn/derrick'
+    | '/learn/library'
     | '/learn/lock'
     | '/learn/machine'
     | '/learn/path'
+    | '/learn/prime2'
     | '/learn/quiz'
+    | '/learn/universe'
+    | '/learn/years'
     | '/listen/$slug'
     | '/jobs'
     | '/learn'
@@ -288,11 +354,17 @@ export interface FileRouteTypes {
     | '/weathers'
     | '/jobs/$id'
     | '/learn/atlas'
+    | '/learn/compare'
     | '/learn/decide'
+    | '/learn/derrick'
+    | '/learn/library'
     | '/learn/lock'
     | '/learn/machine'
     | '/learn/path'
+    | '/learn/prime2'
     | '/learn/quiz'
+    | '/learn/universe'
+    | '/learn/years'
     | '/listen/$slug'
     | '/jobs/'
     | '/learn/'
@@ -430,11 +502,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LearnAtlasRouteImport
       parentRoute: typeof LearnRoute
     }
+    '/learn/compare': {
+      id: '/learn/compare'
+      path: '/compare'
+      fullPath: '/learn/compare'
+      preLoaderRoute: typeof LearnCompareRouteImport
+      parentRoute: typeof LearnRoute
+    }
     '/learn/decide': {
       id: '/learn/decide'
       path: '/decide'
       fullPath: '/learn/decide'
       preLoaderRoute: typeof LearnDecideRouteImport
+      parentRoute: typeof LearnRoute
+    }
+    '/learn/derrick': {
+      id: '/learn/derrick'
+      path: '/derrick'
+      fullPath: '/learn/derrick'
+      preLoaderRoute: typeof LearnDerrickRouteImport
+      parentRoute: typeof LearnRoute
+    }
+    '/learn/library': {
+      id: '/learn/library'
+      path: '/library'
+      fullPath: '/learn/library'
+      preLoaderRoute: typeof LearnLibraryRouteImport
       parentRoute: typeof LearnRoute
     }
     '/learn/lock': {
@@ -458,11 +551,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LearnPathRouteImport
       parentRoute: typeof LearnRoute
     }
+    '/learn/prime2': {
+      id: '/learn/prime2'
+      path: '/prime2'
+      fullPath: '/learn/prime2'
+      preLoaderRoute: typeof LearnPrime2RouteImport
+      parentRoute: typeof LearnRoute
+    }
     '/learn/quiz': {
       id: '/learn/quiz'
       path: '/quiz'
       fullPath: '/learn/quiz'
       preLoaderRoute: typeof LearnQuizRouteImport
+      parentRoute: typeof LearnRoute
+    }
+    '/learn/universe': {
+      id: '/learn/universe'
+      path: '/universe'
+      fullPath: '/learn/universe'
+      preLoaderRoute: typeof LearnUniverseRouteImport
+      parentRoute: typeof LearnRoute
+    }
+    '/learn/years': {
+      id: '/learn/years'
+      path: '/years'
+      fullPath: '/learn/years'
+      preLoaderRoute: typeof LearnYearsRouteImport
       parentRoute: typeof LearnRoute
     }
     '/listen/': {
@@ -496,21 +610,33 @@ const JobsRouteWithChildren = JobsRoute._addFileChildren(JobsRouteChildren)
 
 interface LearnRouteChildren {
   LearnAtlasRoute: typeof LearnAtlasRoute
+  LearnCompareRoute: typeof LearnCompareRoute
   LearnDecideRoute: typeof LearnDecideRoute
+  LearnDerrickRoute: typeof LearnDerrickRoute
+  LearnLibraryRoute: typeof LearnLibraryRoute
   LearnLockRoute: typeof LearnLockRoute
   LearnMachineRoute: typeof LearnMachineRoute
   LearnPathRoute: typeof LearnPathRoute
+  LearnPrime2Route: typeof LearnPrime2Route
   LearnQuizRoute: typeof LearnQuizRoute
+  LearnUniverseRoute: typeof LearnUniverseRoute
+  LearnYearsRoute: typeof LearnYearsRoute
   LearnIndexRoute: typeof LearnIndexRoute
 }
 
 const LearnRouteChildren: LearnRouteChildren = {
   LearnAtlasRoute: LearnAtlasRoute,
+  LearnCompareRoute: LearnCompareRoute,
   LearnDecideRoute: LearnDecideRoute,
+  LearnDerrickRoute: LearnDerrickRoute,
+  LearnLibraryRoute: LearnLibraryRoute,
   LearnLockRoute: LearnLockRoute,
   LearnMachineRoute: LearnMachineRoute,
   LearnPathRoute: LearnPathRoute,
+  LearnPrime2Route: LearnPrime2Route,
   LearnQuizRoute: LearnQuizRoute,
+  LearnUniverseRoute: LearnUniverseRoute,
+  LearnYearsRoute: LearnYearsRoute,
   LearnIndexRoute: LearnIndexRoute,
 }
 

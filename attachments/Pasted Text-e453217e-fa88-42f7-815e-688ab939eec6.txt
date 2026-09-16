@@ -1,0 +1,163 @@
+WNRG LN vs IOGP LN — Full Comparison
+
+The One-Line Answer
+
+IOGP is the purer energy play. WNRG is the more resilient farm line. They are not interchangeable — they are structurally different portfolios that happen to share the same sector label.
+
+Sub-Sector Breakdown: The Defining Difference
+
+This is the most important data point in the entire comparison. The two ETFs have almost no sub-sector overlap.
+
+
+
+Sub-Sector                     WNRG LN IOGP LN
+Integrated Oils                50.32%  0.00%
+Exploration & Production (E&P) 18.77%  98.36%
+Midstream                      13.52%  1.02%
+Refining & Marketing           10.00%  0.00%
+Oilfield Services              5.05%   0.00%
+
+BQL
+for(holdings('WNRG LN Equity')) get(sum(group(weight, by=classification_name(BICS, 4))))
+
+BQL
+for(holdings('IOGP LN Equity')) get(sum(group(weight, by=classification_name(BICS, 4))))
+
+WNRG is a full energy value chain ETF. Half its weight sits in integrated majors — companies like ExxonMobil, Shell, TotalEnergies, and BP — which have downstream refining, chemicals, and increasingly LNG and power businesses that partially insulate them from the raw oil price. Integrated companies are more shielded from volatility due to global and downstream value chain diversification. Bloomberg Intelligence
+
+IOGP is a pure upstream extraction bet. At 98.36% E&P, it owns companies whose entire business is finding and producing oil and gas. When the oil price moves, IOGP moves with it — amplified by operating leverage. Higher beta E&P and oil-services ETFs show more responsiveness in recent movements compared to producers, refiners, and integrated companies. Bloomberg Intelligence
+
+Holdings Overlap: Minimal
+
+Across the top 10 holdings of each ETF, only two names appear in both:
+
+
+
+Company                    WNRG Weight IOGP Weight Character
+ConocoPhillips             4.39%       10.68%      Large-cap E&P — the bridge name
+Canadian Natural Resources 2.74%       10.31%      Oil sands E&P — pure upstream
+
+The remaining eight names in each top 10 are entirely different. WNRG's top holdings are the integrated majors: XOM (17.93%), CVX (10.25%), Shell (7.00%), TotalEnergies (4.60%), BP (3.14%). IOGP's top holdings are pure-play E&Ps: EOG Resources (9.92%), Devon Energy (7.41%), Woodside Energy (5.79%), Diamondback Energy (5.16%), EQT (4.30%). These are fundamentally different companies with fundamentally different risk profiles.
+
+
+
+BQL
+for(top(holdings('WNRG LN Equity'), 10, weight)) get(id_isin, name, weight)
+
+BQL
+for(top(holdings('IOGP LN Equity'), 10, weight)) get(id_isin, name, weight)
+
+Geographic Breakdown
+
+Both funds are US-anchored at ~62%, but diverge sharply after that.
+
+
+
+Country        WNRG LN IOGP LN
+United States  61.68%  62.85%
+Canada         14.02%  20.33%
+United Kingdom 10.91%  0.51%
+France         4.60%   0.00%
+Australia      1.62%   8.66%
+Japan          1.36%   3.31%
+Norway         1.22%   2.68%
+
+BQL
+for(holdings('WNRG LN Equity')) get(sum(group(weight, by=cntry_of_domicile)))
+
+BQL
+for(holdings('IOGP LN Equity')) get(sum(group(weight, by=cntry_of_domicile)))
+
+WNRG's UK (10.91%) and France (4.60%) weights are almost entirely Shell, BP, and TotalEnergies — the European integrated majors. IOGP has virtually no European integrated exposure (UK 0.51%). Instead, IOGP has a heavier Canada weight (20.33% vs 14.02%) and meaningful Australia exposure (8.66% vs 1.62%) — reflecting pure-play E&P names like Woodside Energy and Inpex.
+
+Fund Metrics Head-to-Head
+
+
+
+Metric         WNRG LN           IOGP LN           Edge
+AUM            $609M             $449M             WNRG — larger, more liquid
+OCF            0.30%             0.55%             WNRG — 25bp cheaper annually
+Holdings       67                74                Similar breadth
+YTD Return     +47.92%           +42.82%           WNRG — +5.1pp ahead
+1Y Return      +43.19%           +39.89%           WNRG — +3.3pp ahead
+Index          MSCI World Energy S&P Oil & Gas E&P Different mandates entirely
+Oil price beta Medium            High              IOGP — purer commodity play
+Drawdown risk  Lower             Higher            WNRG — integrated majors cushion
+
+The Regime Analysis: When Each Wins
+
+IOGP wins when:
+
+Oil price surges sharply — pure E&P operating leverage amplifies the move. Oil E&Ps are discounting approximately $65 WTI at current prices, meaning any sustained move above that level flows directly to free cash flow. Barclays
+
+Deep stagflation — the 1973–1980 analogue. Pure upstream E&P was the highest-returning sub-sector in that decade. Upstream sector valuations remain compelling at approximately 5x 2027E EV/DACF for oil-weighted E&Ps. Barclays
+
+Geopolitical supply shock — E&P companies with production assets benefit directly from price spikes. Energy equities have retraced wartime gains, with 2027 unlevered free cash flow yields remaining compelling at approximately 9.5% for diversified/oil-weighted E&Ps. Barclays
+
+WNRG wins when:
+
+Oil price is volatile but not directional — integrated majors' downstream businesses (refining, chemicals, LNG) provide earnings stability when the upstream is choppy. Integrated companies are traditionally more defensive due to their asset composition. Bloomberg Intelligence
+
+Dividend income matters — Shell's dividend breakeven is approximately $28/bbl, with a consistent $3bn quarterly buyback program. UBS Integrated majors distribute more reliably than pure E&Ps.
+
+Energy transition is a concern — European integrated majors' upstream portfolios are increasingly skewed toward natural gas, with expectations to reach at least 50% by 2030, driven by long-term demand growth and gas' role in the energy mix. Bloomberg Intelligence
+
+Regime uncertainty — the diversified value chain (refining, midstream, services) means WNRG participates in energy sector strength without being fully dependent on the oil price direction.
+
+The Farm Verdict
+
+The Principia framework asks one question: which line earns its allocation across the most economic weathers without losing the farm in the worst one?
+
+For the farm as currently constructed, WNRG LN is the correct first addition. Here is why:
+
+The farm already has ICOM (broad commodities) providing indirect oil price exposure. Adding IOGP on top would create a double-concentration in raw commodity beta — two lines that both fall hard when oil reverses.
+
+WNRG's integrated major exposure (50.32%) adds something the farm genuinely lacks: large-cap energy equity with dividend income, balance sheet strength, and downstream diversification. Shell, XOM, and TotalEnergies are not the same risk as ICOM.
+
+WNRG's OCF of 0.30% vs IOGP's 0.55% is a 25bp annual drag difference — meaningful over a decade of contributions.
+
+WNRG's larger AUM ($609M vs $449M) means tighter spreads and better liquidity for a GBP ISA where the position will be built slowly via monthly contributions.
+
+IOGP belongs on the watch list, not the buy list — yet. If the regime shifts decisively into deep stagflation (Brent sustains above $120, CPI re-accelerates above 7%), IOGP's pure E&P beta becomes the highest-conviction line in the entire universe screen. At that point, the farm could hold both: WNRG as the structural energy line and IOGP as a tactical overweight — but that would require a seventeenth line, which the protocol does not permit. The signed sentence stays the hand.
+
+The one scenario where IOGP is the better first addition: if the farm's goal is maximum stagflation protection and the engine (VWRP) is already providing sufficient integrated-major exposure via its ~4% energy sector weight. In that case, IOGP's pure upstream beta adds something genuinely incremental. But at 45% VWRP, the engine's energy weight is only ~1.8% of the total farm — not enough to make IOGP redundant. WNRG remains the priority.
+
+Suggested Principia line name for WNRG: "The Derrick" — the structure that sits above the well, not the well itself.
+
+
+
+BQL
+for(['IOGP LN Equity', 'WNRG LN Equity']) get(ann_total_return(calc_interval=3Y), dividend_yield, fund_benchmark, fund_expense_ratio, fund_total_assets, name, security_des, total_return(calc_interval=1Y), total_return(calc_interval=YTD))
+
+BQL
+for(holdings('WNRG LN Equity')) get(count(group(id)))
+
+BQL
+for(holdings('IOGP LN Equity')) get(count(group(id)))
+
+
+Sources
+
+1. Revisions Aid Energy Earnings But Sector Challenged
+RESEARCH 07/09/26
+
+2. Energy ETFs Rally Unevenly as Signals Diverge: Weekly ETF Pack
+RESEARCH 08/11/26
+
+3. [Delayed] U.S. Integrated Oil & E&P: Reflecting on Sector Valuation
+RESEARCH 06/26/26
+
+4. [Delayed] In Case You Missed It: Weekly Equity Market Commentary & Conviction Calls
+RESEARCH 08/20/26
+
+5. [Delayed] U.S. Integrated Oil & E&P: 2Q26 Mark-to-Market
+RESEARCH 07/13/26
+
+6. Metrics Change on Sentiment, War and Summer
+RESEARCH 07/08/26
+
+7. [Delayed] European Equity Strategy "Europe's quiet comeback" Fowler
+RESEARCH 09/14/26
+
+8. Deep Dive: AI Data Centers to Send Electricity Demand Soaring
+RESEARCH 09/10/24

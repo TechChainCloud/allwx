@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Play } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { EPISODES, PRINCIPLES, SEVEN_QUESTIONS, STUDY } from "@/lib/content";
+import { EPISODES, PRINCIPLES, SEVEN_QUESTIONS, STUDY, episodeBySlug } from "@/lib/content";
 import { usePlayer } from "@/store/player";
 
 export const Route = createFileRoute("/study")({ component: StudyPage });
@@ -16,7 +16,7 @@ function StudyPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-10">
       <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-accent">
-        STUDY · TWELVE MONTHS · CLOSE 8 SEP
+        STUDY · TWELVE MONTHS · LOCK 16 SEP
       </p>
       <h1 className="mt-3 font-mono text-4xl tracking-tight">
         Learn the jobs before you decorate a platform
@@ -24,32 +24,39 @@ function StudyPage() {
       <p className="mt-4 font-sans text-lg leading-relaxed text-muted">
         A weekend of tickers is how people collect uniforms. Twelve months of
         mechanisms is how a household still holds when the weather changes.
-        Prime is the design lock. The live ISA is still fourteen lines.
+        Prime II is the lock. The live ISA is still fourteen lines. Season three
+        is the new tape.
       </p>
 
       <ol className="mt-10 space-y-3">
-        {STUDY.map((m, i) => (
+        {STUDY.map((m) => (
           <li key={m.month} className="rounded-md border border-line bg-panel p-5">
             <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-cyan">
               {m.month}
             </p>
             <h2 className="mt-1 font-mono text-2xl">{m.title}</h2>
             <p className="mt-2 font-sans leading-relaxed text-muted">{m.body}</p>
-            {EPISODES[Math.min(i, EPISODES.length - 1)] && (
-              <div className="mt-4 flex items-center gap-3">
-                <Button
-                  size="sm"
-                  variant="outline"
-                  onClick={() => play(EPISODES[Math.min(i, EPISODES.length - 1)].slug)}
-                >
-                  <Play className="size-3.5 translate-x-px" />
-                  EP {EPISODES[Math.min(i, EPISODES.length - 1)].code}
-                </Button>
-                {ready && completed.includes(EPISODES[Math.min(i, EPISODES.length - 1)].slug) && (
+            <div className="mt-4 flex flex-wrap items-center gap-3">
+              {m.play.map((slug) => {
+                const ep = episodeBySlug(slug);
+                if (!ep) return null;
+                return (
+                  <Button
+                    key={slug}
+                    size="sm"
+                    variant="outline"
+                    onClick={() => play(ep.slug)}
+                  >
+                    <Play className="size-3.5 translate-x-px" />
+                    EP {ep.code}
+                  </Button>
+                );
+              })}
+              {ready &&
+                m.play.every((s) => completed.includes(s)) && (
                   <span className="font-mono text-xs text-up">HEARD</span>
                 )}
-              </div>
-            )}
+            </div>
           </li>
         ))}
       </ol>
@@ -73,34 +80,19 @@ function StudyPage() {
         <ol className="mt-4 space-y-3">
           {PRINCIPLES.map((line, i) => (
             <li key={line} className="flex gap-4 font-sans leading-relaxed">
-              <span className="w-5 font-mono text-accent">{i + 1}</span>
+              <span className="w-5 shrink-0 font-mono text-accent">{i + 1}</span>
               {line}
             </li>
           ))}
         </ol>
       </section>
 
-      <p className="mt-12 font-sans text-sm leading-relaxed text-muted">
-        Starting points, none of which are endorsements: Dalio, How the Economic
-        Machine Works; public Bridgewater notes on All Weather and risk parity;
-        Antti Ilmanen on expected returns; standard fixed-income chapters on
-        duration. Read the disagreements. A framework that cannot survive a
-        smart opponent is a slogan.
+      <p className="mt-12 font-sans text-sm text-muted">
+        {EPISODES.length} episodes. Education only.{" "}
+        <Link to="/listen" className="text-accent hover:text-fg">
+          OPEN SERIES →
+        </Link>
       </p>
-      <div className="mt-6 flex flex-wrap gap-4">
-        <Link to="/debate" className="font-mono text-sm text-accent hover:underline">
-          DEBATE {"<GO>"}
-        </Link>
-        <Link to="/lab" className="font-mono text-sm text-cyan hover:underline">
-          LAB
-        </Link>
-        <Link to="/tape" className="font-mono text-sm text-cyan hover:underline">
-          TONIGHT'S TAPE
-        </Link>
-        <Link to="/" className="font-mono text-sm text-muted hover:underline">
-          ALLWX {"<GO>"}
-        </Link>
-      </div>
     </div>
   );
 }

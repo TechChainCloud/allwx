@@ -1,6 +1,6 @@
-export const PLAN_ASOF = "2026-09-09";
+export const PLAN_ASOF = "2026-09-16";
 export const PLAN_SENTENCE =
-  "Brent $100.95. Overlay co-primary. IDTL in the penalty box. Walk-back inactive. Thursday 10 Sep CPI 13:30 BST is the next print. 16 Sep FOMC. Then the only action date: 3 October. House holds. Do not rebuild T212. DBMF stays a gate.";
+  "Live = lock. T212 09:46 BST, NAV £1,083.45, 17 lines. VAGS and IDTL sold. FOMC tonight 19:00. 3 Oct fills IGLS/URNG/SMGB drift. Walk-back still off. No eighteenth line.";
 
 export const CALENDAR: {
   date: string;

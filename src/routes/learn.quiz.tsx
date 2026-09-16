@@ -17,7 +17,7 @@ function QuizPage() {
     <div className="space-y-8">
       <header className="max-w-2xl">
         <p className="stamp text-[11px] text-accent">Drills</p>
-        <h1 className="mt-3 font-mono text-4xl tracking-tight">Twelve questions. No costume.</h1>
+        <h1 className="mt-3 font-mono text-4xl tracking-tight">Twenty questions. No costume.</h1>
         <p className="mt-3 font-sans text-sm leading-relaxed text-muted">
           Score {right}/{total} correct · {done} answered. Progress stays on this
           device. Education only.

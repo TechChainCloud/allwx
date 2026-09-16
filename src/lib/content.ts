@@ -1,3 +1,5 @@
+import { S3 } from "@/lib/season3";
+
 export type JobId =
   | "shares"
   | "bonds"
@@ -40,14 +42,15 @@ export type Episode = {
   chapters: { t: number; label: string }[];
   transcript: Line[];
   season?: string;
+  lockNote?: string;
 };
 
 export const SERIES = {
   title: "ALLWX",
   tagline: "All Weather Terminal",
-  season: "S1 · CLASSROOM",
+  season: "S3 · LOCK",
   description:
-    "A Bridgewater-inspired teaching terminal. Two-desk briefing. Four regimes. Seven sleeves. Bloomberg functions as the measurement system. Education only — not the All Weather fund, not advice.",
+    "A Bridgewater-inspired teaching terminal. Two-desk briefing. Four regimes. Seven classroom jobs. Prime II is the house lock. Education only — not the All Weather fund, not advice.",
 };
 
 export const JOBS: Job[] = [
@@ -64,7 +67,7 @@ export const JOBS: Job[] = [
     principle: "Hire residual claims to compound productivity. Do not hire them as insurance.",
     failure: "A long recession or a sharp rise in the discount rate. A bad decade is not a fired employee.",
     blurb:
-      "A residual claim on thousands of firms. Everyone else gets paid first. The productivity clock showing up in a price.",
+      "A residual claim on thousands of firms. Everyone else gets paid first. The productivity clock showing up in a price. Prime II keeps the engine at 45: 38 cap-weight plus 7 value.",
     forYoung:
       "Future wages are already a growth asset. Stacking 100% listed equity on a cyclical labour market is how sequence risk arrives early.",
   },
@@ -81,7 +84,7 @@ export const JOBS: Job[] = [
     principle: "A yield is a price. Duration is the transmission. Name it.",
     failure: "Treating a thirty-year and an overnight bill as the same 'bond'.",
     blurb:
-      "A promise of currency, not a request that a company become more valuable. YAS for the mark. GC for the curve.",
+      "A promise of currency, not a request that a company become more valuable. YAS for the mark. GC for the curve. Prime II replaces VAGS with FLOT by drift — carry, not convexity. Named.",
     forYoung:
       "A sterling-hedged IG book is a closer match to the classroom job than an accidental dollar trade dressed as defensive.",
   },
@@ -132,7 +135,7 @@ export const JOBS: Job[] = [
     principle: "If the stuff everyone needs becomes the problem, own a little of the stuff.",
     failure: "Long quiet contango. Not a permanent return machine.",
     blurb:
-      "A claim on inputs expressed through futures curves. Backwardation can pay. Contango can tax. CL1 and C LC1 are not the index.",
+      "A claim on inputs expressed through futures curves. Backwardation can pay. Contango can tax. Prime II keeps ICOM at 8. The derrick is energy equity — a different job.",
     forYoung:
       "A decade of contango can look dead while headlines sound dramatic. This sleeve is seasonal in a deeper sense than weather.",
   },
@@ -166,7 +169,7 @@ export const JOBS: Job[] = [
     principle: "Respond to one crisis shape, then stand down. They are not safe in every fire.",
     failure: "Using a six-percent sleeve as a sixty-percent blanket. Fiscal inflation is the wrong fire.",
     blurb:
-      "Enormous duration. One crisis shape. That is why gold, linkers and commodities still have jobs. DUR_MID tells you the load.",
+      "Enormous duration. One crisis shape. Prime II starves IDTL of new cash and scores deflation C. Named. DUR_MID tells you the load.",
     forYoung:
       "A modest weight can still matter because duration is large. It is the wrong brigade for a supply-shock fire.",
   },
@@ -237,23 +240,25 @@ export const PRINCIPLES = [
   "Duration is a tool and a risk. Name it. A thirty-year and an overnight bill are not the same word 'bond'.",
   "Gold is not CPI. Linkers are not gold. Commodities are not linkers. Cash is not duration.",
   "They are supposed to disagree. Score a sleeve against its contract. Do not fire the quiet employee.",
-  "Three books. Classroom seven teaches the rooms. Live fourteen is tonight's pad. Prime fifteen is the design lock. Do not flatten them.",
+  "Three books became five. Classroom seven. Live fourteen. Prime I archived. Machine draft superseded. Prime II is the lock. Do not flatten the pad.",
   "2022 is the proof. Prime −5.24 versus S&P −18.64 and 60/40 −16. The inflation exam is the exam sixty-forty was not built for.",
   "2025 is the surprise. Gold, copper, goods carried a reflation year. Already staffed. Not predicted.",
   "At the 2008 trough the all-weather book had more pounds left. That is the behavioural architecture working.",
-  "Gold floor is ten in the classroom. Prime prints 9.6. Name the breach. Do not move the floor because a pie looks finished.",
-  "INXG is probation. UK CPI is not US CPI. The five-year wreck is still the veto. Write a kill rule.",
+  "Gold floor is ten in the classroom. Prime II prints eight. Named. Do not move the floor because a pie looks finished.",
+  "The derrick is not irrigation. WNRG is integrated energy equity. IOGP is 98% E&P. ICOM is the stuff. Three uniforms is a costume.",
+  "The float is not the umbrella. FLOT is 1.67y carry. VAGS was 7–8y convexity. Firing duration because this cycle’s correlation is positive is a regime call.",
+  "The long spring is hired for 2008. A negative three-year in a hiking cycle is the job working. Prime II starves it anyway and scores deflation C. Named.",
+  "INXG is still probation. UK CPI is not US CPI. The five-year wreck is still the veto. Write a kill rule.",
   "Walk-back is two keys: PMI under 50 and 2s10s inverted. Tonight both are clear. Observe. Do not pre-position.",
+  "IWVL absorbing VWRP is the only add that does not invent a line. Combined engine 45%. Phase 1 at £10k already named it.",
   "Hard cap, walk-back, core drift, satellite drift, 75/25 split, satellite collective 20%. Higher priority eats the cash.",
   "Contribution rate dominates allocation until the book is funded. Doubling £200 to £400 is ~2.5pp of return without rewriting the lock.",
   "Prime cannot honestly do 10–15% for 30 years. That path is a tracker, a tilt, or leverage a retail ISA cannot hold.",
-  "Sunny-Day compounds more if you never sell a −30 year. The question is behavioural. Thirteen of eighteen lines are clean rejects.",
-  "DBMF is a gated candidate, not a sixteenth lock. T212 AutoInvest first. Then VAGS 13.5 → 10.5. Not before.",
-  "TER is the only guaranteed negative return. Prime ~0.14%. Every 0.10pp saved is real terminal value.",
-  "Weight changes run on a monthly clock. New lines run on a multi-year clock, triggered by book size, not a loud week.",
+  "DBMF is a gated candidate. T212 AutoInvest + fractional first. FLOT is listed-on-platform. Open gate is not an order.",
+  "New lines enter at 1%. Recency is the enemy of the 3rd. Size is the risk management.",
   "A protocol written during a drawdown is a rationalisation. Write it first. Do not check the book between contribution dates.",
   "Pain + reflection = progress. Write the if-then. File it. That is the compounding that matters.",
-  "Remember the jobs when the tickers change. Fifteen lines or seven. £200 on the 3rd. No hero trades.",
+  "Remember the jobs when the tickers change. Seventeen listed or seven. £200 on the 3rd. No hero trades.",
 ];
 
 export const SEVEN_QUESTIONS = [
@@ -299,61 +304,73 @@ export const STUDY = [
     month: "M1",
     title: "The machine and four rooms",
     body: "Economic Machine until you can assign a print without checking. ECO, PMI, the regime grid. Episodes 1–2. Fridge lines 1–3.",
+    play: ["the-machine", "four-rooms"],
   },
   {
     month: "M2",
     title: "Duration, real yield, 2022",
     body: "YAS. DUR_MID. GTII10. Walk 2022 as a table of who was paid. Prime −5.24 versus S&P −18.64 is the public exam. Episodes 3–4.",
+    play: ["residual-claims", "duration-weapon"],
   },
   {
     month: "M3",
     title: "Three inflation animals",
-    body: "Gold, linkers, commodities. They do not clock in on the same day. Gold floor ten. Cap ICOM at ten. Episode 5. HOUSE → PRIME LOCK.",
+    body: "Gold, linkers, commodities. They do not clock in on the same day. Classroom gold floor ten. Cap ICOM at ten. The derrick is not irrigation. Episodes 5 and 16.",
+    play: ["three-animals", "the-derrick"],
   },
   {
     month: "M4",
     title: "Currency as a decision",
-    body: "Sterling household, dollar duration, unhedged equities. VAGS is hedged on purpose. DXY is not decoration.",
+    body: "Sterling household, dollar duration, unhedged equities. VAGS was hedged on purpose. FLOT is a dollar floater. DXY is not decoration. Episode 6.",
+    play: ["powder-and-brigade"],
   },
   {
     month: "M5",
     title: "One cycle, written out",
-    body: "1970s, 2008, 2020, 2022, 2025. Paid/fined table. 2008 trough: Prime had more pounds left. That is behaviour, not a CAGR.",
+    body: "1970s, 2008, 2020, 2022, 2025, 9 Sep 2026 overlay. Paid/fined table. 2008 trough: more pounds left. That is behaviour, not a CAGR. Episode 11.",
+    play: ["years-that-paid"],
   },
   {
     month: "M6",
     title: "A year you would have looked wrong",
-    body: "Write the principle before you touch a weight. Insurance looks unemployed in goldilocks. That is the premium.",
+    body: "Write the principle before you touch a weight. Insurance looks unemployed in goldilocks. That is the premium. Episode 9.",
+    play: ["if-you-are-wrong"],
   },
   {
     month: "M7",
     title: "Two clocks and the six-priority stack",
-    body: "Hard cap. Walk-back (two keys). Core drift ±3. Satellite drift ±1.5. 75/25 split. Satellite cap 20%. RULES → HIER. Do not invent a protocol in the pain.",
+    body: "Hard cap. Walk-back (two keys). Core drift ±3. Satellite drift ±1.5. 75/25 split. Satellite cap 20%. Do not invent a protocol in the pain. Episodes 7–8.",
+    play: ["correlations-lie", "seven-questions"],
   },
   {
     month: "M8",
-    title: "Three books",
-    body: "Classroom seven. Live fourteen on T212. Prime fifteen locked 7 Sep 23:08. Do not flatten the ticket pad because a briefing was persuasive. HOUSE → PRIME LOCK.",
+    title: "Five books, one lock",
+    body: "Classroom seven. Live fourteen. Prime I archived. Machine draft superseded. Prime II stamped 16 Sep 08:23. Do not flatten T212. Episodes 13 and 15.",
+    play: ["prime-sentences", "the-lock"],
   },
   {
     month: "M9",
     title: "The argument",
-    body: "Tracker, 60/40, Sunny-Day, gold with no coupon, the decade All Weather lagged. DEBATE. Episode 9. Sunny-Day is a behavioural exam, not a TER exam.",
+    body: "Tracker, 60/40, Sunny-Day, gold with no coupon, the decade All Weather lagged. DEBATE. Sunny-Day is a behavioural exam, not a TER exam. Episode 9.",
+    play: ["if-you-are-wrong"],
   },
   {
     month: "M10",
     title: "Honest tape, the fan, the debit",
-    body: "YTD gap versus a tracker is the insurance premium. LAB PATHS: flat £200, Case 4, Case 5. Doubling the debit is ~2.5pp. Prime cannot honestly do 10–15%. Episodes 10–12. HOUSE → LIMITS.",
+    body: "YTD gap versus a tracker is the insurance premium. LAB: flat £200, Case 4, Case 5. Doubling the debit is ~2.5pp. Prime cannot honestly do 10–15%. Episodes 10 and 12.",
+    play: ["honest-numbers", "phases-and-floors"],
   },
   {
     month: "M11",
-    title: "Gates, not costumes",
-    body: "INXG probation. DBMF gated on T212 AutoInvest. INGH is an observation. 23×5 does not change the mix. HOUSE → GATE. Next cash: 3 Oct.",
+    title: "Universe and gates",
+    body: "Five filters. Rank is a screen. IWVL absorbs. FLOT is a gate. WNRG enters at 1%. Recency is the enemy of the 3rd. Episodes 16–17.",
+    play: ["the-derrick", "the-universe"],
   },
   {
     month: "M12",
     title: "Sit with the lock",
-    body: "Do not check the book between contribution dates. Walk-back inactive tonight. File the if-then. Fridge. Full lesson EP 14.",
+    body: "Do not check the book between contribution dates. Walk-back inactive tonight. File the if-then. 3 Oct is the action date. Episodes 18 and 14.",
+    play: ["the-third", "full-lesson"],
   },
 ];
 
@@ -767,17 +784,19 @@ export const EPISODES: Episode[] = [
   {
     slug: "prime-sentences",
     code: "13",
-    title: "Fifteen sentences",
-    subtitle: "Invictus Prime. Two new sterling tickets. The 20-year chart does not owe you complexity.",
+    title: "Fifteen sentences — Prime I archive",
+    subtitle: "The 7 Sep lock. Two sterling tickets. Archived the morning Prime II stamped.",
     audio: "/audio/ep13.mp3?v=8",
     duration: 108,
     season: "S2",
+    lockNote:
+      "Prime I is archived. Prime II is the house lock — 16 Sep 08:23. Seventeen listed. Hear EP 15.",
     jobIds: ["shares", "bonds", "gold", "tips", "commodities", "cash", "long"],
     weatherIds: ["reflation", "stagflation", "disinflation"],
     takeaways: [
-      "Prime is the design lock, 7 Sep 23:08. The live ISA is still fourteen lines.",
-      "INXG is hired on probation. Gold 9.6 is a named floor breach. DBMF is a gate.",
-      "More sentences did not win the 20-year proxy. The debit on the 3rd does the compounding.",
+      "This tape is Prime I, 7 Sep. The live ISA was fourteen. That pad is still fourteen.",
+      "INXG was hired on probation. Gold 9.6 was a named floor breach. Those sentences still teach.",
+      "Hear EP 15 for the lock that replaced this one. Complexity is still not a return.",
     ],
     chapters: [
       { t: 0, label: "Prime" },
@@ -806,9 +825,11 @@ export const EPISODES: Episode[] = [
     weatherIds: ["goldilocks", "reflation", "stagflation", "disinflation"],
     takeaways: [
       "What you own if you are wrong is the only design question.",
-      "Classroom seven, live fourteen, Prime fifteen — do not confuse the books.",
-      "Six-priority stack. Walk-back inactive. £200 on the 3rd. No hero trades.",
+      "Classroom seven, live fourteen, Prime I fifteen, Prime II seventeen listed — do not confuse the books.",
+      "Six-priority stack. Walk-back inactive. £200 on the 3rd. Hear EP 15–18 for the lock.",
     ],
+    lockNote:
+      "Recorded against Prime I. The lock is now Prime II. The rooms and jobs did not change. The pad did not move.",
     chapters: [
       { t: 0, label: "Open" },
       { t: 90, label: "Rooms" },
@@ -825,6 +846,7 @@ export const EPISODES: Episode[] = [
       { who: "DESK", text: "ALLWX desk. Out." },
     ],
   },
+  ...S3,
   {
     slug: "seven-jobs",
     code: "00",
@@ -878,7 +900,8 @@ export function episodesBySeason(season: string) {
 export const SEASONS = [
   { id: "S0", label: "S0 · LECTURE", hint: "The original seven-jobs tape" },
   { id: "S1", label: "S1 · CLASSROOM", hint: "The seven jobs and the four rooms" },
-  { id: "S2", label: "S2 · HOUSE", hint: "Defence, numbers, Prime, the full lesson" },
+  { id: "S2", label: "S2 · HOUSE", hint: "Numbers, Prime I archive, the full lesson" },
+  { id: "S3", label: "S3 · LOCK", hint: "Prime II, the derrick, the universe, the third" },
 ] as const;
 
 export const TOTAL_DURATION = EPISODES.reduce((a, e) => a + e.duration, 0);

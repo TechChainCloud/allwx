@@ -63,8 +63,13 @@ function Listen() {
       <h1 className="mt-6 font-mono text-4xl leading-[1.05] tracking-tight">{ep.title}</h1>
       <p className="mt-4 font-sans text-lg leading-relaxed text-muted">{ep.subtitle}</p>
       <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.18em] text-cyan">
-        Two-desk · DESK / RATES · education only
+        Two-desk · DESK / RATES · {ep.season ?? "S1"} · education only
       </p>
+      {ep.lockNote ? (
+        <p className="mt-4 rounded-md border border-accent/40 bg-panel px-4 py-3 font-sans text-sm leading-relaxed">
+          {ep.lockNote}
+        </p>
+      ) : null}
       <div className="mt-6 flex flex-wrap gap-3">
         <Button size="lg" onClick={() => play(ep.slug, pos > 12 ? pos : 0)}>
           <Play className="size-4 translate-x-px fill-current" />

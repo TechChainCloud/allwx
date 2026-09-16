@@ -43,10 +43,10 @@ function Home() {
               if you are wrong?
             </h1>
             <p className="mt-5 max-w-xl font-sans text-base leading-relaxed text-muted">
-              The Invictus knowledge desk. Four rooms you can press. Sixteen jobs
-              with a story. A protocol that answers sell / add / walk-back.
-              Classroom seven, live fourteen, Prime lock, machine draft — do not
-              flatten them. Education only.
+              The Invictus knowledge desk. Four rooms you can press. A library
+              of every ticker and year. A protocol that answers sell / add /
+              walk-back. Classroom seven, live fourteen, Prime lock, machine
+              draft — do not flatten them. Education only.
             </p>
             <div className="mt-7 flex flex-wrap items-center gap-3">
               <Link
@@ -77,6 +77,18 @@ function Home() {
               </Link>
             </div>
             <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2 font-mono text-[11px] text-muted">
+              <Link to="/learn" className="hover:text-fg">
+                LEARN
+              </Link>
+              <Link to="/learn/prime2" className="hover:text-fg">
+                PRIME II
+              </Link>
+              <Link to="/learn/universe" className="hover:text-fg">
+                UNIVERSE
+              </Link>
+              <Link to="/learn/years" className="hover:text-fg">
+                YEARS
+              </Link>
               <Link to="/jobs" className="hover:text-fg">
                 SLEEVES
               </Link>

@@ -1,8 +1,8 @@
 /** Closing brief 8 Sep 2026. Teaching tape. Not a forecast. Not a lock-file edit. */
 
-export const BRIEF_ASOF = "2026-09-09";
-export const BRIEF_WHEN = "17:35 BST";
-export const PRIME_LOCKED = "2026-09-07 23:08 BST";
+export const BRIEF_ASOF = "2026-09-16";
+export const BRIEF_WHEN = "09:46 BST";
+export const PRIME_LOCKED = "2026-09-16 09:46 BST";
 
 export const PRIME_STATS = {
   cagr: 8.2,
@@ -25,21 +25,23 @@ export const PRIME_SLEEVE_MIX = {
 };
 
 export const PRIME_SENTENCES: { ticker: string; ter: number; sentence: string }[] = [
-  { ticker: "VWRP", ter: 0.14, sentence: "Productivity is the only sustainable return." },
-  { ticker: "VAGS", ter: 0.08, sentence: "If growth and inflation both fall, someone has to own high-quality duration." },
-  { ticker: "ITPS", ter: 0.1, sentence: "Inflation is a monetary phenomenon at the margin; TIPS are the CPI contract." },
-  { ticker: "SGLN", ter: 0.12, sentence: "The long-term debt cycle ends in money." },
-  { ticker: "ICOM", ter: 0.19, sentence: "Goods inflation wins in both reflation and stagflation." },
-  { ticker: "CSH2", ter: 0.1, sentence: "Optionality is an asset class." },
-  { ticker: "IDTL", ter: 0.07, sentence: "If the cut cycle comes, you need long-duration Treasury to feel it." },
-  { ticker: "INXG", ter: 0.1, sentence: "UK inflation is not US inflation — own both contracts in their own currency." },
-  { ticker: "IGLS", ter: 0.07, sentence: "Short-duration GBP carry earns without long-end term premium risk." },
-  { ticker: "DFNS", ter: 0.55, sentence: "Global defence thematic — earns in reflation and stagflation." },
-  { ticker: "SMGB", ter: 0.35, sentence: "Semiconductor / AI capex — the infrastructure of the next productivity cycle." },
-  { ticker: "COPA", ter: 0.49, sentence: "Copper miner equity — the metal of electrification and industrial expansion." },
-  { ticker: "XDWI", ter: 0.25, sentence: "Global industrial equity — earns in reflation." },
-  { ticker: "XDWH", ter: 0.25, sentence: "Defensive healthcare — earns in goldilocks and holds in deflation." },
-  { ticker: "URNG", ter: 0.65, sentence: "Uranium / nuclear — the baseload energy of the energy transition." },
+  { ticker: "VWRP", ter: 0.14, sentence: "The engine is cap-weight productivity. 38% is still the largest line." },
+  { ticker: "IWVL", ter: 0.25, sentence: "Value absorbs the engine. Combined 45%. Not a new room." },
+  { ticker: "ICOM", ter: 0.19, sentence: "Goods inflation. Not energy equity." },
+  { ticker: "IGLN", ter: 0.12, sentence: "The barn. iShares Physical Gold. Floor breach of 10 is named at 8." },
+  { ticker: "DBMF", ter: 0.75, sentence: "The surfer. Target 4%. Gate: T212 AutoInvest + fractional." },
+  { ticker: "WNRG", ter: 0.3, sentence: "The derrick. Integrated majors. Not ICOM. Not IOGP." },
+  { ticker: "DFNS", ter: 0.55, sentence: "Governments write the cheque." },
+  { ticker: "SMGB", ter: 0.35, sentence: "Size is the risk management." },
+  { ticker: "XDWI", ter: 0.25, sentence: "Physical industrials. Already inside VWRP." },
+  { ticker: "XDWH", ter: 0.25, sentence: "Defensive residual claims. Still equity." },
+  { ticker: "COPA", ter: 0.49, sentence: "One copper wrapper." },
+  { ticker: "URNG", ter: 0.65, sentence: "Tiny on purpose." },
+  { ticker: "ITPS", ter: 0.1, sentence: "US CPI contract. Real-yield tax exists." },
+  { ticker: "FLOT", ter: 0.1, sentence: "The float. Carry without the umbrella’s convexity." },
+  { ticker: "INXG", ter: 0.1, sentence: "London thermometer. Probation. Kill rule stands." },
+  { ticker: "XSTR", ter: 0.1, sentence: "The tin. Live pad uses CSH2." },
+  { ticker: "IGLS", ter: 0.07, sentence: "Short gilt carry. Ladder rung." },
 ];
 
 export const YEAR_TAPE: {
@@ -222,29 +224,29 @@ export const HIERARCHY = [
 
 export const BUILD = [
   {
-    ticker: "VAGS",
-    move: "17 → 13.5",
-    why: "Worst Sharpe of any line (−0.945). Headwind in both current boxes. Trimmed to floor. Insurance looks unemployed. That is the job.",
+    ticker: "VWRP + IWVL",
+    move: "45 → 38 + 7",
+    why: "Engine stays 45%. Value absorbs. Not a new room.",
   },
   {
-    ticker: "ICOM",
-    move: "8.5 → 9.6",
-    why: "Only line that earns in both reflation and stagflation. Was undersized relative to its regime utility. Cap still 10. Do not chase.",
+    ticker: "WNRG",
+    move: "New 3.0",
+    why: "The derrick. Energy equity gap. Enters at 1% on 3 Oct if Brent holds £75. Not ICOM.",
   },
   {
-    ticker: "INXG",
-    move: "New 3.8",
-    why: "UK CPI contract. Corr with ITPS 0.019. Sterling inflation TIPS cannot write. Classroom veto still stands. Probation, not a cleared gate.",
+    ticker: "VAGS → FLOT",
+    move: "6 → 0 / 0 → 6",
+    why: "By drift, not sale. Carry without 7–8y convexity. Deflation C is named.",
   },
   {
-    ticker: "IGLS",
-    move: "New 2.8",
-    why: "UK short gilt. Duration ~2.5y. Ladder rung. Carry without long-end term premium.",
+    ticker: "IDTL → INXG",
+    move: "Starve / 2 → 3",
+    why: "Stub starved of new cash. Thermometer raised. Probation and kill rule stand.",
   },
   {
-    ticker: "XDWH",
-    move: "2.85 → 1.8",
-    why: "Lowest regime fit in the satellite sleeve. Funds the sterling rates tickets. Still the quiet satellite.",
+    ticker: "Count",
+    move: "16 claimed · 17 listed",
+    why: "Living 12 + quiet 5. The lock names the hole instead of pretending the slogan won.",
   },
 ];
 
@@ -259,7 +261,7 @@ export const OVERNIGHT = {
 };
 
 export const BRIEF_PARA =
-  "Invictus Prime is a 15-line all-weather ISA locked 7 Sep 2026, 23:08 BST. Session 9 Sep 17:35: Brent $100.95, overlay co-primary, IDTL in the penalty box, ICOM the only green Invictus line. House holds. Walk-back inactive. Next cash: 3 October. No action required before then.";
+  "Invictus Prime II is live. T212 16 Sep 2026, 09:46 BST, NAV £1,083.45. Seventeen lines plus £16.01 cash. VAGS and IDTL sold. FLOT, IWVL, WNRG, DBMF held. Gold wrapper is IGLN. Copper is WisdomTree metal, not miners. FOMC 19:00. Walk-back off. Education only.";
 
 export const HORMUZ =
   "Brent $100.95 on Hormuz. European gas above €80. $6bn long-dated buyback versus $10bn priced. Yields at new YTD highs. ICOM paid. Duration taxed. That is the design. Observe. Do not edit the lock.";

@@ -1,8 +1,8 @@
 import type { JobId } from "@/lib/content";
 
-export const DESK_ASOF = "2026-09-09";
-export const DESK_CLOCK = "17:35 BST";
-export const DESK_EVENT = "Thu 10 Sep CPI 13:30 · 16 Sep FOMC";
+export const DESK_ASOF = "2026-09-16";
+export const DESK_CLOCK = "09:46 BST";
+export const DESK_EVENT = "Live = lock · NAV £1,083.45 · FOMC 19:00";
 
 export const SEVEN_TONIGHT: {
   n: number;

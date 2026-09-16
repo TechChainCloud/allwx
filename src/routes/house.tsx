@@ -86,24 +86,24 @@ function HousePage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
       <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-accent">
-        HOUSE · {PRIME_NAME} LOCKED {PRIME_LOCKED} · BRIEF {BRIEF_ASOF} {BRIEF_WHEN}
+        HOUSE · {PRIME_NAME} LIVE = LOCK {HOUSE_NAV_ASOF} · NAV £{HOUSE_NAV.toFixed(2)}
       </p>
-      <h1 className="mt-3 font-mono text-4xl tracking-tight">Fifteen lines. Two sleeves. Nine sentences.</h1>
+      <h1 className="mt-3 font-mono text-4xl tracking-tight">Seventeen lines. The pad is the lock.</h1>
       <p className="mt-4 max-w-2xl font-sans text-base leading-relaxed text-muted">
         {BRIEF_PARA}
       </p>
 
       <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
         <Stat k="NAV" v={`£${HOUSE_NAV.toFixed(2)}`} d={`Cash £${HOUSE_CASH.toFixed(2)}`} />
-        <Stat k="CORE TGT" v={`${sumFamily("core", "target").toFixed(0)}%`} d="Seven jobs" />
-        <Stat k="ALT + SAT" v={`${(sumFamily("alt", "target") + sumFamily("sat", "target")).toFixed(0)}%`} d="DBMG + six themes" />
+        <Stat k="LIVING" v={`${sumFamily("living", "target").toFixed(1)}%`} d="Twelve lines" />
+        <Stat k="QUIET" v={`${sumFamily("quiet", "target").toFixed(1)}%`} d="Five lines" />
         <Stat k="LINES" v={String(HOUSE.length)} d={`${sumField("target").toFixed(0)}% vector`} />
         <Stat k="NEXT CASH" v="3 OCT" d={NEXT_CONTRIB} />
       </div>
       <p className="mt-3 font-mono text-[11px] text-cyan">{HOUSE_REGIME}</p>
       <div className="mt-4">
-        <Button size="sm" onClick={() => play("prime-sentences")}>
-          PLAY EP 13
+        <Button size="sm" onClick={() => play("the-lock")}>
+          PLAY EP 15
         </Button>
         <p className="mt-2 font-mono text-[11px] text-muted">
           PRIME panes: LOCK · YEARS · SUNNY · GATE · LIMITS · CLOSE
@@ -205,7 +205,7 @@ function HousePie({ field }: { field: Field }) {
     <div className="rounded-md border border-line bg-panel p-4">
       <svg viewBox="0 0 200 200" className="mx-auto w-full max-w-[260px]">
         {slices.map((s) => (
-          <path key={s.h.ticker} d={s.d} fill={s.h.color} opacity={s.h.family === "sat" ? 0.78 : 1} />
+          <path key={s.h.ticker} d={s.d} fill={s.h.color} opacity={s.h.family === "quiet" ? 0.75 : 1} />
         ))}
         <circle cx="100" cy="100" r="36" fill="#0a0e16" />
         <text x="100" y="96" textAnchor="middle" fill="#ff9900" fontSize="8" fontFamily="IBM Plex Mono">
@@ -423,10 +423,9 @@ function CoreCompare() {
         ))}
       </ul>
       <p className="mt-8 font-sans text-sm text-muted">
-        A pure reflation optimizer would fatten VWRP and ICOM, zero VAGS and
-        IDTL, trim SGLN, and max the paying satellites. That book would have
-        won the last twelve months and would be naked in a rotation. The house
-        refuses that trade. See{" "}
+        A pure reflation optimizer would fatten VWRP, ICOM and WNRG, keep FLOT
+        instead of duration, and max SMGB. That book is closer to what is live
+        than the classroom seven. The missing umbrella is a choice. See{" "}
         <Link to="/pie" className="text-accent hover:underline">
           MIX
         </Link>{" "}
@@ -475,8 +474,8 @@ function Warn() {
       <div>
         <h2 className="font-mono text-sm text-accent">POWDER VARIANT · NOT ADOPTED</h2>
         <p className="mt-2 max-w-2xl font-sans text-sm text-muted">
-          A 100% candidate that lifts CSH2 to 11 and cuts VWRP to 22. Useful as
-          a Stage-4 sketch. Not the live house. Sum {powderSum}%.
+          A 100% sketch that lifts XSTR to 6. Useful as a Stage-4 powder
+          variant. Not the live house. Sum {powderSum}%.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           {POWDER_VARIANT.map((l) => (
@@ -532,8 +531,8 @@ function PrimeDesk() {
   return (
     <section className="mt-8 space-y-8">
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        <Stat k="CORE" v={`${PRIME_CORE}%`} d="Nine jobs" />
-        <Stat k="SAT" v={`${PRIME_SAT}%`} d="Six themes" />
+        <Stat k="LIVING" v={`${PRIME_CORE}%`} d="Twelve lines" />
+        <Stat k="QUIET" v={`${PRIME_SAT}%`} d="Five lines" />
         <Stat k="CAGR / VOL" v={`${PRIME_STATS.cagr}% · ${PRIME_STATS.vol}%`} d={`Sharpe ${PRIME_STATS.sharpe} · TER ${PRIME_STATS.ter}%`} />
         <Stat k="WORST ETF" v={`${PRIME_STATS.worstEtf}%`} d={`${PRIME_STATS.worstEtfYear} · S&P −18.64`} />
       </div>
@@ -559,14 +558,14 @@ function PrimeDesk() {
             <div className="rounded-md border border-line bg-panel p-4">
               <svg viewBox="0 0 200 200" className="mx-auto w-full max-w-[240px]">
                 {slices.map((s) => (
-                  <path key={s.h.ticker} d={s.d} fill={s.h.color} opacity={s.h.sleeve === "sat" ? 0.75 : 1} />
+                  <path key={s.h.ticker} d={s.d} fill={s.h.color} opacity={s.h.sleeve === "quiet" ? 0.75 : 1} />
                 ))}
                 <circle cx="100" cy="100" r="36" fill="#0a0e16" />
                 <text x="100" y="96" textAnchor="middle" fill="#ff9900" fontSize="9" fontFamily="IBM Plex Mono">
-                  PRIME
+                  II
                 </text>
                 <text x="100" y="110" textAnchor="middle" fill="#f8f8f2" fontSize="11" fontFamily="IBM Plex Mono">
-                  15
+                  17
                 </text>
               </svg>
             </div>

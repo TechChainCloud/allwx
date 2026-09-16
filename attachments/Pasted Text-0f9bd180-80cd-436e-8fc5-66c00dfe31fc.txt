@@ -1,0 +1,97 @@
+The Transition: Slow, Measured, and Conditional
+
+The answer is measured, not slow. There is a meaningful difference. Slow implies passive drift. Measured implies active sequencing with preconditions at each gate. The Principia protocol already contains the transition mechanism — contributions are the only tool. The question is which preconditions must be true before each move is made.
+
+The Three Categories of Change
+
+Not all six changes in V2 carry the same urgency or risk. They fall into three categories:
+
+
+
+Category           Changes                               Urgency                                         Mechanism
+Structural repairs VAGS → FLOT, IDTL → INXG              High — these are regime-wrong lines today       Stop reinvesting distributions; redirect contributions immediately
+New lines          WNRG (The Derrick), IWVL (Value Tilt) Medium — fills genuine gaps but not emergencies Introduce one at a time via contributions; preconditions apply
+Weight adjustments VWRP −6.94pp, XSTR −2.03pp, INXG +1pp Low — drift corrects naturally over months      Contribution redirection only; no action required tonight
+
+The Preconditions: Gate by Gate
+
+Gate 1 — Before touching anything (tonight)
+
+Three conditions must be true before the first contribution is redirected:
+
+The walk-back is inactive. It is — confirmed in the Principia header. If the walk-back fires before 3 October, the transition pauses entirely. The walk-back governs above all protocol.
+
+The FOMC decision (tonight, 19:00 BST) does not materially change the regime. A 25bp hike to 4.00% is 93% priced and does not alter the transition logic. A surprise hold or a hawkish dot plot revision upward changes the calculus for FLOT (more urgent) and IDTL (more urgent to exit). A dovish surprise would make IDTL temporarily less urgent to exit — but the negative 3Y annualised return does not reverse overnight.
+
+The BoE decision (Thursday) confirms hold. A surprise BoE hike would steepen the gilt curve further, making IGLS more valuable and IDTL more damaging. The transition logic holds either way — but a hike accelerates the urgency of the IDTL exit.
+
+Gate 2 — 3 October 2026: First contribution (WNRG introduction)
+
+Preconditions for introducing WNRG as The Derrick:
+
+Brent is above £75/bbl in GBP terms. At $105.84 and GBPUSD 1.3510, Brent is currently £78.34/bbl — above the threshold. Energy equity earns its allocation when the commodity is in a sustained uptrend, not when it is recovering from a trough. The current level confirms the thesis is live.
+
+ICOM is not more than 200bp above its 8% target. Currently +19bp — well within tolerance. If ICOM were at 10%+ of the farm, the commodity exposure would already be sufficient and WNRG would be redundant. At +19bp, WNRG adds genuine incremental exposure.
+
+No seventeenth line has been invented. The book must be at 16 lines before WNRG is introduced. It currently is. WNRG becomes line 16 only after IDTL and VAGS are confirmed as exiting — which happens via drift, not sale.
+
+SMGB is bought as per the signed book. The 3 October contribution buys SMGB first (the signed sentence). WNRG receives the remainder of the contribution after SMGB is topped up to target. The signed book is not overridden by the transition.
+
+Gate 3 — November 2026: VAGS → FLOT transition begins
+
+Preconditions for beginning the VAGS replacement:
+
+UK 2Y gilt yield remains above 4.0%. Currently 4.889%. FLOT's floating rate yield is anchored to short-term rates — it only outperforms VAGS when short rates are elevated. If the BoE cuts aggressively before November and the 2Y falls below 4.0%, VAGS becomes less damaging and the urgency of the switch reduces.
+
+Stock-bond correlation remains positive. The structural case for replacing VAGS rests on the positive stock-bond correlation regime. If CPI falls sharply below 2.5% and the correlation turns negative (bonds diversify equities again), VAGS recovers its theoretical justification. Monitor monthly — if the correlation flips, the VAGS exit pauses.
+
+FLOT is confirmed available on the ISA platform. FLOT LN is an iShares USD-denominated floating rate bond ETF listed on the LSE. Confirm the broker (HL, IBKR, or Trading 212) lists it before the November contribution date. If unavailable, the alternative is USFR LN (WisdomTree USD Floating Rate Treasury) — same function, government-grade credit, 0.91yr duration.
+
+The VAGS distribution is not reinvested. From the November contribution date forward, any VAGS income distribution is redirected to FLOT manually. This is the mechanism that accelerates the transition without requiring a sale.
+
+Gate 4 — December 2026 onward: IWVL introduction and IDTL exit
+
+Preconditions for introducing IWVL (Value Tilt) and allowing IDTL to exit via drift:
+
+VWRP is at or above its 38% target weight. IWVL absorbs from VWRP's weight — the combined engine sleeve stays at 45%. If VWRP has drifted below 38% due to market moves, contributions go to VWRP first before IWVL receives any allocation.
+
+UK 10Y gilt yield remains above 4.5%. Currently 5.367%. IDTL's negative 3Y return is a function of the rate environment — long nominal gilt duration loses value when yields rise. If the 10Y falls sharply below 4.5% (a significant BoE pivot), IDTL's mark-to-market loss partially reverses and the exit becomes less urgent. The signed sentence does not require selling IDTL — it simply stops receiving contributions.
+
+IWVL is introduced at 1% maximum in the first month. No new line enters the book at full target weight. IWVL starts at 1%, grows to 3.5% by Q1 2027, and reaches its 7% target by mid-2027 via monthly contributions. The value factor is a long-duration thesis — it does not need to be fully sized in month one.
+
+The value factor is not in a momentum reversal. IWVL has returned +51.44% over 1Y. A mean-reversion in the value factor (growth outperforming sharply) would not invalidate the thesis but would reduce the urgency of sizing up quickly. If IWVL falls more than 15% from its current level before reaching 3.5% target, the contribution pace slows — the DCA effect handles this correctly.
+
+The Full Transition Timeline with Preconditions
+
+
+
+Date       Action                                                                Precondition                                                                    If Precondition Fails
+Tonight    Monitor FOMC (19:00 BST) and BoE (Thursday)                           Walk-back inactive ✅                                                            If walk-back fires: full pause
+3 Oct 2026 Introduce WNRG at 1.0%; buy SMGB per signed book                      Brent above £75/bbl ✅ · ICOM within 200bp of target ✅ · Book at 16 lines ✅      If Brent below £75: delay WNRG to November; redirect to SMGB
+3 Nov 2026 Begin VAGS → FLOT; WNRG to 2.0%; IWVL at 1.0%                         UK 2Y above 4.0% · Stock-bond correlation positive · FLOT available on platform If 2Y below 4.0%: keep VAGS; redirect to WNRG and IWVL only
+3 Dec 2026 WNRG to 3.0% target; IWVL to 2.0%; IDTL stops receiving contributions UK 10Y above 4.5% · VWRP at or above 38%                                        If VWRP below 38%: VWRP receives contribution before IWVL
+3 Jan 2027 FLOT to 4.0%; IWVL to 3.5%; INXG receives IDTL's redirected weight    WNRG at 3.0% target confirmed · Walk-back inactive                              If walk-back fires: pause all new line sizing; hold existing weights
+Q1–Q2 2027 IWVL to 7.0% target; FLOT to 6.0% target; VAGS at near-zero via drift Value factor not in >15% reversal · UK 2Y above 4.0%                            If value reversal: slow IWVL pace; redirect to VWRP
+Mid-2027   V2 fully implemented; 16 lines at target weights                      All preconditions met across prior gates                                        If any gate fails: partial V2 is still better than V0
+
+The Speed Question: Why Measured, Not Slow
+
+There are two reasons not to be slow:
+
+VAGS and IDTL are costing the farm today. VAGS is down −1.29% YTD. IDTL is down −4.22% YTD with a negative 3Y annualised return. Every month these lines receive contributions is a month of capital deployed into the regime's weakest instruments. The structural repair (VAGS → FLOT, IDTL → INXG) should begin at the first available contribution date where the preconditions are met.
+
+WNRG and IWVL are working in the current regime. WNRG is up +43.19% YTD. IWVL is up +34.76% YTD. Waiting six months to introduce them means six months of contributions pointed at lines that are underperforming the candidates. The DCA effect works in both directions — early contributions to a rising line build the position at lower average cost than late contributions.
+
+There are two reasons not to be fast:
+
+The seventeenth line rule. WNRG and IWVL cannot both enter the book at full weight simultaneously without temporarily creating 18 lines (while VAGS and IDTL are still drifting out). The sequencing — one new line per contribution cycle — is the protocol that prevents this.
+
+Recency bias is the enemy. WNRG at +43.19% YTD and IWVL at +34.76% YTD are the strongest performers in the screen. The temptation is to size them at maximum immediately. The Principia framework's answer to this temptation is the same as its answer to the SMGB trim temptation: the size is the risk management. A new line enters at 1%, grows via contributions, and earns its full target weight over 6–9 months. This is not slowness — it is the protocol working as designed.
+
+The One Condition That Overrides Everything
+
+If the walk-back fires before any gate is reached, the entire transition pauses. The walk-back is the farm's circuit breaker. It exists precisely for the scenario where the regime shifts sharply and the contribution protocol would otherwise be buying into a deteriorating situation. The transition from V0 to V2 is a fair-weather operation — it happens in the gaps between the winters, not during them.
+
+The walk-back conditions from the Principia header: PMI 54.6, US 2s10s +33.3bp. Both are currently in the reflation zone. The walk-back fires when the regime deteriorates — PMI falling below 50, curve inverting, or a specific drawdown threshold being breached. Monitor both after tonight's FOMC decision.
+
+The transition is not a rebuild. It is a measured upgrade, gate by gate, contribution by contribution, with the signed sentence staying the hand at every step.

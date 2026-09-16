@@ -1,13 +1,15 @@
-export const PRIME_ASOF = "2026-09-07";
-export const PRIME_LOCKED = "2026-09-07 23:08 BST";
-export const PRIME_NAME = "Invictus Prime";
-export const PRIME_CORE = 87.4;
-export const PRIME_SAT = 12.6;
-export const PRIME_LINES = 15;
+export const PRIME_ASOF = "2026-09-16";
+export const PRIME_LOCKED = "2026-09-16 09:46 BST";
+export const PRIME_NAME = "Invictus Prime II";
+export const PRIME_CORE = 80.5;
+export const PRIME_SAT = 19.5;
+export const PRIME_LINES = 17;
+export const PRIME_CLAIMED = 16;
+export const PRIME_PREV = "Invictus Prime I · 15 lines · locked 7 Sep 2026 23:08 BST · archived";
 
 export type PrimeLine = {
   ticker: string;
-  sleeve: "core" | "sat";
+  sleeve: "living" | "quiet";
   w: number;
   job: string;
   best: string;
@@ -16,190 +18,66 @@ export type PrimeLine = {
 };
 
 export const PRIME: PrimeLine[] = [
-  {
-    ticker: "VWRP",
-    sleeve: "core",
-    w: 23.8,
-    job: "Global productivity core",
-    year: "2009–2021",
-    color: "#8be9fd",
-    best: "Post-GFC goldilocks. Residual claims did the heavy lift when growth was paid and inflation was quiet. Sized as the engine, not a forecast.",
-  },
-  {
-    ticker: "VAGS",
-    sleeve: "core",
-    w: 13.5,
-    job: "Deflation engine",
-    year: "2008",
-    color: "#6272a4",
-    best: "The year everything else was on fire. Nominal quality duration is hired for the room you least want to own in reflation.",
-  },
-  {
-    ticker: "ITPS",
-    sleeve: "core",
-    w: 12.5,
-    job: "US CPI contract",
-    year: "2021–22",
-    color: "#50fa7b",
-    best: "Accrual when CPI ran hot. Pays if real yields do not outrun the index. Cheap versus realised PCE on this tape.",
-  },
-  {
-    ticker: "SGLN",
-    sleeve: "core",
-    w: 9.6,
-    job: "Debt-cycle watchman",
-    year: "2025",
-    color: "#ffb86c",
-    best: "The year the long debt cycle printed metal. Three of four ugly end-games still print gold. Weight sits a hair under the classroom floor of 10.",
-  },
-  {
-    ticker: "ICOM",
-    sleeve: "core",
-    w: 9.6,
-    job: "Goods inflation hedge",
-    year: "2021–22 / 25–26",
-    color: "#ff5555",
-    best: "Only core line paid in both current boxes. Supply-shock years are the brief. Cap still applies. Do not chase last year's 44.",
-  },
-  {
-    ticker: "CSH2",
-    sleeve: "core",
-    w: 6.5,
-    job: "Optionality",
-    year: "Every hike / 2022",
-    color: "#bd93f9",
-    best: "The week something breaks. Powder to buy the cheap line without a sale. Not a return engine.",
-  },
-  {
-    ticker: "IDTL",
-    sleeve: "core",
-    w: 5.3,
-    job: "Cut-cycle stub",
-    year: "2008 / 2020",
-    color: "#f8f8f2",
-    best: "Pays when the growth engine bleeds and policy goes to the floor. That is the pairing.",
-  },
-  {
-    ticker: "INXG",
-    sleeve: "core",
-    w: 3.8,
-    job: "UK CPI contract",
-    year: "2022 UK spike",
-    color: "#50fa7b",
-    best: "Sterling inflation that US TIPS cannot write. Classroom veto still stands on the five-year wreck. Prime hires it as probation, not a cleared gate.",
-  },
-  {
-    ticker: "IGLS",
-    sleeve: "core",
-    w: 2.8,
-    job: "UK short gilt 1–5y",
-    year: "Soft landing carry",
-    color: "#6272a4",
-    best: "Ladder rung between cash and the aggregate. Carry without long-end term premium.",
-  },
-  {
-    ticker: "DFNS",
-    sleeve: "sat",
-    w: 2.9,
-    job: "Defence thematic",
-    year: "2022–24 rearmament",
-    color: "#ff5555",
-    best: "Fragmentation spend. A decade thesis. Price can lag the headline. Hard cap.",
-  },
-  {
-    ticker: "SMGB",
-    sleeve: "sat",
-    w: 2.6,
-    job: "AI capex / semis",
-    year: "2024–26",
-    color: "#8be9fd",
-    best: "Infrastructure layer of the compute cycle. Highest satellite Sharpe on this window. Still equity weather.",
-  },
-  {
-    ticker: "COPA",
-    sleeve: "sat",
-    w: 2.6,
-    job: "Copper miners",
-    year: "2020–22 transition",
-    color: "#ffb86c",
-    best: "Electrification operating leverage. Confirm COPA vs COPG before 3 Oct.",
-  },
-  {
-    ticker: "XDWI",
-    sleeve: "sat",
-    w: 2.1,
-    job: "Global industrials",
-    year: "2021 capex",
-    color: "#6272a4",
-    best: "Physical economy in a sustained reflation. Diversifies the theme sleeve away from chips and defence.",
-  },
-  {
-    ticker: "XDWH",
-    sleeve: "sat",
-    w: 1.8,
-    job: "Healthcare defensive",
-    year: "2022 bear",
-    color: "#50fa7b",
-    best: "Satellite VAGS. Quiet when themes run. Paid when they do not.",
-  },
-  {
-    ticker: "URNG",
-    sleeve: "sat",
-    w: 1.1,
-    job: "Uranium / nuclear",
-    year: "2023–24 renaissance",
-    color: "#f1fa8c",
-    best: "Energy-security ticket. Highest vol. Keep it tiny.",
-  },
+  { ticker: "VWRP", sleeve: "living", w: 38, job: "The Engine", year: "Always", color: "#8be9fd", best: "Cap-weight productivity rent. Cut 45→38 so IWVL can absorb. Still the largest line." },
+  { ticker: "IWVL", sleeve: "living", w: 7, job: "Value tilt", year: "High-rate regime", color: "#50fa7b", best: "Absorbs from VWRP. Combined engine stays 45%. The only add that does not invent a line." },
+  { ticker: "ICOM", sleeve: "living", w: 8, job: "Irrigation", year: "2022 / 26 oil", color: "#ff5555", best: "Broad goods. Not energy equity. Cap still applies." },
+  { ticker: "IGLN", sleeve: "living", w: 8, job: "The Barn", year: "2025", color: "#ffb86c", best: "iShares Physical Gold. Same metal job as SGLN. Classroom floor 10. Named at 8." },
+  { ticker: "DBMF", sleeve: "living", w: 4, job: "The Surfer", year: "Transitions", color: "#bd93f9", best: "Trend. Gate passed — the line is held at 4%. Not a fifth weather." },
+  { ticker: "WNRG", sleeve: "living", w: 3, job: "The Derrick", year: "Stagflation oil", color: "#f1fa8c", best: "Live at 3%. Integrated energy equity. Not ICOM. Not IOGP." },
+  { ticker: "DFNS", sleeve: "living", w: 3, job: "Geopolitical tax", year: "2023–25", color: "#ff5555", best: "Government payee. Cap 5%." },
+  { ticker: "SMGB", sleeve: "living", w: 2.5, job: "Digital picks", year: "2024–26", color: "#8be9fd", best: "Size is the risk management. Signed trim stays unsigned." },
+  { ticker: "XDWI", sleeve: "living", w: 2, job: "Physical picks", year: "Reflation capex", color: "#6272a4", best: "Industrials. Already rhymes with VWRP." },
+  { ticker: "XDWH", sleeve: "living", w: 2, job: "Night-shift doctor", year: "Defensive equity", color: "#50fa7b", best: "Still a residual claim. Not a linker." },
+  { ticker: "COPA", sleeve: "living", w: 2, job: "Electrification metal", year: "2021–22", color: "#ffb86c", best: "WisdomTree Copper ETC. Metal, not miners. One wrapper." },
+  { ticker: "URNG", sleeve: "living", w: 1, job: "Nuclear option", year: "Fuel story", color: "#f1fa8c", best: "Tiny on purpose." },
+  { ticker: "ITPS", sleeve: "quiet", w: 6, job: "US CPI contract", year: "2021–22", color: "#50fa7b", best: "Rent review. Real-yield tax exists." },
+  { ticker: "FLOT", sleeve: "quiet", w: 6, job: "The Float", year: "Higher-for-longer", color: "#bd93f9", best: "Live at 6%. Replaced VAGS by sale. Carry, not convexity." },
+  { ticker: "INXG", sleeve: "quiet", w: 3, job: "London thermometer", year: "2022 UK spike", color: "#50fa7b", best: "Absorbs IDTL’s starved cash. Still on probation. Kill rule stands." },
+  { ticker: "XSTR", sleeve: "quiet", w: 3, job: "The Tin", year: "Every hike", color: "#bd93f9", best: "Overnight GBP swap. Live tin. Residual cash £16 sits beside it." },
+  { ticker: "IGLS", sleeve: "quiet", w: 1.5, job: "Short gilt carry", year: "Soft landing", color: "#6272a4", best: "Ladder rung. Prime I ticket kept smaller." },
 ];
+
 
 export function sumPrime(sleeve?: PrimeLine["sleeve"]) {
   return PRIME.filter((p) => !sleeve || p.sleeve === sleeve).reduce((a, p) => a + p.w, 0);
 }
 
 export const PRIME_YEAR =
-  "Teaching year 2025: gold, goods, the engine and the theme sleeve all printed. That is the house already staffed — not a forecast that landed.";
+  "Live = lock. T212 16 Sep 2026, 09:46 BST. NAV £1,083.45. Seventeen lines plus £16.01 cash. VAGS and IDTL sold. FOMC still 19:00. Walk-back still off.";
 
 export const PRIME_VERDICT = [
-  { name: "Invictus Prime · 15", cagr: 6.3, terminal: 339, note: "More sentences. Slightly less 20y path in this proxy." },
-  { name: "Invictus One-Pie · 13", cagr: 6.51, terminal: 353, note: "Predecessor lock. Still the better 20y line on this chart." },
-  { name: "60/40", cagr: 6.8, terminal: 374, note: "Won the sunny decades. Failed 2022. Not the exam Prime is built for." },
+  { name: "Invictus Prime II · 17 listed", cagr: 6.3, terminal: 339, note: "No new 20y proxy. Figure is Prime I’s path, not an II audit. Recency-heavy. Deflation self-score C." },
+  { name: "Invictus Prime I · 15", cagr: 6.3, terminal: 339, note: "Archived 7 Sep lock. Still the last audited 20y path." },
+  { name: "60/40", cagr: 6.8, terminal: 374, note: "Won the sunny decades. Failed 2022." },
 ];
 
 export const PRIME_VS_LIVE = [
-  { dim: "Lines", prime: "15", live: "14 on T212", classroom: "7" },
-  { dim: "New core", prime: "INXG 3.8 · IGLS 2.8", live: "Neither", classroom: "Neither" },
-  { dim: "Alt", prime: "No DBMG", live: "DBMG 6", classroom: "—" },
-  { dim: "Gold", prime: "9.6", live: "10", classroom: "15 floor 10" },
-  { dim: "Satellites", prime: "12.6 · six themes", live: "~14 + alt", classroom: "0" },
-  { dim: "INXG", prime: "Hired on probation", live: "Absent", classroom: "Vetoed" },
+  { dim: "Lines", prime: "17", live: "17 on T212", classroom: "7" },
+  { dim: "Engine", prime: "VWRP 38 + IWVL 7 = 45", live: "38.18 + 7.03", classroom: "30" },
+  { dim: "Energy equity", prime: "WNRG 3", live: "3.01", classroom: "None" },
+  { dim: "Quiet duration", prime: "FLOT 6 · VAGS 0 · IDTL 0", live: "FLOT 6.02", classroom: "VAGS 18 · IDTL 6" },
+  { dim: "Gold", prime: "IGLN 8", live: "7.99", classroom: "15 floor 10" },
+  { dim: "INXG", prime: "3 · probation", live: "3.00", classroom: "Vetoed" },
 ];
 
 export const PRIME_LESSONS = [
-  "Every line needs a year that only it could have paid. If you cannot name the year, you do not have a job. You have a costume.",
-  "Three books. Classroom seven teaches the rooms. The live ISA is fourteen lines at ~£950. Prime fifteen is the design lock, dated 7 Sep 2026, 23:08 BST. Do not flatten T212 this week.",
-  "Prime adds two sterling rates tickets — IGLS 2.8 and INXG 3.8 — funded in part by trimming VAGS 17→13.5 and XDWH 2.85→1.8. ICOM steps 8.5→9.6 because it is the only core line paid in both current boxes.",
-  "INXG remains the argument. Corr with ITPS 0.019. UK inflation TIPS cannot write versus a five-year wreck and a 50% drawdown. Sized at 3.8 so a second gilt crisis cannot own the book. Probation. Written kill rule.",
-  "Gold at 9.6 is below the classroom floor of 10. Name the breach. Do not move the floor because a pie looks finished.",
-  "2022 is the proof of concept. Prime −5.24 versus S&P −18.64, XLK −27.73, 60/40 −16. The inflation exam is the exam sixty-forty was not built for.",
-  "2025 is the surprise year: gold, copper, goods carried the machine to +13.18, within 5pp of the S&P in a reflation. Already staffed. Not predicted.",
-  "2026 YTD Prime +9.37 versus 60/40 +4.6. Overlay weather. Do not enlarge ICOM because Brent is $97. Cap still applies.",
-  "30-year DCA at £200/month: at the 2008 trough Prime held £37,235 versus £27,715 for 100% equity. Highest absolute pounds of the four. That is why the mix exists — so a rational person keeps contributing.",
-  "Prime cannot honestly promise 10–15% for 30 years. 100% VWRP, a 60–70 equity tilt, or levered risk-parity. The last is structurally closed in a retail ISA. The lever that costs nothing in risk is the debit on the 3rd.",
-  "Doubling £200 to £400 at 8.2% is close to adding ~2.5pp of annual return. Case 5 (ramp then fill the ISA) is the wrapper-efficient path. Case 4 is the executable one. Flat £200 is the schedule that already exists.",
-  "Sunny-Day is 67% equity, 0% linkers, ~0.35% TER. If discipline holds through every −30 year, it outperforms. The question is behavioural. Thirteen of eighteen tickers are clean rejects. INGH vs XDWI is an observation. Lock file not changed.",
-  "DBMF is a gated candidate, not a sixteenth lock. 1Y Sharpe 1.47, corr VWRP 0.22, corr VAGS −0.16. Gate: T212 AutoInvest + fractional. Then, and only then, VAGS 13.5 → 10.5, DBMF 3.0.",
-  "30-year fan: reshape median £300k versus Prime lock £288k versus S&P £376k. Crossover with the S&P is the 25th percentile. Below it, Prime wins. That is the lost-decade case.",
-  "Six-priority stack. Hard cap. Walk-back (PMI<50 AND 2s10s<0 — currently inactive). Core drift ±3. Satellite drift ±1.5. 75/25 split. Satellite collective 20%. Higher priority eats the cash.",
-  "23×5 US hours raise overnight gaps. Do not check the book between contribution dates. Stronger structural case for gated trend-following. Still not a lock-file edit.",
-  "TER ~0.14% is institutional-grade for a retail ISA. It is the only guaranteed negative return. Complexity is not a return. The 20-year proxy still favours One-Pie over Prime. Extra sentences did not win the compounding.",
-  "Next cash: 3 October. Walk-back inactive. Verify COPA. Verify DBMF availability — as a gate, not a trade. No hero trades. Fifteen lines or seven. Same rule.",
+  "Prime II is live. T212 16 Sep 2026, 09:46 BST, NAV £1,083.45. Seventeen ETF lines plus £16.01 residual cash. The pad is the lock.",
+  "VAGS and IDTL were sold. The protocol said contributions only. This lock overrides that sentence. Deflation C is named, not hidden.",
+  "IWVL 7% absorbs VWRP. Combined engine 45%. Live 38.18 + 7.03.",
+  "WNRG is live at 3%. Energy equity, not ICOM. IOGP stays off the pad.",
+  "FLOT is live at 6%. Carry without the umbrella’s convexity. The 2008 duration spike is no longer staffed.",
+  "IGLN 8% is iShares Physical Gold. Same metal job as SGLN. Classroom floor 10. Named.",
+  "COPA on T212 is WisdomTree Copper — the metal ETC, not Global X miners. One copper wrapper.",
+  "DBMF 4% is held. The AutoInvest gate is passed. Still not a fifth weather.",
+  "INXG 3% remains probation. Kill rule stands.",
+  "URNG printed −10.4% this session on a 1% line (~10bp of NAV). Size is the risk management.",
+  "Walk-back still needs both keys. FOMC 19:00 BST is a print. 3 Oct still the contribution date — fill the light lines (IGLS, URNG, SMGB), do not invent an eighteenth.",
+  "Seventeen lines or seven. Jobs, not stories.",
 ];
 
 export const PRIME_TARGETS = [
-  { gate: "Now · £950", do: "Do not rebuild T212 into Prime this week. 3 Oct contribution still routes the live 14-line book." },
-  { gate: "£5k", do: "Protocol written. Still seven jobs plus whatever is already live. No INXG because of a brief." },
-  { gate: "£10k", do: "Prime becomes eligible as a design, not mandatory. INXG must re-clear the lab gate or stay a 3.8 probation with a written kill rule." },
-  { gate: "£20k", do: "IGLS may join as the short-gilt rung if VAGS drift is fat and the curve is still positively sloped." },
-  { gate: "Always", do: "£200 on the 3rd. Walk-back. Drift-routing. No hero trades. Fifteen lines or seven — same rule." },
+  { gate: "Tonight", do: "Live = lock. Watch FOMC 19:00. Do not rebuild again." },
+  { gate: "3 Oct", do: "Fill IGLS 1.43→1.5, URNG 0.96→1, SMGB 2.44→2.5 if walk-back is clear. No eighteenth line." },
+  { gate: "Always", do: "No new personalities. Caps hold. Size is the risk management." },
 ];
+
