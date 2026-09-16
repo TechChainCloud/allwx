@@ -32,6 +32,12 @@ export function formatGbp(n: number, digits = 0): string {
   }).format(n);
 }
 
+export function publicUrl(path: string): string {
+  const trimmed = path.replace(/^\//, "");
+  const base = import.meta.env.BASE_URL ?? "/";
+  return `${base}${trimmed}`;
+}
+
 export function formatCompactGbp(n: number): string {
   if (Math.abs(n) >= 1_000_000) return `£${(n / 1_000_000).toFixed(2)}M`;
   if (Math.abs(n) >= 1_000) return `£${Math.round(n / 1_000)}k`;
