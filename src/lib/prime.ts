@@ -33,7 +33,7 @@ export const PRIME: PrimeLine[] = [
   { ticker: "ITPS", sleeve: "quiet", w: 6, job: "US CPI contract", year: "2021–22", color: "#50fa7b", best: "Rent review. Real-yield tax exists." },
   { ticker: "FLOT", sleeve: "quiet", w: 6, job: "The Float", year: "Higher-for-longer", color: "#bd93f9", best: "Live at 6%. Replaced VAGS by sale. Carry, not convexity." },
   { ticker: "INXG", sleeve: "quiet", w: 3, job: "London thermometer", year: "2022 UK spike", color: "#50fa7b", best: "Absorbs IDTL’s starved cash. Still on probation. Kill rule stands." },
-  { ticker: "XSTR", sleeve: "quiet", w: 3, job: "The Tin", year: "Every hike", color: "#bd93f9", best: "Overnight GBP swap. Live tin. Residual cash £16 sits beside it." },
+  { ticker: "XSTR", sleeve: "quiet", w: 3, job: "The Tin", year: "Every hike", color: "#bd93f9", best: "Overnight GBP swap. Live tin. Residual cash sits beside it. Size not published." },
   { ticker: "IGLS", sleeve: "quiet", w: 1.5, job: "Short gilt carry", year: "Soft landing", color: "#6272a4", best: "Ladder rung. Prime I ticket kept smaller." },
 ];
 
@@ -43,7 +43,7 @@ export function sumPrime(sleeve?: PrimeLine["sleeve"]) {
 }
 
 export const PRIME_YEAR =
-  "Live = lock. T212 16 Sep 2026, 09:46 BST. NAV £1,083.45. Seventeen lines plus £16.01 cash. VAGS and IDTL sold. FOMC still 19:00. Walk-back still off.";
+  "Live = lock. T212 16 Sep 2026, 09:46 BST. Seventeen lines. VAGS and IDTL sold. FOMC still 19:00. Walk-back still off. Weights only. No sterling total.";
 
 export const PRIME_VERDICT = [
   { name: "Invictus Prime II · 17 listed", cagr: 6.3, terminal: 339, note: "No new 20y proxy. Figure is Prime I’s path, not an II audit. Recency-heavy. Deflation self-score C." },
@@ -61,7 +61,7 @@ export const PRIME_VS_LIVE = [
 ];
 
 export const PRIME_LESSONS = [
-  "Prime II is live. T212 16 Sep 2026, 09:46 BST, NAV £1,083.45. Seventeen ETF lines plus £16.01 residual cash. The pad is the lock.",
+  "Prime II is live. T212 16 Sep 2026, 09:46 BST. Seventeen ETF lines. The pad is the lock. Weights only.",
   "VAGS and IDTL were sold. The protocol said contributions only. This lock overrides that sentence. Deflation C is named, not hidden.",
   "IWVL 7% absorbs VWRP. Combined engine 45%. Live 38.18 + 7.03.",
   "WNRG is live at 3%. Energy equity, not ICOM. IOGP stays off the pad.",

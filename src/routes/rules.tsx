@@ -322,7 +322,7 @@ function GatesTab() {
 }
 
 function ScaleTab() {
-  const stops = [710, 5000, 10000, 20000, 50000, 100000];
+  const stops = [1000, 5000, 10000, 20000, 50000, 100000];
   const [i, setI] = useState(0);
   const book = stops[i];
   const row = useMemo(() => {
@@ -343,9 +343,10 @@ function ScaleTab() {
     <section className="mt-8">
       <h2 className="font-mono text-2xl">MILESTONE MAP</h2>
       <p className="mt-2 max-w-2xl font-sans text-sm text-muted">
-        Until roughly £20,000 the contribution decision dwarfs every allocation
-        decision. At £710, a one-percent better year is £{onePct}. An extra
-        fifty pounds is £{extra50}.
+        Until roughly twenty thousand the contribution decision dwarfs every
+        allocation decision. On a small book a one-percent better year is
+        £{onePct}. An extra fifty in the debit is £{extra50}. This slider is a
+        teaching scale, not the live pad.
       </p>
       <div className="mt-5">
         <input

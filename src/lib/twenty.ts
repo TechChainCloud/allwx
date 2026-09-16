@@ -59,7 +59,7 @@ export const TWENTY_VS_HOUSE = [
   { dim: "Gold floor", classroom: "15, never <10", house: "10 live", twenty: "7 — below classroom floor" },
   { dim: "INXG", classroom: "Vetoed", house: "Absent", twenty: "4% — probation, not a pass" },
   { dim: "Themes", classroom: "0", house: "6 lines ~14%", twenty: "3 lines, 5%" },
-  { dim: "When", classroom: "Always", house: "Live ISA now", twenty: "Scale book. Not £950." },
+  { dim: "When", classroom: "Always", house: "Live ISA now", twenty: "Scale book. Not a small pad." },
 ];
 
 export const TWENTY_PRINCIPLES = [
@@ -112,7 +112,7 @@ export const TWENTY_HOLES = [
     body: "Teaching floor is 15, never below 10. This design goes to 7 to fund factors. That is a different religion. Name it. Do not call it the same house.",
   },
   {
-    title: "Eighteen lines at £950 is costume",
+    title: "Eighteen lines on a small pad is costume",
     body: "Minimum size, spreads, and FX tickets make a twenty-line book a later-phase object. The live ISA stays fourteen. This page is a scale sketch.",
   },
 ];

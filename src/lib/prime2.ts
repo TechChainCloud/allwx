@@ -3,7 +3,7 @@
 export const P2_ASOF = "2026-09-16";
 export const P2_STATUS = "LIVE = LOCK";
 export const P2_HEADLINE =
-  "T212 16 Sep 2026, 09:46 BST. NAV £1,083.45. Seventeen lines plus £16.01 cash. VAGS and IDTL sold. The pad is the book. FOMC tonight is a print.";
+  "T212 16 Sep 2026, 09:46 BST. Seventeen lines. VAGS and IDTL sold. The pad is the book. FOMC tonight is a print. Weights only. No sterling total.";
 
 export type P2Line = {
   n: number;

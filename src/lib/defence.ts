@@ -95,7 +95,7 @@ export const DEBATE_SECTIONS: {
       },
       {
         q: "A starter book does not need this much analysis.",
-        a: "The analysis is not for the first seven hundred pounds. It is for the six-figure book those pounds become. Habits built when the pie is small — seven questions, no improvisation, contribution on a date — are the same habits that stop a Stage-4 sale when the drawdown is five figures. Discipline compounds on any size.",
+        a: "The analysis is not for the first few hundred. It is for the six-figure book those contributions become. Habits built when the pie is small — seven questions, no improvisation, contribution on a date — are the same habits that stop a Stage-4 sale when the drawdown is five figures. Discipline compounds on any size.",
       },
     ],
   },
@@ -138,8 +138,8 @@ export const DEBATE_SECTIONS: {
         a: "Teaching warnings. Duplicate cat-bond lines and a theme sleeve that forgot the vector must confirm. A pie you cannot press Confirm on is not diversification. Maximus is a separate fifteen-line experiment. It is not the house and it does not sit in the ISA as a second religion.",
       },
       {
-        q: "Next lever at nine hundred and fifty pounds?",
-        a: "The contribution date. Three points of drift is about twenty-eight pounds. Cheaper to close with new cash than with a sale. Verify COPG, confirm walk-back is off, point pounds at the thinnest core job. Do not top up a satellite because it printed green today.",
+        q: "Next lever on a small book?",
+        a: "The contribution date. A few points of drift is cheaper to close with new cash than with a sale. Confirm walk-back is off, point the debit at the thinnest core job. Do not top up a satellite because it printed green today.",
       },
       {
         q: "Is Invictus Prime the live house now?",

@@ -11,7 +11,7 @@ export const BOOKS: {
   href: string;
 }[] = [
   { id: "classroom", name: "Classroom seven", lines: 7, asof: "Always", job: "Teaches the four rooms.", href: "/jobs" },
-  { id: "live", name: "Live ISA", lines: 17, asof: "T212 · £1,083 · 09:46", job: "The pad is the lock.", href: "/house" },
+  { id: "live", name: "Live ISA", lines: 17, asof: "T212 · 09:46 · weights only", job: "The pad is the lock.", href: "/house" },
   { id: "prime", name: "Invictus Prime I", lines: 15, asof: "7 Sep · archived", job: "Predecessor lock.", href: "/house" },
   { id: "draft", name: "Machine draft", lines: 16, asof: "12 Sep · superseded", job: "45% engine teaching pie.", href: "/learn/machine" },
   { id: "prime2", name: "Prime II", lines: 17, asof: "16 Sep 09:46 · LIVE=LOCK", job: "House lock. IGLN barn. WisdomTree copper.", href: "/learn/prime2" },

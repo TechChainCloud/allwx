@@ -1,6 +1,6 @@
 export const PLAN_ASOF = "2026-09-16";
 export const PLAN_SENTENCE =
-  "Live = lock. T212 09:46 BST, NAV £1,083.45, 17 lines. VAGS and IDTL sold. FOMC tonight 19:00. 3 Oct fills IGLS/URNG/SMGB drift. Walk-back still off. No eighteenth line.";
+  "Live = lock. T212 09:46 BST. Seventeen lines. VAGS and IDTL sold. FOMC tonight 19:00. 3 Oct fills IGLS/URNG/SMGB drift. Walk-back still off. No eighteenth line. Weights only.";
 
 export const CALENDAR: {
   date: string;
@@ -48,14 +48,14 @@ export const CALENDAR: {
     event: "Contribution — the only action date",
     bbg: "T212 NAV",
     watch: "Walk-back, core drift ±3pp, sat drift ±1.5pp, sat cap 20%.",
-    act: "£200 AutoInvest. Mechanical tree only. Verify COPA vs COPG. Do not move the date.",
+    act: "Monthly AutoInvest. Mechanical tree only. Do not move the date.",
   },
 ];
 
 export const WALKBACK = {
   slope: { object: "2s10s (GT10 − GT2)", now: "+38bp", trigger: "< 0bp" },
   pmi: { object: "PMI (NAPMPMI)", now: "54.6", trigger: "< 50" },
-  rule: "Both must fire together. Then the full £200 routes to Invictus core. Satellites receive zero. Historical frequency about 6.1% of months. Not the base case. The rule exists because the base case is sometimes wrong.",
+  rule: "Both must fire together. Then the full monthly debit routes to Invictus core. Satellites receive zero. Historical frequency about 6.1% of months. Not the base case. The rule exists because the base case is sometimes wrong.",
 };
 
 export const CONTRIB_TREE = [
@@ -64,7 +64,7 @@ export const CONTRIB_TREE = [
     title: "Walk-back",
     test: "PMI < 50 AND 2s10s < 0bp",
     now: "54.6 and +38bp — both clear",
-    then: "Route all £200 to core. Satellites get nothing.",
+    then: "Route all of the monthly debit to core. Satellites get nothing.",
   },
   {
     step: 2,
@@ -92,7 +92,7 @@ export const CONTRIB_TREE = [
     title: "Default split",
     test: "No drift breach",
     now: "Idle until 3 Oct",
-    then: "£150 core (75%) + £50 satellite (25%). Most underweight line in each sleeve.",
+    then: "75% core + 25% satellite. Most underweight line in each sleeve.",
   },
 ];
 
@@ -127,7 +127,7 @@ export const INGREDIENTS = [
   {
     n: 5,
     title: "Contributions are the engine",
-    body: "At a three-figure book, £200 a month is not a rounding error. The long-run fan is built on those pounds compounding, not on clever tickets. The pie does not need to be perfect. It needs to survive long enough for the contribution to work.",
+    body: "On a small book the monthly debit is not a rounding error. The long-run fan is built on those contributions compounding, not on clever tickets. The pie does not need to be perfect. It needs to survive long enough for the contribution to work.",
   },
 ];
 

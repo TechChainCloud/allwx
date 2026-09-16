@@ -298,7 +298,7 @@ const lockedLines: Line[] = [
     job: "Walk-back reserve. SONIA overnight. Never goes down.",
     analogy: "The cash in the tin under the bed. The quiet room. The general’s reserve.",
     story:
-      "Trigger: PMI < 50 AND curve inverted. All contributions route here. Never negative in nominal terms. FLOT’s +13.9% GBP in 2022 was FX, not carry. XSTR is not replaced at £1,053 NAV.",
+      "Trigger: PMI < 50 AND curve inverted. All contributions route here. Never negative in nominal terms. FLOT’s +13.9% GBP in 2022 was FX, not carry. XSTR is not replaced on a small book.",
     regimes: { goldilocks: "earn", reflation: "earn", stagflation: "earn", deflation: "earn" },
     fiveYear: 3.53,
     y2022: 1.25,
@@ -583,7 +583,7 @@ export const LOCK_ENTRIES = [
 export const PERMANENTLY_DEAD = [
   { id: "d-prime", name: "D-Prime", reason: "Arithmetic was wrong. 2022 ≈ −1.04%, not +1.35%." },
   { id: "sectors", name: "IITU / WNRG / XDWF", reason: "Sector bets, not All Weather lines." },
-  { id: "flot", name: "FLOT replacing XSTR at £1,053 NAV", reason: "FLOT’s +13.9% GBP in 2022 was GBP/USD depreciation, not carry." },
+  { id: "flot", name: "FLOT replacing XSTR on a small book", reason: "FLOT’s +13.9% GBP in 2022 was GBP/USD depreciation, not carry." },
   { id: "gold-scale", name: "Scaling ICOM/SGLN then doubling gold", reason: "Construction error, not research. Both lines stand at 8%." },
   { id: "labels", name: "Wrong fund labels", reason: "ITPS is US TIPS, IDTL is US Treasuries, SMGB is semiconductors, XSTR is SONIA." },
   { id: "alts", name: "Crypto, REITs, IWQU, second BCOM", reason: "Rejected for documented reasons." },
@@ -726,7 +726,7 @@ export function targetWeights(pie: Line[]): Record<string, number> {
   return Object.fromEntries(pie.map((l) => [l.ticker, l.weight]));
 }
 
-export const DEFAULT_NAV = 1053;
+export const DEFAULT_NAV = 10000;
 export const DEFAULT_CONTRIBUTION = 1600;
 export const DEFAULT_PMI = 52;
 export const DEFAULT_GT30 = 5.355;

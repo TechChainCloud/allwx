@@ -9,8 +9,8 @@ export const FOUR_BOOKS = [
   {
     id: "live",
     name: "Live ISA · 17 lines",
-    asof: "T212 · £1,083.45 · 16 Sep 09:46",
-    job: "The pad is the lock. Prime II live. Residual cash £16.01.",
+    asof: "T212 · 16 Sep 09:46 · weights only",
+    job: "The pad is the lock. Prime II live. Cash residual not published.",
     href: "/house",
   },
   {
@@ -145,7 +145,7 @@ export const GLOSSARY: { term: string; group: string; def: string }[] = [
   { term: "CSH2 / XSTR", group: "Ticker", def: "Overnight sterling. Walk-back reserve. Live pad uses CSH2; machine draft uses XSTR. Same job." },
   { term: "IGLS", group: "Ticker", def: "UK 1–5yr gilts. Ladder rung between cash and VAGS. Prime ticket. Not on the live pad until a lock-file change." },
   { term: "Farmer", group: "Lesson", def: "Wheat, greenhouse, irrigation, barn. He does not earn maximum profit in any single year. He never loses the farm." },
-  { term: "Invictus Prime II", group: "Books", def: "Live = lock, 16 Sep 2026 09:46 BST, NAV £1,083.45. 17 T212 lines. VAGS + IDTL sold. Gold wrapper IGLN. Copper is WisdomTree metal." },
+  { term: "Invictus Prime II", group: "Books", def: "Live = lock, 16 Sep 2026 09:46 BST. 17 T212 lines. VAGS + IDTL sold. Gold wrapper IGLN. Copper is WisdomTree metal. Weights only. No sterling total." },
   { term: "The Derrick", group: "Ticker", def: "WNRG — MSCI World Energy. Integrated majors ~50%. Energy equity, not ICOM, not IOGP (98% E&P)." },
   { term: "The Float", group: "Ticker", def: "FLOT — USD floating-rate IG. 1.67y duration. Proposed VAGS replacement. Gate £3k. Open gate is not an order." },
   { term: "Value tilt", group: "Ticker", def: "IWVL — MSCI World Value. The only Prime II add that can absorb VWRP without a new line. Phase 1 at £10k already named it." },

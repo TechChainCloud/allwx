@@ -146,7 +146,7 @@ export const PHASES: {
     growth: 30,
     real: 39,
     def: 31,
-    action: "IWVL 10 from VWRP. SEML 5 from VAGS. INXG stays vetoed unless Prime probation is written with a kill rule. Do not rebuild the live book into 15 lines at £950.",
+    action: "IWVL 10 from VWRP. SEML 5 from VAGS. INXG stays vetoed unless Prime probation is written with a kill rule. Do not rebuild the live book into extra lines because the pad is small.",
     rows: [
       { ticker: "VWRP", name: "FTSE All-World", w: 20, ter: "0.14", fx: "Unhedged", role: "Cap-weight growth", flag: "cut" },
       { ticker: "IWVL", name: "World value factor", w: 10, ter: "0.30", fx: "Unhedged", role: "Value tilt inside growth", flag: "new" },

@@ -1,7 +1,5 @@
 export const HOUSE_ASOF = "2026-09-16";
-export const HOUSE_NAV_ASOF = "2026-09-16 09:46 BST";
-export const HOUSE_NAV = 1083.45;
-export const HOUSE_CASH = 16.01;
+export const HOUSE_ASOF_CLOCK = "2026-09-16 09:46 BST";
 export const HOUSE_NAME = "Invictus Prime II";
 export const HOUSE_REGIME = "Reflation primary · stagflation CO-PRIMARY · live = lock";
 export const NEXT_CONTRIB = "2026-10-03";
@@ -14,7 +12,6 @@ export type HouseLine = {
   locked: number;
   target: number;
   live: number;
-  pounds: number;
   day?: number;
   color: string;
   fit: "PAY" | "TAX" | "MIX" | "POWDER";
@@ -32,7 +29,6 @@ export const HOUSE: HouseLine[] = [
     locked: 38,
     target: 38,
     live: 38.18,
-    pounds: 407.65,
     day: -0.57,
     color: "#8be9fd",
     fit: "TAX",
@@ -49,7 +45,6 @@ export const HOUSE: HouseLine[] = [
     locked: 8,
     target: 8,
     live: 8.05,
-    pounds: 86.91,
     day: 3.62,
     color: "#ff5555",
     fit: "PAY",
@@ -66,7 +61,6 @@ export const HOUSE: HouseLine[] = [
     locked: 8,
     target: 8,
     live: 7.99,
-    pounds: 85.24,
     day: -1.66,
     color: "#ffb86c",
     fit: "TAX",
@@ -83,14 +77,13 @@ export const HOUSE: HouseLine[] = [
     locked: 7,
     target: 7,
     live: 7.03,
-    pounds: 75.01,
     day: -0.07,
     color: "#50fa7b",
     fit: "MIX",
     signal: "Quiet session. Factor is a long clock.",
     note: "Absorbs VWRP. Combined engine 45%. The only add that did not invent a line.",
     thesis:
-      "Value factor. Front-loaded cash flows. High-rate weather. Phase 1 at £10k already named it. Now live at 7%.",
+      "Value factor. Front-loaded cash flows. High-rate weather. Phase 1 paper already named it. Now live at 7%.",
   },
   {
     ticker: "FLOT",
@@ -100,7 +93,6 @@ export const HOUSE: HouseLine[] = [
     locked: 6,
     target: 6,
     live: 6.02,
-    pounds: 64.24,
     day: -0.14,
     color: "#bd93f9",
     fit: "MIX",
@@ -117,7 +109,6 @@ export const HOUSE: HouseLine[] = [
     locked: 6,
     target: 6,
     live: 6.01,
-    pounds: 64.19,
     day: -0.65,
     color: "#50fa7b",
     fit: "TAX",
@@ -134,7 +125,6 @@ export const HOUSE: HouseLine[] = [
     locked: 4,
     target: 4,
     live: 4.02,
-    pounds: 42.95,
     day: 3.47,
     color: "#ff79c6",
     fit: "PAY",
@@ -151,12 +141,11 @@ export const HOUSE: HouseLine[] = [
     locked: 3,
     target: 3,
     live: 3.02,
-    pounds: 32.21,
     day: -0.03,
     color: "#bd93f9",
     fit: "POWDER",
     signal: "Carry near zero duration.",
-    note: "Live tin. CSH2 is not in this book. Residual platform cash sits beside it at £16.01.",
+    note: "Live tin. CSH2 is not in this book. Residual platform cash sits beside it. Not sized in public.",
     thesis:
       "Overnight sterling. Walk-back reserve. Not a return engine. Emergency boiler cash still sits outside the pie.",
   },
@@ -168,7 +157,6 @@ export const HOUSE: HouseLine[] = [
     locked: 3,
     target: 3,
     live: 3.01,
-    pounds: 32.10,
     day: 0.19,
     color: "#f1fa8c",
     fit: "PAY",
@@ -185,7 +173,6 @@ export const HOUSE: HouseLine[] = [
     locked: 3,
     target: 3,
     live: 3.0,
-    pounds: 32.05,
     day: -0.84,
     color: "#50fa7b",
     fit: "TAX",
@@ -202,7 +189,6 @@ export const HOUSE: HouseLine[] = [
     locked: 3,
     target: 3,
     live: 3.0,
-    pounds: 31.98,
     day: -0.53,
     color: "#ff6b6b",
     fit: "TAX",
@@ -219,7 +205,6 @@ export const HOUSE: HouseLine[] = [
     locked: 2.5,
     target: 2.5,
     live: 2.44,
-    pounds: 26.01,
     day: -3.88,
     color: "#7ad4e8",
     fit: "TAX",
@@ -236,7 +221,6 @@ export const HOUSE: HouseLine[] = [
     locked: 2,
     target: 2,
     live: 1.98,
-    pounds: 21.17,
     day: -0.75,
     color: "#69d47a",
     fit: "TAX",
@@ -253,7 +237,6 @@ export const HOUSE: HouseLine[] = [
     locked: 2,
     target: 2,
     live: 1.94,
-    pounds: 20.66,
     day: -2.41,
     color: "#8892b0",
     fit: "TAX",
@@ -270,7 +253,6 @@ export const HOUSE: HouseLine[] = [
     locked: 2,
     target: 2,
     live: 1.92,
-    pounds: 20.52,
     day: -3.48,
     color: "#e6a35c",
     fit: "TAX",
@@ -287,7 +269,6 @@ export const HOUSE: HouseLine[] = [
     locked: 1.5,
     target: 1.5,
     live: 1.43,
-    pounds: 15.25,
     day: -0.39,
     color: "#6272a4",
     fit: "MIX",
@@ -304,7 +285,6 @@ export const HOUSE: HouseLine[] = [
     locked: 1,
     target: 1,
     live: 0.96,
-    pounds: 10.29,
     day: -10.37,
     color: "#f1fa8c",
     fit: "TAX",
@@ -334,7 +314,7 @@ export const CLASSROOM_VS_HOUSE = [
   { ticker: "IGLN", classroom: 15, house: 8, job: "Barn at 8. Floor 10 named. Wrapper IGLN." },
   { ticker: "ITPS", classroom: 14, house: 6, job: "US CPI contract. Quieter than classroom." },
   { ticker: "ICOM", classroom: 10, house: 8, job: "Irrigation. Derrick is extra energy equity." },
-  { ticker: "XSTR", classroom: 7, house: 3, job: "Tin. Residual cash £16 sits beside it." },
+  { ticker: "XSTR", classroom: 7, house: 3, job: "Tin. Residual cash sits beside it. Not a return engine." },
   { ticker: "IDTL", classroom: 6, house: 0, job: "Fire brigade sold. Deflation C named." },
   { ticker: "VAGS", classroom: 18, house: 0, job: "Umbrella sold. FLOT is carry, not convexity." },
 ];
@@ -357,7 +337,7 @@ export const REGIME_MATRIX = [
 export const TENSIONS = [
   {
     title: "Live equals lock",
-    body: "T212 print 16 Sep 09:46 BST, NAV £1,083.45, 17 lines plus £16.01 cash. The pad is no longer fourteen. Prime II is not a queue for 3 Oct. It is the book.",
+    body: "T212 print 16 Sep 09:46 BST. Seventeen lines. The pad is no longer fourteen. Prime II is not a queue for 3 Oct. It is the book. Weights only. No sterling total.",
   },
   {
     title: "Sales happened",
@@ -383,16 +363,14 @@ export const TENSIONS = [
 
 export const PRIOR_SEVEN = {
   asof: "prior 7-line snapshot",
-  nav: 855.93,
-  cost: 850.98,
   lines: [
-    { ticker: "VWRP", pct: 29.84, pounds: 255.4 },
-    { ticker: "VAGS", pct: 16.28, pounds: 139.38 },
-    { ticker: "SGLN", pct: 14.83, pounds: 126.92 },
-    { ticker: "ITPS", pct: 13.76, pounds: 117.77 },
-    { ticker: "ICOM", pct: 12.74, pounds: 109.08 },
-    { ticker: "CSH2", pct: 6.77, pounds: 57.94 },
-    { ticker: "IDTL", pct: 5.77, pounds: 49.41 },
+    { ticker: "VWRP", pct: 29.84 },
+    { ticker: "VAGS", pct: 16.28 },
+    { ticker: "SGLN", pct: 14.83 },
+    { ticker: "ITPS", pct: 13.76 },
+    { ticker: "ICOM", pct: 12.74 },
+    { ticker: "CSH2", pct: 6.77 },
+    { ticker: "IDTL", pct: 5.77 },
   ],
 };
 

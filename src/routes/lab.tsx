@@ -129,7 +129,7 @@ function Honest() {
       <ul className="mt-6 space-y-2 font-sans text-sm leading-relaxed text-muted">
         <li>The machine lagged a world tracker this year. That is the design in a reflation where residual claims are the paying job.</li>
         <li>Three-year gold at +109% is the other sentence. Insurance is only unemployed until it is not.</li>
-        <li>At £710 most operational precision is smaller than a spread. Contribution direction is the rebalance. The framework is still the rehearsal for a larger book.</li>
+        <li>On a small book most operational precision is smaller than a spread. Contribution direction is the rebalance. The framework is still the rehearsal for a larger book.</li>
       </ul>
     </section>
   );

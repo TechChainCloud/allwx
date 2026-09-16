@@ -261,7 +261,7 @@ export const OVERNIGHT = {
 };
 
 export const BRIEF_PARA =
-  "Invictus Prime II is live. T212 16 Sep 2026, 09:46 BST, NAV £1,083.45. Seventeen lines plus £16.01 cash. VAGS and IDTL sold. FLOT, IWVL, WNRG, DBMF held. Gold wrapper is IGLN. Copper is WisdomTree metal, not miners. FOMC 19:00. Walk-back off. Education only.";
+  "Invictus Prime II is live. T212 16 Sep 2026, 09:46 BST. Seventeen lines. VAGS and IDTL sold. FLOT, IWVL, WNRG, DBMF held. Gold wrapper is IGLN. Copper is WisdomTree metal, not miners. FOMC 19:00. Walk-back off. Weights only. Education only.";
 
 export const HORMUZ =
   "Brent $100.95 on Hormuz. European gas above €80. $6bn long-dated buyback versus $10bn priced. Yields at new YTD highs. ICOM paid. Duration taxed. That is the design. Observe. Do not edit the lock.";

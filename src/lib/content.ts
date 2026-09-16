@@ -718,7 +718,7 @@ export const EPISODES: Episode[] = [
       { who: "DESK", text: "ALLWX desk. Episode ten. Honest numbers. This year the classroom lagged a single world tracker by about three hundred and seventy basis points. Say it without a costume." },
       { who: "RATES", text: "A world tracker printed a bit over twelve. The weighted seven-line mix printed about eight and a half. Residual claims were the paying job. The defensive block contributed almost nothing. Commodities carried part of the insurance. That is reflation arithmetic." },
       { who: "DESK", text: "Three-year gold in the wrapper is more than double. That sentence is the other half of the year. Insurance looks unemployed until the room changes. Twenty twenty-two was the room. Twenty twenty-four and twenty-five were not." },
-      { who: "RATES", text: "The book in the brief is seven hundred and ten pounds. Most of the precision we taught — three-point drift, phase gates, currency overlays — cannot be applied cheaply at that size. New cash pointed at the thin sleeve is the rebalance. The rest is rehearsal." },
+      { who: "RATES", text: "The book in the brief is small. Most of the precision we taught — three-point drift, phase gates, currency overlays — cannot be applied cheaply at that size. New cash pointed at the thin sleeve is the rebalance. The rest is rehearsal." },
       { who: "DESK", text: "The comparison that matters is not this year's gap. It is whether a person who understands the jobs sells the growth engine twenty-five percent down. The data cannot answer that. The framework can. Stage four has not arrived yet. The test is still ahead." },
       { who: "RATES", text: "Set the contribution date. Read the seven questions. Do not act on them until scale and a real trigger arrive. Accept that the next year of this book should look boring. Next: the years that paid, and the year that cost twenty-four points of relative pride." },
     ],
@@ -804,7 +804,7 @@ export const EPISODES: Episode[] = [
       { t: 80, label: "Chart" },
     ],
     transcript: [
-      { who: "DESK", text: "ALLWX desk. Episode thirteen. Fifteen sentences. Invictus Prime is a design lock. It is not tonight's ticket pad. Classroom seven still teaches the rooms. The live sterling book is still fourteen lines at nine hundred and fifty pounds." },
+      { who: "DESK", text: "ALLWX desk. Episode thirteen. Fifteen sentences. Invictus Prime is a design lock. It is not tonight's ticket pad. Classroom seven still teaches the rooms. The live sterling book is still fourteen lines. Weights only. No sterling total on this desk." },
       { who: "RATES", text: "Prime adds two sterling rates tickets. Short gilts as the ladder rung between cash and the aggregate. UK linkers as a CPI contract TIPS cannot write. It drops the managed-futures alt. That is a different animal, not a fifth weather." },
       { who: "DESK", text: "INXG is the argument. Twenty twenty-two sterling inflation ran hotter than the US print. That is the job. The five-year wreck and a fifty percent drawdown are the veto. Prime sizes it at three point eight so a second gilt crisis cannot own the household. Probation. Written kill rule. Not a cleared gate." },
       { who: "RATES", text: "Gold prints nine point six. The classroom floor is ten. Name the breach. Do not move the floor because a pie looks finished." },

@@ -1,5 +1,4 @@
 import type { Verdict } from "@/lib/verdict";
-import { formatGbp } from "@/lib/utils";
 import { cn } from "@/lib/utils";
 
 const KIND_CLASS: Record<Verdict["kind"], string> = {
@@ -36,7 +35,6 @@ export function VerdictCard({ verdict }: { verdict: Verdict }) {
                 <span className="text-sm tracking-wide text-fg">{a.ticker}</span>
                 <span className="tabular text-sm text-muted">
                   {a.pct.toFixed(1)}%
-                  <span className="ml-4 text-fg">{formatGbp(a.pounds)}</span>
                 </span>
               </li>
             ))}

@@ -8,10 +8,8 @@ import {
   HONEST,
   HOUSE,
   HOUSE_ASOF,
-  HOUSE_CASH,
+  HOUSE_ASOF_CLOCK,
   HOUSE_NAME,
-  HOUSE_NAV,
-  HOUSE_NAV_ASOF,
   HOUSE_REGIME,
   MAXIMUS_WARN,
   NEXT_CONTRIB,
@@ -86,7 +84,7 @@ function HousePage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
       <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-accent">
-        HOUSE · {PRIME_NAME} LIVE = LOCK {HOUSE_NAV_ASOF} · NAV £{HOUSE_NAV.toFixed(2)}
+        HOUSE · {PRIME_NAME} LIVE = LOCK {HOUSE_ASOF_CLOCK} · WEIGHTS ONLY
       </p>
       <h1 className="mt-3 font-mono text-4xl tracking-tight">Seventeen lines. The pad is the lock.</h1>
       <p className="mt-4 max-w-2xl font-sans text-base leading-relaxed text-muted">
@@ -94,7 +92,7 @@ function HousePage() {
       </p>
 
       <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-        <Stat k="NAV" v={`£${HOUSE_NAV.toFixed(2)}`} d={`Cash £${HOUSE_CASH.toFixed(2)}`} />
+        <Stat k="AS OF" v={HOUSE_ASOF} d="T212 weights" />
         <Stat k="LIVING" v={`${sumFamily("living", "target").toFixed(1)}%`} d="Twelve lines" />
         <Stat k="QUIET" v={`${sumFamily("quiet", "target").toFixed(1)}%`} d="Five lines" />
         <Stat k="LINES" v={String(HOUSE.length)} d={`${sumField("target").toFixed(0)}% vector`} />
@@ -238,7 +236,6 @@ function LineTable({ field }: { field: Field }) {
             <th className="px-3 py-2">Lock</th>
             <th className="px-3 py-2">Target</th>
             <th className="px-3 py-2">Live</th>
-            <th className="hidden px-3 py-2 md:table-cell">£</th>
             <th className="px-3 py-2">Fit</th>
             <th className="hidden px-3 py-2 lg:table-cell">Signal</th>
           </tr>
@@ -257,7 +254,6 @@ function LineTable({ field }: { field: Field }) {
               <td className="px-3 py-2 tabular-nums">{h.locked ? h.locked.toFixed(1) : "—"}</td>
               <td className="px-3 py-2 tabular-nums">{h.target.toFixed(0)}</td>
               <td className="px-3 py-2 tabular-nums">{h.live.toFixed(2)}</td>
-              <td className="hidden px-3 py-2 tabular-nums text-muted md:table-cell">{h.pounds.toFixed(2)}</td>
               <td
                 className={
                   h.fit === "PAY"
@@ -284,9 +280,9 @@ function Drift() {
   return (
     <section className="mt-8">
       <p className="max-w-2xl font-sans text-sm text-muted">
-        Live versus T212 target on the {HOUSE_NAV_ASOF} snapshot. At £950 a 3pp
-        drift is about £28 — still cheaper to close with the next contribution
-        than with a sale.
+        Live versus T212 target on the {HOUSE_ASOF_CLOCK} snapshot. Drift is
+        closed with the next contribution, not a discretionary top-up. A few
+        tenths is not a rewrite.
       </p>
       <ul className="mt-5 space-y-2">
         {HOUSE.map((h) => {
@@ -407,18 +403,16 @@ function CoreCompare() {
           </tbody>
         </table>
       </div>
-      <h2 className="mt-10 font-mono text-sm text-accent">PRIOR SEVEN · £{PRIOR_SEVEN.nav}</h2>
+      <h2 className="mt-10 font-mono text-sm text-accent">PRIOR SEVEN · WEIGHTS ONLY</h2>
       <p className="mt-2 font-sans text-sm text-muted">
         The last 7-line Invictus print before the revamp. Same jobs. No alt. No
-        satellites. Cost basis £{PRIOR_SEVEN.cost.toFixed(2)}.
+        satellites. Percentages only.
       </p>
       <ul className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
         {PRIOR_SEVEN.lines.map((l) => (
           <li key={l.ticker} className="rounded-md border border-line bg-panel px-3 py-2 font-mono text-[11px]">
             <span className="text-cyan">{l.ticker}</span>{" "}
-            <span className="tabular-nums text-muted">
-              {l.pct.toFixed(2)}% · £{l.pounds.toFixed(2)}
-            </span>
+            <span className="tabular-nums text-muted">{l.pct.toFixed(2)}%</span>
           </li>
         ))}
       </ul>

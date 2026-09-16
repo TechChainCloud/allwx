@@ -43,7 +43,7 @@ export const SESSION_TRIGGERS: {
   status: "OFF" | "ON" | "WATCH";
   note: string;
 }[] = [
-  { name: "Walk-back", object: "2s10s < 0 AND PMI < 50", now: "+38bp / 54.6", status: "OFF", note: "Neither key. Full £200 still splits unless both fire." },
+  { name: "Walk-back", object: "2s10s < 0 AND PMI < 50", now: "+38bp / 54.6", status: "OFF", note: "Neither key. The full monthly debit still splits unless both fire." },
   { name: "IDTL green light", object: "GT30", now: "~5.25–5.30%", status: "ON", note: "Above 5.00. First signal to add toward cap 8% with new cash — not a sale, not tonight." },
   { name: "IDTL duration hit", object: "GT30", now: "~5.25–5.30%", status: "OFF", note: "Pain 5.40. Below it. Hold." },
   { name: "ICOM $100", object: "CO1", now: "$100.95", status: "ON", note: "Co-primary overlay. Cap still applies. Do not enlarge on a session." },

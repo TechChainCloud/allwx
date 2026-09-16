@@ -2,7 +2,7 @@ import type { JobId } from "@/lib/content";
 
 export const DESK_ASOF = "2026-09-16";
 export const DESK_CLOCK = "09:46 BST";
-export const DESK_EVENT = "Live = lock · NAV £1,083.45 · FOMC 19:00";
+export const DESK_EVENT = "Live = lock · weights only · FOMC 19:00";
 
 export const SEVEN_TONIGHT: {
   n: number;
@@ -280,7 +280,7 @@ export const GATES = [
   {
     id: "scale",
     name: "Scale",
-    fail: "A five-percent sleeve at £710 is £35. Spread and minimum size make it theatre.",
+    fail: "A five-percent sleeve on a small book is spread theatre. Size is the risk management.",
     pass: "Phase 2 at £10,000. Phase 3 at £50,000. Below the gate the answer is always not yet.",
   },
   {

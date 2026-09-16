@@ -13,7 +13,7 @@ import {
   TOTAL_DURATION,
 } from "@/lib/content";
 import { SCORECARD } from "@/lib/ops";
-import { HOUSE_NAV, HOUSE_NAV_ASOF } from "@/lib/house";
+import { HOUSE_ASOF, HOUSE_ASOF_CLOCK } from "@/lib/house";
 import { TAPE, TAPE_OVERLAY, TAPE_REGIME, TAPE_STAGE } from "@/lib/tape";
 import { formatDurationLabel } from "@/lib/utils";
 import { usePlayer } from "@/store/player";
@@ -109,8 +109,7 @@ function Home() {
               </Link>
             </div>
             <p className="mt-5 font-mono text-xs tabular-nums text-faint">
-              {EPISODES.length} EP · {mins} MIN · {done}/{EPISODES.length} HEARD · HOUSE £
-              {HOUSE_NAV.toFixed(0)} · {HOUSE_NAV_ASOF}
+              {EPISODES.length} EP · {mins} MIN · {done}/{EPISODES.length} HEARD · {HOUSE_ASOF_CLOCK}
             </p>
           </div>
           <div className="rounded-md border border-line bg-panel p-4">
@@ -270,14 +269,14 @@ function Home() {
           </Link>
         </div>
         <p className="mt-2 max-w-2xl font-sans text-sm text-muted">
-          Design lock is Invictus Prime — fifteen lines. Live T212 is still
-          fourteen at £{HOUSE_NAV.toFixed(2)} on {HOUSE_NAV_ASOF}. Classroom
-          seven stays the teaching object. Do not rebuild this week.
+          Design lock is Invictus Prime II — seventeen lines. Live T212 is the
+          lock as of {HOUSE_ASOF_CLOCK}. Weights only. Classroom seven stays the
+          teaching object.
         </p>
         <div className="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-4">
           <div className="rounded-md border border-line bg-panel p-3">
-            <p className="font-mono text-[10px] text-muted">NAV</p>
-            <p className="mt-1 font-mono text-lg tabular-nums">£{HOUSE_NAV.toFixed(0)}</p>
+            <p className="font-mono text-[10px] text-muted">AS OF</p>
+            <p className="mt-1 font-mono text-lg tabular-nums">{HOUSE_ASOF}</p>
           </div>
           <div className="rounded-md border border-line bg-panel p-3">
             <p className="font-mono text-[10px] text-muted">CORE</p>

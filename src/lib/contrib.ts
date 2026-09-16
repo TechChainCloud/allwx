@@ -22,7 +22,7 @@ export const CONTRIB_CASES: {
     invested: 60000,
     terminal: 193400,
     isaBreach: "No",
-    verdict: "The schedule you can actually run at £950. Contributions dominate the first decade.",
+    verdict: "The schedule you can actually run. Contributions dominate the first decade.",
     realistic: "Highest.",
   },
   {
